@@ -3,11 +3,11 @@
     <head>
         <title>Warhammer40k</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
-        <header>
+        <header class="main-header">
             <h1>Warhammer 40k</h1>
             <nav>
                 <ul>
@@ -18,15 +18,55 @@
             </nav>
         </header>
 
-        <h1>Warhammer</h1>
-
-        <button onclick = "alert('Button Clicked!')">Click Me!</button>
         
+        <h2 class="section-title">Select a Mission Map</h2>
         <select id = "mySelect">
-            <option value = "1">Option 1</option>
-            <option value = "2">Option 2</option>
-            <option value = "3">Option 3</option>
+            <option value = "0">Select</option>
+            <option value = "1">GW 2025-26</option>
+            <option value = "2">WTC 2025</option>
         </select>
+
+        <h2 class="section-title">Deployment</h2>
+        <select id = "deploymentSelect">
+            <option value = "0">Select Deployment</option>
+            <option value = "1">Tripping point</option>
+            <option value = "2">Sweeping Engagement</option>
+            <option value = "3">Hammer & Anvil</option>
+            <option value = "4">Dawn of War</option>
+            <option value = "5">Crucible Battle</option>
+        </select>
+
+        <h2 class="section-title">Layout</h2>
+        <select id = "layoutSelect">
+            <option value = "0">Select Layout</option>
+            <option value = "1">1</option>
+            <option value = "2">2</option>
+
+        <script>
+        const unitOptions = {
+            red: ["Tank", "Sniper", "Infantry"],
+            blue: ["Drone", "Medic", "Engineer"],
+            green: ["Archer", "Knight", "Mage"]
+        };
+
+        function updateUnits() {
+            const armySelect = document.getElementById("army");
+            const unitSelect = document.getElementById("unit");
+            const selectedArmy = armySelect.value;
+
+      // Clear existing options
+        unitSelect.innerHTML = '<option value="">-- Select Unit --</option>';
+
+        if (unitOptions[selectedArmy]) {
+            unitOptions[selectedArmy].forEach(unit => {
+            const option = document.createElement("option");
+            option.value = unit.toLowerCase();
+            option.text = unit;
+            unitSelect.appendChild(option);
+            });
+        }
+    }
+        </script>
     </body>
 
 

@@ -1,10 +1,23 @@
 html{
-    background-color: tan
+    background-color: tan;
 }
 
 header {
     background-color: #333;
     color: white;
-    padding: 10px 0;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 4px;
+    color: rgb(123, 212, 236);
+}
+
+.main-header {
+    background-image: #444;
+    color: white;
+    padding: 20px 0;
     text-align: center;
 }
