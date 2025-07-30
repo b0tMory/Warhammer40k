@@ -20,10 +20,10 @@
 
         
         <h2 class="section-title">Select a Mission Map</h2>
-        <select id = "mySelect">
+        <select id = "mySelect" onchange="updateUnits()">
             <option value = "0">Select</option>
-            <option value = "1">GW 2025-26</option>
-            <option value = "2">WTC 2025</option>
+            <option id = "gw" value = "1">GW 2025-26</option>
+            <option id = "wtc" value = "2">WTC 2025</option>
         </select>
 
         <h2 class="section-title">Deployment</h2>
@@ -44,14 +44,14 @@
 
         <script>
         const unitOptions = {
-            red: ["Tank", "Sniper", "Infantry"],
-            blue: ["Drone", "Medic", "Engineer"],
-            green: ["Archer", "Knight", "Mage"]
+            1: ["Tripping Point", "Sweeping Engagement", "Sweeping Engagement", "Hammer & Anvil", "Dawn of War", "Crucible Battle"],
+            2: ["Drone", "Medic", "Engineer"],
+            3: ["Archer", "Knight", "Mage"]
         };
 
         function updateUnits() {
-            const armySelect = document.getElementById("army");
-            const unitSelect = document.getElementById("unit");
+            const armySelect = document.getElementById("mySelect");
+            const unitSelect = document.getElementById("deploymentSelect");
             const selectedArmy = armySelect.value;
 
       // Clear existing options
