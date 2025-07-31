@@ -4,8 +4,8 @@ const unitOptions = {
 };
 
 function updateUnits() {
-const army = document.getElementById("army").value;
-const unitSelect = document.getElementById("unit");
+const army = document.getElementById("mySelect").value;
+const unitSelect = document.getElementById("deploymentSelect");
 unitSelect.innerHTML = '<option value="">-- Select Unit --</option>';
 
 if (unitOptions[army]) {
@@ -20,8 +20,8 @@ if (unitOptions[army]) {
 
 // Called when unit is selected
 function updateImage() {
-const army = document.getElementById("army").value;
-const unit = document.getElementById("unit").value;
+const army = document.getElementById("mySelect").value;
+const unit = document.getElementById("deploymentSelect").value;
 if (army && unit) {
     const imagePath = `images/${army}_${unit}.png`;
     localStorage.setItem("overlayImagePath", imagePath);
