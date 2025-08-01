@@ -1,74 +1,109 @@
 <!DOCTYPE html>
-    <html lang = "en">
-    <head>
-        <title>Warhammer40k</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="styles.css">
-    </head>
+<html lang="en">
+<head>
+    <title>Warhammer40k</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1>Warhammer 40k</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="map.html">Map</a></li>
+                
+            </ul>
+        </nav>
+    </header>
 
-    <body>
-        <header class="main-header">
-            <h1>Warhammer 40k</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="armies.html">Armies</a></li>
-                </ul>
-            </nav>
-        </header>
+    <h2 class="section-title">Select a Mission Map</h2>
+    <select id="mySelect" onchange="updateUnits()">
+        <option value="">Select</option>
+        <option value="1">GW 2025-26</option>
+        <option value="2">WTC 2025</option>
+    </select>
 
-        
-        <h2 class="section-title">Select a Mission Map</h2>
-        <select id = "mySelect" onchange="updateUnits()">
-            <option value = "0">Select</option>
-            <option id = "gw" value = "1">GW 2025-26</option>
-            <option id = "wtc" value = "2">WTC 2025</option>
-        </select>
+    <h2 class="section-title">Deployment</h2>
+    <select id="deploymentSelect" onchange="updateLayout()">
+        <option value="">Select Deployment</option>
+    </select>
 
-        <h2 class="section-title">Deployment</h2>
-        <select id = "deploymentSelect">
-            <option value = "0">Select Deployment</option>
-            <option value = "1">Tripping point</option>
-            <option value = "2">Sweeping Engagement</option>
-            <option value = "3">Hammer & Anvil</option>
-            <option value = "4">Dawn of War</option>
-            <option value = "5">Crucible Battle</option>
-        </select>
+    <h2 class="section-title">Layout</h2>
+    <select id="layoutSelect" onchange="updateImage()">
+        <option value="">Select Layout</option>
+    </select>
 
-        <h2 class="section-title">Layout</h2>
-        <select id = "layoutSelect">
-            <option value = "0">Select Layout</option>
-            <option value = "1">1</option>
-            <option value = "2">2</option>
+    <!-- Optional Image Element to Show Selected Map -->
+    <img id="image" src="GW Layouts 2025-2026\GW Layouts 2025-2026\GW - Tipping Point - Layout 4.png" style="width:100%; display:block; margin-top:20px;"/>
 
-        <script>
-        const unitOptions = {
-            1: ["Tripping Point", "Sweeping Engagement", "Sweeping Engagement", "Hammer & Anvil", "Dawn of War", "Crucible Battle"],
-            2: ["Drone", "Medic", "Engineer"],
-            3: ["Archer", "Knight", "Mage"]
-        };
+    <script>
+    const unitOptions = {
+        1: ["Tipping Point", "Sweeping Engagement", "Hammer & Anvil", "Dawn of War", "Crucible of Battle"],
+        2: ["Drone", "Medic", "Engineer"]
+    };
 
-        function updateUnits() {
-            const armySelect = document.getElementById("mySelect");
-            const unitSelect = document.getElementById("deploymentSelect");
-            const selectedArmy = armySelect.value;
+    const layoutOptions = {
+        "tipping point": ["Layout 1", "Layout 2", "Layout 4", "Layout 6", "Layout 7", "Layout 8"],
+        "sweeping engagement": ["Layout 3", "Layout 5"],
+        "hammer & anvil": ["Layout 1", "Layout 7", "Layout 8"],
+        "dawn of war": ["Layout 5"],
+        "crucible of battle": ["Layout 1", "Layout 2", "Layout 4", "Layout 6", "Layout 8"],
 
-      // Clear existing options
-        unitSelect.innerHTML = '<option value="">-- Select Unit --</option>';
+        // If you use WTC values, add entries like:
+        // "drone": [...], "medic": [...], etc.
+    };
+
+    function updateUnits() {
+        const armySelect = document.getElementById("mySelect");
+        const unitSelect = document.getElementById("deploymentSelect");
+        const selectedArmy = armySelect.value;
+
+        unitSelect.innerHTML = '<option value="">-- Select Deployment --</option>';
+        document.getElementById("layoutSelect").innerHTML = '<option value="">-- Select Layout --</option>';
 
         if (unitOptions[selectedArmy]) {
             unitOptions[selectedArmy].forEach(unit => {
-            const option = document.createElement("option");
-            option.value = unit.toLowerCase();
-            option.text = unit;
-            unitSelect.appendChild(option);
+                const option = document.createElement("option");
+                option.value = unit.toLowerCase(); // This will match layoutOptions keys
+                option.text = unit;
+                unitSelect.appendChild(option);
             });
         }
     }
-        </script>
-    </body>
 
+    function updateLayout() {
+        const deploymentSelect = document.getElementById("deploymentSelect");
+        const layoutSelect = document.getElementById("layoutSelect");
+        const selectedDeployment = deploymentSelect.value;
 
+        layoutSelect.innerHTML = '<option value="">-- Select Layout --</option>';
 
+        if (layoutOptions[selectedDeployment]) {
+            layoutOptions[selectedDeployment].forEach(layout => {
+                const option = document.createElement("option");
+                option.value = layout;
+                option.text = layout;
+                layoutSelect.appendChild(option);
+            });
+        }
+    }
+
+    function updateImage() {
+        const deployment = document.getElementById("deploymentSelect").value;
+        const layout = document.getElementById("layoutSelect").value;
+        const imageElement = document.getElementById("image");
+    
+
+        if (deployment && layout) {
+            const imagePath = `GW Layouts 2025-2026/GW - ${deployment} - ${layout}.png`.replace(/ /g, '%20');
+            imageElement.src = imagePath;
+            imageElement.style.display = "block"; // Show the image
+            imageElement.alt = `Map for ${deployment} - ${layout}`;
+            localStorage.setItem("overlayImagePath", imagePath);
+            
+        }
+    }
+    </script>
+</body>
 </html>

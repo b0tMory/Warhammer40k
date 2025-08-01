@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <html lang = "en">
+    <head>
+        <title>Warhammer40k - Image</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+<style>
+    html, body {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    }
+
+    #map {
+    width: 100vw;
+    height: 100vh;
+      object-fit: contain; /* Use "contain" if you want to maintain aspect ratio with borders */
+    display: block;
+    }
+</style>
+</head>
+<body>
+    <img id="image" alt="Overlay Image">
+
+    <script>
+        const img = document.getElementById("image");
+
+        function updateImageFromStorage() {
+            const path = localStorage.getItem("overlayImagePath");
+            if (path && img.src !== path) {
+                img.src = path;
+                img.alt = `Overlay map: ${path}`;
+                console.log("Overlay updated to:", path);
+            }
+        }
+
+        // Initial load
+        updateImageFromStorage();
+
+        // Poll every 500ms for updates
+        setInterval(updateImageFromStorage, 500);
+    </script>
+</body>
+</html>
