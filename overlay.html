@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Warhammer 40k - Overlay</title>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            background: transparent;
+            overflow: hidden;
+            height: 100%;
+            width: 100%;
+        }
+
+        .overlay-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #overlayImage {
+            max-width: 100vw;
+            max-height: 100vh;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            display: block;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        #overlayImage.loaded {
+            opacity: 1;
+        }
+
+        /* Optional: Add a subtle loading indicator */
+        .loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgba(255, 255, 255, 0.7);
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            display: none;
+        }
+
+        /* Debug info - only visible in dev */
+        .debug-info {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 10px;
+            display: none; /* Set to 'block' for debugging */
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay-container">
+        <div class="loading" id="loadingText">Loading...</div>
+        <img id="overlayImage" src="" alt="">
+    </div>
+    
+    <div class="debug-info" id="debugInfo">
+        Waiting for image...
+    </div>
+
+    <script>
+        let currentImagePath = "";
+        let lastCheckTime = 0;
+        let checkInterval;
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Overlay initialized');
+            startMonitoring();
+            
+            // Try to load initial image if available
+            checkForImageUpdate();
+        });
+
+        function startMonitoring() {
+            // Check for updates every 500ms
+            checkInterval = setInterval(checkForImageUpdate, 500);
+            console.log('Started monitoring for image updates');
+        }
+
+        function checkForImageUpdate() {
+            try {
+                const storedPath = localStorage.getItem("overlayImagePath");
+                const updateTime = localStorage.getItem("overlayUpdateTime");
+                
+                if (storedPath && storedPath !== currentImagePath) {
+                    updateOverlayImage(storedPath);
+                } else if (!storedPath && currentImagePath) {
+                    // Image was cleared
+                    clearOverlayImage();
+                }
+                
+                // Update debug info
+                updateDebugInfo(storedPath, updateTime);
+                
+            } catch (error) {
+                console.warn('Could not access localStorage:', error);
+                // Fallback: could implement file polling here if needed
+            }
+        }
+
+        function updateOverlayImage(imagePath) {
+            const imageElement = document.getElementById("overlayImage");
+            const loadingElement = document.getElementById("loadingText");
+            
+            if (imagePath) {
+                console.log('Updating overlay image:', imagePath);
+                
+                // Show loading indicator
+                loadingElement.style.display = 'block';
+                imageElement.classList.remove('loaded');
+                
+                // Create new image to preload
+                const newImg = new Image();
+                newImg.onload = function() {
+                    imageElement.src = `${imagePath}?t=${Date.now()}`;
+                    imageElement.classList.add('loaded');
+                    loadingElement.style.display = 'none';
+                    currentImagePath = imagePath;
+                    console.log('Image loaded successfully');
+                };
+                
+                newImg.onerror = function() {
+                    console.error('Failed to load image:', imagePath);
+                    loadingElement.style.display = 'none';
+                    // Keep previous image if new one fails
+                };
+                
+                newImg.src = `${imagePath}?t=${Date.now()}`;
+            }
+        }
+
+        function clearOverlayImage() {
+            const imageElement = document.getElementById("overlayImage");
+            imageElement.classList.remove('loaded');
+            currentImagePath = "";
+            console.log('Image cleared');
+        }
+
+        function updateDebugInfo(path, updateTime) {
+            const debugElement = document.getElementById("debugInfo");
+            if (debugElement.style.display === 'block') {
+                const time = updateTime ? new Date(parseInt(updateTime)).toLocaleTimeString() : 'Never';
+                const fileName = path ? path.split('/').pop() : 'None';
+                debugElement.textContent = `Image: ${fileName} | Updated: ${time}`;
+            }
+        }
+
+        // Handle errors gracefully
+        document.getElementById("overlayImage").addEventListener('error', function() {
+            console.error('Image failed to load:', this.src);
+            this.classList.remove('loaded');
+        });
+
+        // Cleanup on page unload
+        window.addEventListener('beforeunload', function() {
+            if (checkInterval) {
+                clearInterval(checkInterval);
+            }
+        });
+
+        // Optional: Enable debug mode with URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('debug') === 'true') {
+            document.getElementById('debugInfo').style.display = 'block';
+            console.log('Debug mode enabled');
+        }
+    </script>
+</body>
+</html>

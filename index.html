@@ -89,21 +89,24 @@
         }
     }
 
-    function updateImage() {
-        const deployment = document.getElementById("deploymentSelect").value;
-        const layout = document.getElementById("layoutSelect").value;
-        const imageElement = document.getElementById("image");
-    
+    const bc = new BroadcastChannel("overlay_channel");
 
-        if (deployment && layout) {
-            const imagePath = `GW Layouts 2025-2026/GW - ${deployment} - ${layout}.png`.replace(/ /g, '%20');
-            imageElement.src = imagePath;
-            imageElement.style.display = "block"; // Show the image
-            imageElement.alt = `Map for ${deployment} - ${layout}`;
-            localStorage.setItem("overlayImagePath", imagePath);
-            
-        }
+function updateImage() {
+    const deployment = document.getElementById("deploymentSelect").value;
+    const layout = document.getElementById("layoutSelect").value;
+
+    if (deployment && layout) {
+        const imagePath = `http://localhost:5500/GW%20Layouts%202025-2026/GW%20-%20${deployment}%20-%20${layout}.png`;
+        localStorage.setItem("overlayImagePath", imagePath);
+
+        document.getElementById("image").src = imagePath;
+
+        // Broadcast to the overlay
+        bc.postMessage({ imagePath });
+        console.log("Broadcasting image update:", imagePath);
     }
+}
+
     </script>
 </body>
 </html>

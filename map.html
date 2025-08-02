@@ -25,25 +25,44 @@
 </style>
 </head>
 <body>
-    <img id="image" alt="Overlay Image">
+    <img id="image" src="http://localhost:5500/GW%20Layouts%202025-2026/GW%20-%20Crucible%20of%20Battle%20-%20Layout%202.png" style="width:100vw; height:100vh; object-fit:contain;" alt="Test Image">
 
     <script>
-        const img = document.getElementById("image");
-
-        function updateImageFromStorage() {
-            const path = localStorage.getItem("overlayImagePath");
+        function updateImageFromServer() {
+    fetch("/current-image")
+        .then(res => res.json())
+        .then(data => {
+            const path = data.imagePath;
             if (path && img.src !== path) {
-                img.src = path;
-                img.alt = `Overlay map: ${path}`;
-                console.log("Overlay updated to:", path);
+                img.src = `${path}?t=${Date.now()}`; // force reload
+            }
+        });
+}
+
+setInterval(updateImageFromServer, 1000);
+
+const img = document.getElementById("image");
+
+    function updateImageFromStorage() {
+        const rawPath = localStorage.getItem("overlayImagePath");
+
+        if (rawPath) {
+            // Cache-busting timestamp to force reload
+            const cacheBusted = `${rawPath}?t=${Date.now()}`;
+
+            if (img.src !== cacheBusted) {
+                img.src = cacheBusted;
+                img.alt = `Overlay map: ${rawPath}`;
+                console.log("OBS overlay image updated:", cacheBusted);
             }
         }
+    }
 
-        // Initial load
-        updateImageFromStorage();
+    // Initial load
+    updateImageFromStorage();
 
-        // Poll every 500ms for updates
-        setInterval(updateImageFromStorage, 500);
-    </script>
+    // Poll for changes every 1000ms (1s)
+    setInterval(updateImageFromStorage, 1000);
+</script>
 </body>
 </html>
