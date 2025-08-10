@@ -30,5 +30,19 @@ nav ul {
     margin: 0 auto;
 }
 
+select{
+    
+    
+    padding: 10px 20px;
+    font-size: 36px;
+    border: 1px solid;
+    margin: center;
+    text-align: center;
+}
+
+body{
+    align-items: center;
+    display: flex;
+}
 
 

@@ -26,6 +26,13 @@
 </head>
 <body>
     <img id="image" src="http://localhost:5500/GW%20Layouts%202025-2026/GW%20-%20Crucible%20of%20Battle%20-%20Layout%202.png" style="width:100vw; height:100vh; object-fit:contain;" alt="Test Image">
+    
+    <input type="checkbox" id="army1" checked>
+    <label for="army1">Army 1</label>
+    <input type="checkbox" id="army2" checked>  
+    <label for="army2">Army 2</label>
+    <input type="checkbox" id="army3" checked>
+    <label for="army3">Army 3</label>
 
     <script>
         function updateImageFromServer() {
@@ -64,5 +71,61 @@ const img = document.getElementById("image");
     // Poll for changes every 1000ms (1s)
     setInterval(updateImageFromStorage, 1000);
 </script>
+<style>
+.map-container {
+    position: relative;
+    display: inline-block;
+}
+.map-image {
+    display: block;
+    max-width: 100%;
+}
+.marker {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgba(0, 255, 0, 0.6);
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+}
+.piece {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    transform: translate(-50%, -50%);
+    pointer-events: none; /* pieces won't block marker clicks */
+}
+</style>
+
+<div class="map-container" id="mapContainer">
+<img src="GW Layouts 2025-2026/GW - Tipping Point - Layout 4.png" class="map-image" id="mapImage">
+
+<!-- Fixed marker locations -->
+<div class="marker" style="top: 30%; left: 40%;" data-id="1"></div>
+<div class="marker" style="top: 60%; left: 70%;" data-id="2"></div>
+</div>
+
+<script>
+const mapContainer = document.getElementById("mapContainer");
+
+  // Click only on predefined markers
+mapContainer.addEventListener("click", function(e) {
+    if (e.target.classList.contains("marker")) {
+    const marker = e.target;
+
+    const piece = document.createElement("img");
+      piece.src = "piece.png"; // replace with your piece image
+    piece.classList.add("piece");
+
+      // Position piece exactly where marker is
+    piece.style.top = marker.style.top;
+    piece.style.left = marker.style.left;
+
+    mapContainer.appendChild(piece);
+    }
+});
+</script>
+
 </body>
 </html>
