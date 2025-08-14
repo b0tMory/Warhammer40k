@@ -12,8 +12,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="map.html">Map</a></li>
-                <li><a href="overlay.html">Overlay</a></li>
-                <li><a href="combined.html">Combined</a></li>
+                
                 
             </ul>
         </nav>
@@ -36,13 +35,67 @@
         <option value="">Select Layout</option>
     </select>
 
+    
+    <!-- Making the box for the army list -->
+    <div id="ArmyList">
+        <div class="labels">
+        <h1>Player 1</h1>
+        <h2>Army List</h2>
+        </div>
+        
+        <!-- Army selection view -->
+        <div id="armySelectionView1">
+            <div class="checks" id="checkboxContainer1">
+                <!-- Army checkboxes will be generated here -->
+            </div>
+        </div>
+
+        <!-- Army detail view -->
+        <div id="armyDetailView1" style="display: none;">
+            <h3 id="armyTitle1"></h3>
+            <div id="unitList1">
+                <!-- Units for this army -->
+            </div>
+            <button id="addUnitBtn1">Add Unit</button>
+            <button id="deleteUnitBtn1">Delete Unit</button>
+            <button id="rotateUnitBtn1">Rotate Unit</button>
+            <button id="backBtn1">Back</button>
+        </div>
+    </div>
+
+    <div id="ArmyList2">
+        <div class="labels">
+        <h1>Player 2</h1>
+        <h2>Army List</h2>
+        </div>
+        
+        <!-- Army selection view -->
+        <div id="armySelectionView2">
+            <div class="checks" id="checkboxContainer2">
+                <!-- Army checkboxes will be generated here -->
+            </div>
+        </div>
+
+        <!-- Army detail view -->
+        <div id="armyDetailView2" style="display: none;">
+            <h3 id="armyTitle2"></h3>
+            <div id="unitList2">
+                <!-- Units for this army -->
+            </div>
+            <button id="addUnitBtn2">Add Unit</button>
+            <button id="deleteUnitBtn2">Delete Unit</button>
+            <button id="rotateUnitBtn2">Rotate Unit</button>
+            <button id="backBtn2">Back</button>
+        </div>
+    </div>
+
     <!-- Optional Image Element to Show Selected Map -->
     <img id="image" src="GW Layouts 2025-2026\GW - Tipping Point - Layout 4.png" style="width:100%; display:block; margin-top:20px;"/>
     
     <script>
     const unitOptions = {
         1: ["Tipping Point", "Sweeping Engagement", "Hammer & Anvil", "Dawn of War", "Crucible of Battle"],
-        2: ["search and destroy", "tipping point", "sweeping engagement", "hammer & anvil", "dawn of war", "crucible of battle"]
+        2: ["search and destroy", "tipping point", "sweeping engagement", "hammer and anvil", "dawn of war", "crucible of battle"]
     };
 
     const layoutOptions = {
@@ -58,10 +111,10 @@
 
     const layoutOptions2 = {
         "search and destroy": ["1", "2", "3", "4 - 5", "6", "7", "8"],
-        "tipping point": ["1", "2", "4 - 5", "6", " 7", "8"],
+        "tipping point": ["1", "2", "3", "4 - 5", "6", "7", "8"],
         "sweeping engagement": ["1", "2", "3", "4 BETA", "5 BETA", "6 BETA"],
-        "hammer & anvil": ["1", "2", "3", "4 - 5", "6", "7", "8"],
-        "dawn of war": ["1", "2", "3", "4 BETA", "5 BETA", " 6 BETA"],
+        "hammer and anvil": ["1", "2", "3", "4 - 5", "6", "7", "8"],
+        "dawn of war": ["1", "2", "3", "4 BETA", "5 BETA", "6 BETA"],
         "crucible of battle": ["1", "2", "3", "4 - 5", "7", "8"],
 
         // If you use WTC values, add entries like:
@@ -138,6 +191,8 @@ function updateImage() {
         // If the map is "GW 2025-26", use the first set of
         if (deployment && layout) {
             const imagePath = `GW Layouts 2025-2026/GW - {deployment} - {layout}.png`.replace("{deployment}", deployment).replace("{layout}", layout);
+            
+            // Save to localStorage for overlay page
             localStorage.setItem("overlayImagePath", imagePath);
 
             document.getElementById("image").src = imagePath;
@@ -153,6 +208,8 @@ function updateImage() {
         const deploymentUpper = deployment.toUpperCase();
 
             const imagePath = `WTC Layouts 2025/Cards with text/{deployment} - {layout}.png`.replace("{deployment}", deploymentUpper).replace("{layout}", layout);
+            
+            // Save to localStorage for overlay page
             localStorage.setItem("overlayImagePath", imagePath);
     
             document.getElementById("image").src = imagePath;
@@ -164,32 +221,7 @@ function updateImage() {
     }
 }
     </script>
-    <style>
-.map-container {
-    position: relative;
-    display: inline-block;
-}
-.map-image {
-    display: block;
-    max-width: 100%;
-}
-.marker {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: rgba(0, 255, 0, 0.6);
-    border-radius: 50%;
-    cursor: pointer;
-    transform: translate(-50%, -50%);
-}
-.piece {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    transform: translate(-50%, -50%);
-    pointer-events: none; /* pieces won't block marker clicks */
-}
-</style>
+
 
 <div class="map-container" id="mapContainer">
 <img src="GW Layouts 2025-2026/GW - Tipping Point - Layout 4.png" class="map-image" id="mapImage">
@@ -220,6 +252,182 @@ mapContainer.addEventListener("click", function(e) {
 });
 </script>
 
+<script>
+    // Army list data
+    const armyList = [
+        "Space Marines", "Ultra Marines", "Imperial Fists", "Iron Hands", "Raven Guard",
+        "Salamanders", "White Scars", "Genestealer Cults", "Tyranids", "Necrons",
+        "Thousand Sons", "Space Wolves", "Dark Angels", "Black Templars", "Blood Angels",
+        "Death Guard", "Chaos Demons", "Chaos Knights", "Adeptus Sororitas", "Adeptus Mechanicus",
+        "Deathwatch", "Chaos Space Marines", "World Eaters", "Orks", "Aeldari",
+        "Grey Knights", "Tau", "Votann", "Imperial Knights", "Drukhari",
+        "Imperial Guard", "Custodes"
+    ];
+
+    // Army management
+    const armies = {
+        player1: {},
+        player2: {}
+    };
+
+    // Initialize armies
+    armyList.forEach(army => {
+        armies.player1[army] = [];
+        armies.player2[army] = [];
+    });
+
+    // Generate army checkboxes for both players
+    function generateArmyCheckboxes() {
+        const container1 = document.getElementById('checkboxContainer1');
+        const container2 = document.getElementById('checkboxContainer2');
+        
+        armyList.forEach((army, index) => {
+            // Player 1
+            const label1 = document.createElement('label');
+            const checkbox1 = document.createElement('input');
+            checkbox1.type = 'checkbox';
+            checkbox1.id = `army1_${index + 1}`;
+            checkbox1.value = army;
+            checkbox1.addEventListener('change', () => handleArmySelection(1, army, checkbox1));
+            label1.appendChild(checkbox1);
+            label1.appendChild(document.createTextNode(army));
+            container1.appendChild(label1);
+
+            // Player 2
+            const label2 = document.createElement('label');
+            const checkbox2 = document.createElement('input');
+            checkbox2.type = 'checkbox';
+            checkbox2.id = `army2_${index + 1}`;
+            checkbox2.value = army;
+            checkbox2.addEventListener('change', () => handleArmySelection(2, army, checkbox2));
+            label2.appendChild(checkbox2);
+            label2.appendChild(document.createTextNode(army));
+            container2.appendChild(label2);
+        });
+    }
+
+    // Handle army selection
+    function handleArmySelection(player, armyName, checkbox) {
+        const playerKey = `player${player}`;
+        const hasUnits = armies[playerKey][armyName].length > 0;
+        
+        // If army has units, keep checkbox checked and open detail view
+        if (hasUnits) {
+            checkbox.checked = true;
+            openArmyDetail(player, armyName);
+        } else if (checkbox.checked) {
+            // If no units and checkbox is checked, open detail view
+            openArmyDetail(player, armyName);
+        }
+        // If no units and checkbox is unchecked, do nothing (allow unchecking empty armies)
+    }
+
+    // Open army detail view
+    function openArmyDetail(player, armyName) {
+        const selectionView = document.getElementById(`armySelectionView${player}`);
+        const detailView = document.getElementById(`armyDetailView${player}`);
+        const armyTitle = document.getElementById(`armyTitle${player}`);
+
+        selectionView.style.display = 'none';
+        detailView.style.display = 'block';
+        armyTitle.textContent = armyName;
+        renderUnits(player, armyName);
+    }
+
+    // Render units for an army
+    function renderUnits(player, armyName) {
+        const unitList = document.getElementById(`unitList${player}`);
+        const playerKey = `player${player}`;
+        
+        unitList.innerHTML = '';
+        armies[playerKey][armyName].forEach(unit => {
+            const div = document.createElement('div');
+            div.textContent = unit;
+            unitList.appendChild(div);
+        });
+    }
+
+    // Add unit
+    function addUnit(player, armyName) {
+        const playerKey = `player${player}`;
+        const unitCount = armies[playerKey][armyName].length + 1;
+        armies[playerKey][armyName].push(`Unit ${unitCount}`);
+        renderUnits(player, armyName);
+        
+        // Keep the checkbox checked since army now has units
+        updateCheckboxState(player, armyName, true);
+    }
+
+    // Delete last unit
+    function deleteLastUnit(player, armyName) {
+        const playerKey = `player${player}`;
+        armies[playerKey][armyName].pop();
+        renderUnits(player, armyName);
+        
+        // Update checkbox state based on whether army still has units
+        const hasUnits = armies[playerKey][armyName].length > 0;
+        updateCheckboxState(player, armyName, hasUnits);
+    }
+
+    // Update checkbox state
+    function updateCheckboxState(player, armyName, checked) {
+        const checkboxes = document.querySelectorAll(`#checkboxContainer${player} input[value="${armyName}"]`);
+        checkboxes.forEach(checkbox => {
+            checkbox.checked = checked;
+        });
+    }
+
+    // Go back to army selection
+    function goBackToSelection(player) {
+        const selectionView = document.getElementById(`armySelectionView${player}`);
+        const detailView = document.getElementById(`armyDetailView${player}`);
+        
+        selectionView.style.display = 'block';
+        detailView.style.display = 'none';
+    }
+
+    // Event listeners for buttons
+    document.getElementById('addUnitBtn1').addEventListener('click', () => {
+        const armyName = document.getElementById('armyTitle1').textContent;
+        addUnit(1, armyName);
+    });
+
+    document.getElementById('deleteUnitBtn1').addEventListener('click', () => {
+        const armyName = document.getElementById('armyTitle1').textContent;
+        deleteLastUnit(1, armyName);
+    });
+
+    document.getElementById('rotateUnitBtn1').addEventListener('click', () => {
+        alert('Rotate functionality would be implemented here');
+    });
+
+    document.getElementById('backBtn1').addEventListener('click', () => {
+        goBackToSelection(1);
+    });
+
+    document.getElementById('addUnitBtn2').addEventListener('click', () => {
+        const armyName = document.getElementById('armyTitle2').textContent;
+        addUnit(2, armyName);
+    });
+
+    document.getElementById('deleteUnitBtn2').addEventListener('click', () => {
+        const armyName = document.getElementById('armyTitle2').textContent;
+        deleteLastUnit(2, armyName);
+    });
+
+    document.getElementById('rotateUnitBtn2').addEventListener('click', () => {
+        alert('Rotate functionality would be implemented here');
+    });
+
+    document.getElementById('backBtn2').addEventListener('click', () => {
+        goBackToSelection(2);
+    });
+
+    // Initialize the application
+    document.addEventListener('DOMContentLoaded', function() {
+        generateArmyCheckboxes();
+    });
+</script>
 
 </body>
 </html>

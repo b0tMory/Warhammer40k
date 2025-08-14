@@ -4,22 +4,25 @@ html{
 
 header {
     background-color: #333;
-    color: white;
+    color:red;
     padding: 15px 0;
     text-align: center;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 4px;
+    padding: 5px;
     color: rgb(123, 212, 236);
+    font-size: 30px;
 }
 
 .main-header {
     background-image: #444;
-    color: white;
-    padding: 20px 0;
+    color: red;
+    padding: 10px 0;
+    top: 20px;
     text-align: center;
+    font-size: 20px;
 }
 
 #image {
@@ -31,9 +34,7 @@ nav ul {
 }
 
 select{
-    
-    
-    padding: 10px 20px;
+    padding: 11px 5px;
     font-size: 36px;
     border: 1px solid;
     margin: center;
@@ -41,8 +42,53 @@ select{
 }
 
 body{
-    align-items: center;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+#ArmyList {
+    background-color: navy;
+    padding: 10px;
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    max-height: 600px;
+    max-width: 600px;
+    overflow-y: auto;
+    
+}
+
+.checks{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 32px 16px;
+}
+
+.labels {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    font-size: 16px;
+    
+}
+
+
+#ArmyList2 {
+    background-color: orange;
+    padding: 10px;
+    border-radius: 3px;
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    max-height: 600px;
+    max-width: 600px;
+    overflow-y: auto;
+}
+
+
+
 
 
