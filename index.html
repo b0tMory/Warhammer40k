@@ -56,6 +56,12 @@
             <div id="unitList1">
                 <!-- Units for this army -->
             </div>
+            <select id  = "unitSelect1">
+                <option value="">-- Select Unit --</option>
+                <option value="unit1">Unit 1</option>
+                <option value="unit2">Unit 2</option>
+                <option value="unit3">Unit 3</option>
+            </select>
             <button id="addUnitBtn1">Add Unit</button>
             <button id="deleteUnitBtn1">Delete Unit</button>
             <button id="rotateUnitBtn1">Rotate Unit</button>
@@ -85,6 +91,7 @@
             <button id="addUnitBtn2">Add Unit</button>
             <button id="deleteUnitBtn2">Delete Unit</button>
             <button id="rotateUnitBtn2">Rotate Unit</button>
+            
             <button id="backBtn2">Back</button>
         </div>
     </div>
@@ -190,7 +197,7 @@ function updateImage() {
     if (map == "1") {
         // If the map is "GW 2025-26", use the first set of
         if (deployment && layout) {
-            const imagePath = `GW Layouts 2025-2026/GW - {deployment} - {layout}.png`.replace("{deployment}", deployment).replace("{layout}", layout);
+            const imagePath = `GW Layouts 2025-2026/GW - ${deployment} - ${layout}.png`;
             
             // Save to localStorage for overlay page
             localStorage.setItem("overlayImagePath", imagePath);
@@ -207,7 +214,7 @@ function updateImage() {
             // Convert deployment to uppercase for consistency
         const deploymentUpper = deployment.toUpperCase();
 
-            const imagePath = `WTC Layouts 2025/Cards with text/{deployment} - {layout}.png`.replace("{deployment}", deploymentUpper).replace("{layout}", layout);
+            const imagePath = `WTC Layouts 2025/Cards with text/${deploymentUpper} - ${layout}.png`;
             
             // Save to localStorage for overlay page
             localStorage.setItem("overlayImagePath", imagePath);
@@ -223,13 +230,8 @@ function updateImage() {
     </script>
 
 
-<div class="map-container" id="mapContainer">
-<img src="GW Layouts 2025-2026/GW - Tipping Point - Layout 4.png" class="map-image" id="mapImage">
 
-<!-- Fixed marker locations -->
-<div class="marker" style="top: 30%; left: 40%;" data-id="1"></div>
-<div class="marker" style="top: 60%; left: 70%;" data-id="2"></div>
-</div>
+
 
 <script>
 const mapContainer = document.getElementById("mapContainer");
@@ -351,22 +353,48 @@ mapContainer.addEventListener("click", function(e) {
     function addUnit(player, armyName) {
         const playerKey = `player${player}`;
         const unitCount = armies[playerKey][armyName].length + 1;
-        armies[playerKey][armyName].push(`Unit ${unitCount}`);
+        const unitName = `Unit ${unitCount}`;
+        armies[playerKey][armyName].push(unitName);
         renderUnits(player, armyName);
         
         // Keep the checkbox checked since army now has units
         updateCheckboxState(player, armyName, true);
+        
+        // Broadcast unit addition to map.html
+        const imagePath = player === 1 ? 
+            'elements/2.png' : 
+            'elements/1.png';
+            
+        bc.postMessage({ 
+            action: 'addUnit',
+            player: player,
+            unitName: `${armyName} ${unitName}`,
+            imagePath: imagePath
+        });
+        
+        console.log(`Broadcasting unit addition: Player ${player}, Unit: ${armyName} ${unitName}`);
     }
 
     // Delete last unit
     function deleteLastUnit(player, armyName) {
         const playerKey = `player${player}`;
-        armies[playerKey][armyName].pop();
+        const deletedUnit = armies[playerKey][armyName].pop();
         renderUnits(player, armyName);
         
         // Update checkbox state based on whether army still has units
         const hasUnits = armies[playerKey][armyName].length > 0;
         updateCheckboxState(player, armyName, hasUnits);
+        
+        // Broadcast unit deletion to map.html
+        if (deletedUnit) {
+            bc.postMessage({ 
+                action: 'deleteUnit',
+                player: player,
+                unitName: `${armyName} ${deletedUnit}`
+            });
+            
+            console.log(`Broadcasting unit deletion: Player ${player}, Unit: ${armyName} ${deletedUnit}`);
+        }
     }
 
     // Update checkbox state
@@ -427,6 +455,9 @@ mapContainer.addEventListener("click", function(e) {
     document.addEventListener('DOMContentLoaded', function() {
         generateArmyCheckboxes();
     });
+
+
+
 </script>
 
 </body>

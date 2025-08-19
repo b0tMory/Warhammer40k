@@ -1,160 +1,329 @@
 <!DOCTYPE html>
-    <html lang = "en">
-    <head>
-        <title>Warhammer40k - Image</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="styles.css">
-    </head>
+<html lang="en">
+<head>
+    <title>Warhammer40k - Image</title>
+    <meta charset="UTF-8">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            background: transparent;
+            overflow: hidden;
+            height: 100%;
+            width: 100%;
+        }
 
-<style>
-    html, body {
-    margin: 0;
-    padding: 0;
-    background: transparent;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-    }
+        #image {
+            width: 100vw;
+            height: 100vh;
+            object-fit: contain;
+            display: block;
+        }
 
-    #map {
-    width: 100vw;
-    height: 100vh;
-      object-fit: contain; /* Use "contain" if you want to maintain aspect ratio with borders */
-    display: block;
-    }
-</style>
+        .map-container {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .map-image {
+            display: block;
+            max-width: 100%;
+        }
+
+        .marker {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: rgba(0, 255, 0, 0.6);
+            border-radius: 50%;
+            cursor: pointer;
+            transform: translate(-50%, -50%);
+        }
+
+        .shape {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            transform: translate(-50%, -50%);
+            cursor: move;
+        }
+
+        .shape-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .controls {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background: white;
+            padding: 10px;
+            border: 1px solid black;
+            z-index: 100;
+        }
+
+        .controls button {
+            margin: 2px;
+            padding: 5px 10px;
+        }
+    </style>
 </head>
 <body>
-    <img id="image" src="http://localhost:5500/GW%20Layouts%202025-2026/GW%20-%20Crucible%20of%20Battle%20-%20Layout%202.png" style="width:100vw; height:100vh; object-fit:contain;" alt="Test Image">
+    <div class="map-container" id="mapContainer">
+        <img id="image" src="http://localhost:5500/GW%20Layouts%202025-2026/GW%20-%20Crucible%20of%20Battle%20-%20Layout%202.png" alt="Test Image" style="width: 100%; height: 100%; object-fit: contain;">
+        
+        <!-- Fixed marker locations -->
+        <div class="marker" style="top: 30%; left: 40%;" data-id="1"></div>
+        <div class="marker" style="top: 60%; left: 70%;" data-id="2"></div>
+    </div>
     
-    <div id="checkboxContainer">    </div>
-    
+    <div class="controls">
+        <button onclick="rotateSelected()">Rotate</button>
+        <div>Selected: <span id="selectedInfo">None</span></div>
+        <div>Units: <span id="unitCount">0</span></div>
+    </div>
+
+    <div id="checkboxContainer"></div>
 
     <script>
-        // Function to create checkboxes based on the image path
+        // Existing checkbox data
         const checkboxData = {
-    "GW - Tipping Point - Layout 4.png": ["Army 1", "Army 2", "Army 3"],
-    "GW - Crucible of Battle - Layout 2.png": ["Alpha Squad", "Bravo Squad", "Charlie Squad"],
-    "WTC - Search and Destroy - Layout 1.png": ["Unit A", "Unit B", "Unit C"],
-    "WTC - Tipping Point - Layout 2.png": ["Unit X", "Unit Y", "Unit Z"]
-};
-        function updateImageFromServer() {
-    fetch("/current-image")
-        .then(res => res.json())
-        .then(data => {
-            const path = data.imagePath;
-            if (path && img.src !== path) {
-                img.src = `${path}?t=${Date.now()}`; // force reload
+            "GW - Tipping Point - Layout 4.png": ["Army 1", "Army 2", "Army 3"],
+            "GW - Crucible of Battle - Layout 2.png": ["Alpha Squad", "Bravo Squad", "Charlie Squad"],
+            "WTC - Search and Destroy - Layout 1.png": ["Unit A", "Unit B", "Unit C"],
+            "WTC - Tipping Point - Layout 2.png": ["Unit X", "Unit Y", "Unit Z"]
+        };
+
+        // Shape management
+        let shapeCounter = 0;
+        let selectedShape = null;
+        let shapes = [];
+
+        // BroadcastChannel to receive messages from index.html
+        const bc = new BroadcastChannel("overlay_channel");
+
+        // Listen for messages from index.html
+        bc.onmessage = function(event) {
+            const data = event.data;
+            console.log("Received broadcast:", data);
+            
+            if (data.imagePath && !data.action) {
+                // Map image update
+                updateImageFromBroadcast(data.imagePath);
+            } else if (data.action === 'addUnit') {
+                // Add unit
+                addShapeFromBroadcast(data.imagePath, data.unitName, data.player);
+            } else if (data.action === 'deleteUnit') {
+                // Delete unit
+                deleteShapeByName(data.unitName, data.player);
             }
-        });
-}
+        };
 
-setInterval(updateImageFromServer, 1000);
+        // Add shape from broadcast (no counter needed)
+        function addShapeFromBroadcast(imagePath, unitName, player) {
+            shapeCounter++;
+            const shape = document.createElement('div');
+            shape.className = 'shape';
+            shape.style.top = '50%';
+            shape.style.left = '50%';
+            shape.dataset.id = shapeCounter;
+            shape.dataset.rotation = '0';
+            shape.dataset.unitName = unitName;
+            shape.dataset.player = player;
+            
+            // Add the actual image
+            const img = document.createElement('img');
+            img.src = imagePath;
+            img.className = 'shape-image';
+            img.alt = unitName;
+            shape.appendChild(img);
+            
+            // Add click handler for selection
+            shape.addEventListener('click', function() {
+                selectShape(shape);
+            });
+            
+            // Add drag functionality
+            makeDraggable(shape);
+            
+            document.getElementById('mapContainer').appendChild(shape);
+            shapes.push(shape);
+            selectShape(shape);
+            
+            // Update unit count
+            updateUnitCount();
+            
+            console.log(`Added unit: ${unitName} for Player ${player}`);
+        }
 
-const img = document.getElementById("image");
-
-    function updateImageFromStorage() {
-        const rawPath = localStorage.getItem("overlayImagePath");
-
-        if (rawPath) {
-            // Cache-busting timestamp to force reload
-            const cacheBusted = `${rawPath}?t=${Date.now()}`;
-
-            if (img.src !== cacheBusted) {
-                img.src = cacheBusted;
-                img.alt = `Overlay map: ${rawPath}`;
-                console.log("OBS overlay image updated:", cacheBusted);
+        // Delete shape by unit name
+        function deleteShapeByName(unitName, player) {
+            const shapeToDelete = shapes.find(shape => 
+                shape.dataset.unitName === unitName && 
+                parseInt(shape.dataset.player) === player
+            );
+            
+            if (shapeToDelete) {
+                shapeToDelete.remove();
+                shapes = shapes.filter(shape => shape !== shapeToDelete);
+                
+                // Clear selection if deleted shape was selected
+                if (selectedShape === shapeToDelete) {
+                    selectedShape = null;
+                    document.getElementById('selectedInfo').textContent = 'None';
+                }
+                
+                updateUnitCount();
+                console.log(`Deleted unit: ${unitName} for Player ${player}`);
             }
         }
-    }
 
+        // Update unit count display
+        function updateUnitCount() {
+            document.getElementById('unitCount').textContent = shapes.length;
+        }
 
+        // Update image from broadcast
+        function updateImageFromBroadcast(imagePath) {
+            const img = document.getElementById("image");
+            const cacheBusted = `${imagePath}?t=${Date.now()}`;
+            img.src = cacheBusted;
+            img.alt = `Map: ${imagePath}`;
+            console.log("Map image updated:", cacheBusted);
+            
+            // Load checkboxes if needed
+            const fileName = imagePath.split("/").pop();
+            loadCheckboxesForMap(fileName);
+        }
 
-    const checkboxContainer = document.getElementById("checkboxContainer");
+        // Select shape
+        function selectShape(shape) {
+            // Remove selection from all shapes
+            shapes.forEach(s => s.style.outline = 'none');
+            
+            // Select this shape
+            selectedShape = shape;
+            shape.style.outline = '3px solid yellow';
+            
+            document.getElementById('selectedInfo').textContent = 
+                `${shape.dataset.unitName} (Player ${shape.dataset.player})`;
+        }
 
-function loadCheckboxesForMap(mapFileName) {
-    checkboxContainer.innerHTML = ""; // Clear old checkboxes
+        // Rotate selected shape (octagonal - 45 degree increments)
+        function rotateSelected() {
+            if (selectedShape) {
+                const currentRotation = parseInt(selectedShape.dataset.rotation);
+                const newRotation = (currentRotation + 45) % 360;
+                selectedShape.dataset.rotation = newRotation;
+                selectedShape.style.transform = `translate(-50%, -50%) rotate(${newRotation}deg)`;
+            }
+        }
 
-    if (checkboxData[mapFileName]) {
-    checkboxData[mapFileName].forEach((labelText, index) => {
-        const checkboxId = `checkbox_${index}`;
+        // Make shape draggable
+        function makeDraggable(shape) {
+            let isDragging = false;
+            let startX, startY, startLeft, startTop;
 
-        const checkbox = document.createElement("input");
-        checkbox.type = "checkbox";
-        checkbox.id = checkboxId;
-        checkbox.checked = true;
+            shape.addEventListener('mousedown', function(e) {
+                isDragging = true;
+                startX = e.clientX;
+                startY = e.clientY;
+                
+                const rect = shape.getBoundingClientRect();
+                const containerRect = document.getElementById('mapContainer').getBoundingClientRect();
+                
+                startLeft = ((rect.left + rect.width/2 - containerRect.left) / containerRect.width) * 100;
+                startTop = ((rect.top + rect.height/2 - containerRect.top) / containerRect.height) * 100;
+                
+                e.preventDefault();
+            });
 
-        const label = document.createElement("label");
-        label.htmlFor = checkboxId;
-        label.innerText = labelText;
+            document.addEventListener('mousemove', function(e) {
+                if (!isDragging) return;
+                
+                const containerRect = document.getElementById('mapContainer').getBoundingClientRect();
+                const deltaX = e.clientX - startX;
+                const deltaY = e.clientY - startY;
+                
+                const newLeft = startLeft + (deltaX / containerRect.width) * 100;
+                const newTop = startTop + (deltaY / containerRect.height) * 100;
+                
+                shape.style.left = newLeft + '%';
+                shape.style.top = newTop + '%';
+            });
 
-        checkboxContainer.appendChild(checkbox);
-        checkboxContainer.appendChild(label);
-        checkboxContainer.appendChild(document.createElement("br"));
-    });
-    }
-}
+            document.addEventListener('mouseup', function() {
+                isDragging = false;
+            });
+        }
 
-  // When your image updates from localStorage or fetch
-function updateImageFromStorage() {
-    const rawPath = localStorage.getItem("overlayImagePath");
+        // Existing functions
+        function updateImageFromServer() {
+            fetch("/current-image")
+                .then(res => res.json())
+                .then(data => {
+                    const path = data.imagePath;
+                    const img = document.getElementById("image");
+                    if (path && img.src !== path) {
+                        img.src = `${path}?t=${Date.now()}`;
+                    }
+                });
+        }
 
-    if (rawPath) {
-      const fileName = rawPath.split("/").pop(); // Extract filename only
-    const cacheBusted = `${rawPath}?t=${Date.now()}`;
+        setInterval(updateImageFromServer, 1000);
 
-    if (img.src !== cacheBusted) {
-        img.src = cacheBusted;
-        img.alt = `Overlay map: ${rawPath}`;
-        console.log("OBS overlay image updated:", cacheBusted);
+        const checkboxContainer = document.getElementById("checkboxContainer");
 
-        // Load checkboxes for this map
-        loadCheckboxesForMap(fileName);
-    }
-    } }
+        function loadCheckboxesForMap(mapFileName) {
+            checkboxContainer.innerHTML = "";
 
-  // Initial load
-updateImageFromStorage();
-setInterval(updateImageFromStorage, 1000);
+            if (checkboxData[mapFileName]) {
+                checkboxData[mapFileName].forEach((labelText, index) => {
+                    const checkboxId = `checkbox_${index}`;
 
+                    const checkbox = document.createElement("input");
+                    checkbox.type = "checkbox";
+                    checkbox.id = checkboxId;
+                    checkbox.checked = true;
 
-</script>
-<style>
-.map-container {
-    position: relative;
-    display: inline-block;
-}
-.map-image {
-    display: block;
-    max-width: 100%;
-}
-.marker {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: rgba(0, 255, 0, 0.6);
-    border-radius: 50%;
-    cursor: pointer;
-    transform: translate(-50%, -50%);
-}
-.piece {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    transform: translate(-50%, -50%);
-    pointer-events: none; /* pieces won't block marker clicks */
-}
-</style>
+                    const label = document.createElement("label");
+                    label.htmlFor = checkboxId;
+                    label.innerText = labelText;
 
-<div class="map-container" id="mapContainer">
-<img src="GW Layouts 2025-2026/GW - Tipping Point - Layout 4.png" class="map-image" id="mapImage">
+                    checkboxContainer.appendChild(checkbox);
+                    checkboxContainer.appendChild(label);
+                    checkboxContainer.appendChild(document.createElement("br"));
+                });
+            }
+        }
 
-<!-- Fixed marker locations -->
-<div class="marker" style="top: 30%; left: 40%;" data-id="1"></div>
-<div class="marker" style="top: 60%; left: 70%;" data-id="2"></div>
-</div>
+        function updateImageFromStorage() {
+            const rawPath = localStorage.getItem("overlayImagePath");
 
+            if (rawPath) {
+                const fileName = rawPath.split("/").pop();
+                const cacheBusted = `${rawPath}?t=${Date.now()}`;
+                const img = document.getElementById("image");
 
+                if (img.src !== cacheBusted) {
+                    img.src = cacheBusted;
+                    img.alt = `Overlay map: ${rawPath}`;
+                    console.log("OBS overlay image updated:", cacheBusted);
+                    loadCheckboxesForMap(fileName);
+                }
+            }
+        }
 
+        // Initial load
+        updateImageFromStorage();
+        setInterval(updateImageFromStorage, 1000);
+        
+        // Initialize unit count
+        updateUnitCount();
+    </script>
 </body>
 </html>
