@@ -104,6 +104,31 @@ height: 40px;
 transform: translate(-50%, -50%);
 }
 
+.shape {
+    position: absolute;
+    cursor: grab;
+    display: inline-block;
+}
+
+.shape-label {
+    position: absolute;
+    bottom: 0;                /* inside at the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;               /* stay inside the base */
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    padding: 1px 2px;
+    border-radius: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;  /* truncate long names */
+    pointer-events: none;     /* doesn’t block dragging */
+}
+
+
 
 
 

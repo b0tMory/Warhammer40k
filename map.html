@@ -117,8 +117,8 @@
     // Rotate specific unit
     rotateUnitById(data.unitId, data.newRotation);
             
-        };
-    }
+        }
+    };
         function addShapeFromBroadcast(imagePath, unitName, player, unitId) {
     shapeCounter++;
     const shape = document.createElement('div');
@@ -129,7 +129,7 @@
     shape.dataset.rotation = '0';
     shape.dataset.unitName = unitName;
     shape.dataset.player = player;
-    shape.dataset.unitId = unitId;  // ✅ now correctly assigned
+    shape.dataset.unitId = unitId;  
 
     // Add the actual image
     const img = document.createElement('img');
@@ -137,6 +137,11 @@
     img.className = 'shape-image';
     img.alt = unitName;
     shape.appendChild(img);
+
+    const label = document.createElement('div');
+    label.className = 'shape-label';
+    label.textContent = unitName;
+    shape.appendChild(label);
 
     // Click handler
     shape.addEventListener('click', function() {
