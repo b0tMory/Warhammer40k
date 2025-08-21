@@ -1,0 +1,9122 @@
+{
+    "SPACE MARINES": [
+        {
+            "name": "ARMY LISTS",
+            "base": ""
+        },
+        {
+            "name": "Aggressors",
+            "base": ""
+        },
+        {
+            "name": "Ancient",
+            "base": ""
+        },
+        {
+            "name": "Apothecary Biologis",
+            "base": ""
+        },
+        {
+            "name": "Assault Intercessors",
+            "base": ""
+        },
+        {
+            "name": "Assault Squad",
+            "base": ""
+        },
+        {
+            "name": "Attack Bikes",
+            "base": ""
+        },
+        {
+            "name": "Ballistus Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Bike Squad",
+            "base": ""
+        },
+        {
+            "name": "Bladeguard Ancient",
+            "base": ""
+        },
+        {
+            "name": "Bladeguard Veterans",
+            "base": ""
+        },
+        {
+            "name": "Brutalis Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Captain",
+            "base": ""
+        },
+        {
+            "name": "Centurion Assault Squad",
+            "base": ""
+        },
+        {
+            "name": "Centurion Devastator Squad",
+            "base": ""
+        },
+        {
+            "name": "Chaplain",
+            "base": ""
+        },
+        {
+            "name": "Chaplain on Bike",
+            "base": ""
+        },
+        {
+            "name": "Command Squad",
+            "base": ""
+        },
+        {
+            "name": "Contemptor Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Desolation Squad",
+            "base": ""
+        },
+        {
+            "name": "Devastator Squad",
+            "base": ""
+        },
+        {
+            "name": "Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Drop Pod",
+            "base": ""
+        },
+        {
+            "name": "Eliminators",
+            "base": ""
+        },
+        {
+            "name": "Eradicators",
+            "base": ""
+        },
+        {
+            "name": "Firestrike Servo-Turrets",
+            "base": ""
+        },
+        {
+            "name": "Gladiator Lancer",
+            "base": ""
+        },
+        {
+            "name": "Gladiator Reaper",
+            "base": ""
+        },
+        {
+            "name": "Gladiator Valiant",
+            "base": ""
+        },
+        {
+            "name": "Gravis Captain",
+            "base": ""
+        },
+        {
+            "name": "Hammerfall Bunker",
+            "base": ""
+        },
+        {
+            "name": "Heavy Intercessors",
+            "base": ""
+        },
+        {
+            "name": "Hellblasters",
+            "base": ""
+        },
+        {
+            "name": "Hunter",
+            "base": ""
+        },
+        {
+            "name": "Impulsor",
+            "base": ""
+        },
+        {
+            "name": "Inceptors",
+            "base": ""
+        },
+        {
+            "name": "Incursors",
+            "base": ""
+        },
+        {
+            "name": "Infernus Squad",
+            "base": ""
+        },
+        {
+            "name": "Infiltrators",
+            "base": ""
+        },
+        {
+            "name": "Intercessor Squad",
+            "base": ""
+        },
+        {
+            "name": "Invader ATV",
+            "base": ""
+        },
+        {
+            "name": "Invictor Tactical Warsuit",
+            "base": ""
+        },
+        {
+            "name": "Ironclad Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Judiciar",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder Storm",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder Tornado",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder Typhoon",
+            "base": ""
+        },
+        {
+            "name": "Landraider",
+            "base": ""
+        },
+        {
+            "name": "Landraider Crusader",
+            "base": ""
+        },
+        {
+            "name": "Landraider Redeemer",
+            "base": ""
+        },
+        {
+            "name": "Librarian",
+            "base": ""
+        },
+        {
+            "name": "Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Lieutenant w/ combi weapon",
+            "base": ""
+        },
+        {
+            "name": "Outrider Squad",
+            "base": ""
+        },
+        {
+            "name": "Phobos Captain",
+            "base": ""
+        },
+        {
+            "name": "Phobos Librarian",
+            "base": ""
+        },
+        {
+            "name": "Phobos Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Predator Annihilator",
+            "base": ""
+        },
+        {
+            "name": "Predator Destructor",
+            "base": ""
+        },
+        {
+            "name": "Primaris Ancient",
+            "base": ""
+        },
+        {
+            "name": "Primaris Apothecary",
+            "base": ""
+        },
+        {
+            "name": "Primaris Captain",
+            "base": ""
+        },
+        {
+            "name": "Primaris Chaplain",
+            "base": ""
+        },
+        {
+            "name": "Primaris Company Champion",
+            "base": ""
+        },
+        {
+            "name": "Primaris Librarian",
+            "base": ""
+        },
+        {
+            "name": "Primaris Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Primaris Techmarine",
+            "base": ""
+        },
+        {
+            "name": "Razorback",
+            "base": ""
+        },
+        {
+            "name": "Redemptor Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Reiver Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Reivers",
+            "base": ""
+        },
+        {
+            "name": "Relic Terminator Squad",
+            "base": ""
+        },
+        {
+            "name": "Repulsor",
+            "base": ""
+        },
+        {
+            "name": "Repulsor Executioner",
+            "base": ""
+        },
+        {
+            "name": "Rhino",
+            "base": ""
+        },
+        {
+            "name": "Scout Bikes",
+            "base": ""
+        },
+        {
+            "name": "Scout Squad",
+            "base": ""
+        },
+        {
+            "name": "Servitors",
+            "base": ""
+        },
+        {
+            "name": "Stalker",
+            "base": ""
+        },
+        {
+            "name": "Sternguard Veterans",
+            "base": ""
+        },
+        {
+            "name": "Storm Speeder Hailstrike",
+            "base": ""
+        },
+        {
+            "name": "Storm Speeder Hamerstrike",
+            "base": ""
+        },
+        {
+            "name": "Storm Speeder Thunderstrike",
+            "base": ""
+        },
+        {
+            "name": "Stormhawk Interceptor",
+            "base": ""
+        },
+        {
+            "name": "Stormraven Gunship",
+            "base": ""
+        },
+        {
+            "name": "Stormtalon Gunship",
+            "base": ""
+        },
+        {
+            "name": "Suppressors",
+            "base": ""
+        },
+        {
+            "name": "Tactical Squad",
+            "base": ""
+        },
+        {
+            "name": "Techmarine",
+            "base": ""
+        },
+        {
+            "name": "Terminator Ancient",
+            "base": ""
+        },
+        {
+            "name": "Terminator Assault Squad",
+            "base": ""
+        },
+        {
+            "name": "Terminator Captain",
+            "base": ""
+        },
+        {
+            "name": "Terminator Chaplain",
+            "base": ""
+        },
+        {
+            "name": "Terminator Librarian",
+            "base": ""
+        },
+        {
+            "name": "Terminator Squad",
+            "base": ""
+        },
+        {
+            "name": "Thunderfire Cannon",
+            "base": ""
+        },
+        {
+            "name": "Vanguard Veterans",
+            "base": ""
+        },
+        {
+            "name": "Vindicator",
+            "base": ""
+        },
+        {
+            "name": "Whirlwind",
+            "base": ""
+        },
+        {
+            "name": "Vindicare Assassin",
+            "base": ""
+        },
+        {
+            "name": "Culexus Assassin",
+            "base": ""
+        },
+        {
+            "name": "Eversor Assassin",
+            "base": ""
+        },
+        {
+            "name": "Callidus Assassin",
+            "base": ""
+        },
+        {
+            "name": "Rogue Trader Squad",
+            "base": ""
+        },
+        {
+            "name": "Voidsmen",
+            "base": ""
+        },
+        {
+            "name": "Navy Breachers",
+            "base": ""
+        },
+        {
+            "name": "Subductor Squad",
+            "base": ""
+        },
+        {
+            "name": "Exaction Squad",
+            "base": ""
+        },
+        {
+            "name": "Vigilant Squad",
+            "base": ""
+        },
+        {
+            "name": "Kyria Draxus",
+            "base": ""
+        },
+        {
+            "name": "Inquisitor Corteaz",
+            "base": ""
+        },
+        {
+            "name": "Greyfax",
+            "base": ""
+        },
+        {
+            "name": "Karamazov",
+            "base": ""
+        },
+        {
+            "name": "Inquisitor",
+            "base": ""
+        },
+        {
+            "name": "Eisenhorn",
+            "base": ""
+        },
+        {
+            "name": "Henchmen",
+            "base": ""
+        }
+    ],
+    "ULTRAMARINES": [
+        {
+            "name": "ARMY LISTS",
+            "base": ""
+        },
+        {
+            "name": "Captain Sicarius",
+            "base": ""
+        },
+        {
+            "name": "Chaplain  Cassius",
+            "base": ""
+        },
+        {
+            "name": "Chief Librarian Tigurius",
+            "base": ""
+        },
+        {
+            "name": "Marneus Calgar",
+            "base": ""
+        },
+        {
+            "name": "Roboute Guilliman",
+            "base": ""
+        },
+        {
+            "name": "Sergeant Chronus",
+            "base": ""
+        },
+        {
+            "name": "Sergeant Telion",
+            "base": ""
+        },
+        {
+            "name": "Tyrannic War Veterans",
+            "base": ""
+        },
+        {
+            "name": "Uriel Ventris",
+            "base": ""
+        },
+        {
+            "name": "Victrix Guard",
+            "base": ""
+        },
+        {
+            "name": "Aggressors",
+            "base": ""
+        },
+        {
+            "name": "Ancient",
+            "base": ""
+        },
+        {
+            "name": "Apothecary Biologis",
+            "base": ""
+        },
+        {
+            "name": "Assault Intercessors",
+            "base": ""
+        },
+        {
+            "name": "Assault Squad",
+            "base": ""
+        },
+        {
+            "name": "Attack Bikes",
+            "base": ""
+        },
+        {
+            "name": "Ballistus Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Bike Squad",
+            "base": ""
+        },
+        {
+            "name": "Bladeguard Ancient",
+            "base": ""
+        },
+        {
+            "name": "Bladeguard Veterans",
+            "base": ""
+        },
+        {
+            "name": "Brutalis Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Captain",
+            "base": ""
+        },
+        {
+            "name": "Centurion Assault Squad",
+            "base": ""
+        },
+        {
+            "name": "Centurion Devastator Squad",
+            "base": ""
+        },
+        {
+            "name": "Chaplain",
+            "base": ""
+        },
+        {
+            "name": "Chaplain on Bike",
+            "base": ""
+        },
+        {
+            "name": "Command Squad",
+            "base": ""
+        },
+        {
+            "name": "Contemptor Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Desolation Squad",
+            "base": ""
+        },
+        {
+            "name": "Devastator Squad",
+            "base": ""
+        },
+        {
+            "name": "Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Drop Pod",
+            "base": ""
+        },
+        {
+            "name": "Eliminators",
+            "base": ""
+        },
+        {
+            "name": "Eradicators",
+            "base": ""
+        },
+        {
+            "name": "Firestrike Servo-Turrets",
+            "base": ""
+        },
+        {
+            "name": "Gladiator Lancer",
+            "base": ""
+        },
+        {
+            "name": "Gladiator Reaper",
+            "base": ""
+        },
+        {
+            "name": "Gladiator Valiant",
+            "base": ""
+        },
+        {
+            "name": "Gravis Captain",
+            "base": ""
+        },
+        {
+            "name": "Hammerfall Bunker",
+            "base": ""
+        },
+        {
+            "name": "Heavy Intercessors",
+            "base": ""
+        },
+        {
+            "name": "Hellblasters",
+            "base": ""
+        },
+        {
+            "name": "Hunter",
+            "base": ""
+        },
+        {
+            "name": "Impulsor",
+            "base": ""
+        },
+        {
+            "name": "Inceptors",
+            "base": ""
+        },
+        {
+            "name": "Incursors",
+            "base": ""
+        },
+        {
+            "name": "Infernus Squad",
+            "base": ""
+        },
+        {
+            "name": "Infiltrators",
+            "base": ""
+        },
+        {
+            "name": "Intercessor Squad",
+            "base": ""
+        },
+        {
+            "name": "Invader ATV",
+            "base": ""
+        },
+        {
+            "name": "Invictor Tactical Warsuit",
+            "base": ""
+        },
+        {
+            "name": "Ironclad Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Judiciar",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder Storm",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder Tornado",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder Typhoon",
+            "base": ""
+        },
+        {
+            "name": "Landraider",
+            "base": ""
+        },
+        {
+            "name": "Landraider Crusader",
+            "base": ""
+        },
+        {
+            "name": "Landraider Redeemer",
+            "base": ""
+        },
+        {
+            "name": "Librarian",
+            "base": ""
+        },
+        {
+            "name": "Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Lieutenant w/ combi weapon",
+            "base": ""
+        },
+        {
+            "name": "Outrider Squad",
+            "base": ""
+        },
+        {
+            "name": "Phobos Captain",
+            "base": ""
+        },
+        {
+            "name": "Phobos Librarian",
+            "base": ""
+        },
+        {
+            "name": "Phobos Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Predator Annihilator",
+            "base": ""
+        },
+        {
+            "name": "Predator Destructor",
+            "base": ""
+        },
+        {
+            "name": "Primaris Ancient",
+            "base": ""
+        },
+        {
+            "name": "Primaris Apothecary",
+            "base": ""
+        },
+        {
+            "name": "Primaris Captain",
+            "base": ""
+        },
+        {
+            "name": "Primaris Chaplain",
+            "base": ""
+        },
+        {
+            "name": "Primaris Company Champion",
+            "base": ""
+        },
+        {
+            "name": "Primaris Librarian",
+            "base": ""
+        },
+        {
+            "name": "Primaris Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Primaris Techmarine",
+            "base": ""
+        },
+        {
+            "name": "Razorback",
+            "base": ""
+        },
+        {
+            "name": "Redemptor Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Reiver Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Reivers",
+            "base": ""
+        },
+        {
+            "name": "Relic Terminator Squad",
+            "base": ""
+        },
+        {
+            "name": "Repulsor",
+            "base": ""
+        },
+        {
+            "name": "Repulsor Executioner",
+            "base": ""
+        },
+        {
+            "name": "Rhino",
+            "base": ""
+        },
+        {
+            "name": "Scout Bikes",
+            "base": ""
+        },
+        {
+            "name": "Scout Squad",
+            "base": ""
+        },
+        {
+            "name": "Servitors",
+            "base": ""
+        },
+        {
+            "name": "Stalker",
+            "base": ""
+        },
+        {
+            "name": "Sternguard Veterans",
+            "base": ""
+        },
+        {
+            "name": "Storm Speeder Hailstrike",
+            "base": ""
+        },
+        {
+            "name": "Storm Speeder Hamerstrike",
+            "base": ""
+        },
+        {
+            "name": "Storm Speeder Thunderstrike",
+            "base": ""
+        },
+        {
+            "name": "Stormhawk Interceptor",
+            "base": ""
+        },
+        {
+            "name": "Stormraven Gunship",
+            "base": ""
+        },
+        {
+            "name": "Stormtalon Gunship",
+            "base": ""
+        },
+        {
+            "name": "Suppressors",
+            "base": ""
+        },
+        {
+            "name": "Tactical Squad",
+            "base": ""
+        },
+        {
+            "name": "Techmarine",
+            "base": ""
+        },
+        {
+            "name": "Terminator Ancient",
+            "base": ""
+        },
+        {
+            "name": "Terminator Assault Squad",
+            "base": ""
+        },
+        {
+            "name": "Terminator Captain",
+            "base": ""
+        },
+        {
+            "name": "Terminator Chaplain",
+            "base": ""
+        },
+        {
+            "name": "Terminator Librarian",
+            "base": ""
+        },
+        {
+            "name": "Terminator Squad",
+            "base": ""
+        },
+        {
+            "name": "Thunderfire Cannon",
+            "base": ""
+        },
+        {
+            "name": "Vanguard Veterans",
+            "base": ""
+        },
+        {
+            "name": "Vindicator",
+            "base": ""
+        },
+        {
+            "name": "Whirlwind",
+            "base": ""
+        },
+        {
+            "name": "Vindicare Assassin",
+            "base": ""
+        },
+        {
+            "name": "Culexus Assassin",
+            "base": ""
+        },
+        {
+            "name": "Eversor Assassin",
+            "base": ""
+        },
+        {
+            "name": "Callidus Assassin",
+            "base": ""
+        },
+        {
+            "name": "Rogue Trader Squad",
+            "base": ""
+        },
+        {
+            "name": "Voidsmen",
+            "base": ""
+        },
+        {
+            "name": "Navy Breachers",
+            "base": ""
+        },
+        {
+            "name": "Subductor Squad",
+            "base": ""
+        },
+        {
+            "name": "Exaction Squad",
+            "base": ""
+        },
+        {
+            "name": "Vigilant Squad",
+            "base": ""
+        },
+        {
+            "name": "Kyria Draxus",
+            "base": ""
+        },
+        {
+            "name": "Inquisitor Corteaz",
+            "base": ""
+        },
+        {
+            "name": "Greyfax",
+            "base": ""
+        },
+        {
+            "name": "Karamazov",
+            "base": ""
+        },
+        {
+            "name": "Inquisitor",
+            "base": ""
+        },
+        {
+            "name": "Eisenhorn",
+            "base": ""
+        },
+        {
+            "name": "Henchmen",
+            "base": ""
+        }
+    ],
+    "IMPERIAL FISTS": [
+        {
+            "name": "ARMY LISTS",
+            "base": ""
+        },
+        {
+            "name": "Darnath Lysander",
+            "base": ""
+        },
+        {
+            "name": "Tor Garadon",
+            "base": ""
+        },
+        {
+            "name": "Pedro Kantor",
+            "base": ""
+        },
+        {
+            "name": "Aggressors",
+            "base": ""
+        },
+        {
+            "name": "Ancient",
+            "base": ""
+        },
+        {
+            "name": "Apothecary Biologis",
+            "base": ""
+        },
+        {
+            "name": "Assault Intercessors",
+            "base": ""
+        },
+        {
+            "name": "Assault Squad",
+            "base": ""
+        },
+        {
+            "name": "Attack Bikes",
+            "base": ""
+        },
+        {
+            "name": "Ballistus Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Bike Squad",
+            "base": ""
+        },
+        {
+            "name": "Bladeguard Ancient",
+            "base": ""
+        },
+        {
+            "name": "Bladeguard Veterans",
+            "base": ""
+        },
+        {
+            "name": "Brutalis Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Captain",
+            "base": ""
+        },
+        {
+            "name": "Centurion Assault Squad",
+            "base": ""
+        },
+        {
+            "name": "Centurion Devastator Squad",
+            "base": ""
+        },
+        {
+            "name": "Chaplain",
+            "base": ""
+        },
+        {
+            "name": "Chaplain on Bike",
+            "base": ""
+        },
+        {
+            "name": "Command Squad",
+            "base": ""
+        },
+        {
+            "name": "Contemptor Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Desolation Squad",
+            "base": ""
+        },
+        {
+            "name": "Devastator Squad",
+            "base": ""
+        },
+        {
+            "name": "Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Drop Pod",
+            "base": ""
+        },
+        {
+            "name": "Eliminators",
+            "base": ""
+        },
+        {
+            "name": "Eradicators",
+            "base": ""
+        },
+        {
+            "name": "Firestrike Servo-Turrets",
+            "base": ""
+        },
+        {
+            "name": "Gladiator Lancer",
+            "base": ""
+        },
+        {
+            "name": "Gladiator Reaper",
+            "base": ""
+        },
+        {
+            "name": "Gladiator Valiant",
+            "base": ""
+        },
+        {
+            "name": "Gravis Captain",
+            "base": ""
+        },
+        {
+            "name": "Hammerfall Bunker",
+            "base": ""
+        },
+        {
+            "name": "Heavy Intercessors",
+            "base": ""
+        },
+        {
+            "name": "Hellblasters",
+            "base": ""
+        },
+        {
+            "name": "Hunter",
+            "base": ""
+        },
+        {
+            "name": "Impulsor",
+            "base": ""
+        },
+        {
+            "name": "Inceptors",
+            "base": ""
+        },
+        {
+            "name": "Incursors",
+            "base": ""
+        },
+        {
+            "name": "Infernus Squad",
+            "base": ""
+        },
+        {
+            "name": "Infiltrators",
+            "base": ""
+        },
+        {
+            "name": "Intercessor Squad",
+            "base": ""
+        },
+        {
+            "name": "Invader ATV",
+            "base": ""
+        },
+        {
+            "name": "Invictor Tactical Warsuit",
+            "base": ""
+        },
+        {
+            "name": "Ironclad Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Judiciar",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder Storm",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder Tornado",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder Typhoon",
+            "base": ""
+        },
+        {
+            "name": "Landraider",
+            "base": ""
+        },
+        {
+            "name": "Landraider Crusader",
+            "base": ""
+        },
+        {
+            "name": "Landraider Redeemer",
+            "base": ""
+        },
+        {
+            "name": "Librarian",
+            "base": ""
+        },
+        {
+            "name": "Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Lieutenant w/ combi weapon",
+            "base": ""
+        },
+        {
+            "name": "Outrider Squad",
+            "base": ""
+        },
+        {
+            "name": "Phobos Captain",
+            "base": ""
+        },
+        {
+            "name": "Phobos Librarian",
+            "base": ""
+        },
+        {
+            "name": "Phobos Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Predator Annihilator",
+            "base": ""
+        },
+        {
+            "name": "Predator Destructor",
+            "base": ""
+        },
+        {
+            "name": "Primaris Ancient",
+            "base": ""
+        },
+        {
+            "name": "Primaris Apothecary",
+            "base": ""
+        },
+        {
+            "name": "Primaris Captain",
+            "base": ""
+        },
+        {
+            "name": "Primaris Chaplain",
+            "base": ""
+        },
+        {
+            "name": "Primaris Company Champion",
+            "base": ""
+        },
+        {
+            "name": "Primaris Librarian",
+            "base": ""
+        },
+        {
+            "name": "Primaris Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Primaris Techmarine",
+            "base": ""
+        },
+        {
+            "name": "Razorback",
+            "base": ""
+        },
+        {
+            "name": "Redemptor Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Reiver Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Reivers",
+            "base": ""
+        },
+        {
+            "name": "Relic Terminator Squad",
+            "base": ""
+        },
+        {
+            "name": "Repulsor",
+            "base": ""
+        },
+        {
+            "name": "Repulsor Executioner",
+            "base": ""
+        },
+        {
+            "name": "Rhino",
+            "base": ""
+        },
+        {
+            "name": "Scout Bikes",
+            "base": ""
+        },
+        {
+            "name": "Scout Squad",
+            "base": ""
+        },
+        {
+            "name": "Servitors",
+            "base": ""
+        },
+        {
+            "name": "Stalker",
+            "base": ""
+        },
+        {
+            "name": "Sternguard Veterans",
+            "base": ""
+        },
+        {
+            "name": "Storm Speeder Hailstrike",
+            "base": ""
+        },
+        {
+            "name": "Storm Speeder Hamerstrike",
+            "base": ""
+        },
+        {
+            "name": "Storm Speeder Thunderstrike",
+            "base": ""
+        },
+        {
+            "name": "Stormhawk Interceptor",
+            "base": ""
+        },
+        {
+            "name": "Stormraven Gunship",
+            "base": ""
+        },
+        {
+            "name": "Stormtalon Gunship",
+            "base": ""
+        },
+        {
+            "name": "Suppressors",
+            "base": ""
+        },
+        {
+            "name": "Tactical Squad",
+            "base": ""
+        },
+        {
+            "name": "Techmarine",
+            "base": ""
+        },
+        {
+            "name": "Terminator Ancient",
+            "base": ""
+        },
+        {
+            "name": "Terminator Assault Squad",
+            "base": ""
+        },
+        {
+            "name": "Terminator Captain",
+            "base": ""
+        },
+        {
+            "name": "Terminator Chaplain",
+            "base": ""
+        },
+        {
+            "name": "Terminator Librarian",
+            "base": ""
+        },
+        {
+            "name": "Terminator Squad",
+            "base": ""
+        },
+        {
+            "name": "Thunderfire Cannon",
+            "base": ""
+        },
+        {
+            "name": "Vanguard Veterans",
+            "base": ""
+        },
+        {
+            "name": "Vindicator",
+            "base": ""
+        },
+        {
+            "name": "Whirlwind",
+            "base": ""
+        },
+        {
+            "name": "Vindicare Assassin",
+            "base": ""
+        },
+        {
+            "name": "Culexus Assassin",
+            "base": ""
+        },
+        {
+            "name": "Eversor Assassin",
+            "base": ""
+        },
+        {
+            "name": "Callidus Assassin",
+            "base": ""
+        },
+        {
+            "name": "Rogue Trader Squad",
+            "base": ""
+        },
+        {
+            "name": "Voidsmen",
+            "base": ""
+        },
+        {
+            "name": "Navy Breachers",
+            "base": ""
+        },
+        {
+            "name": "Subductor Squad",
+            "base": ""
+        },
+        {
+            "name": "Exaction Squad",
+            "base": ""
+        },
+        {
+            "name": "Vigilant Squad",
+            "base": ""
+        },
+        {
+            "name": "Kyria Draxus",
+            "base": ""
+        },
+        {
+            "name": "Inquisitor Corteaz",
+            "base": ""
+        },
+        {
+            "name": "Greyfax",
+            "base": ""
+        },
+        {
+            "name": "Karamazov",
+            "base": ""
+        },
+        {
+            "name": "Inquisitor",
+            "base": ""
+        },
+        {
+            "name": "Eisenhorn",
+            "base": ""
+        },
+        {
+            "name": "Henchmen",
+            "base": ""
+        }
+    ],
+    "IRON HANDS": [
+        {
+            "name": "ARMY LISTS",
+            "base": ""
+        },
+        {
+            "name": "Iron Father Feirros",
+            "base": ""
+        },
+        {
+            "name": "Aggressors",
+            "base": ""
+        },
+        {
+            "name": "Ancient",
+            "base": ""
+        },
+        {
+            "name": "Apothecary Biologis",
+            "base": ""
+        },
+        {
+            "name": "Assault Intercessors",
+            "base": ""
+        },
+        {
+            "name": "Assault Squad",
+            "base": ""
+        },
+        {
+            "name": "Attack Bikes",
+            "base": ""
+        },
+        {
+            "name": "Ballistus Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Bike Squad",
+            "base": ""
+        },
+        {
+            "name": "Bladeguard Ancient",
+            "base": ""
+        },
+        {
+            "name": "Bladeguard Veterans",
+            "base": ""
+        },
+        {
+            "name": "Brutalis Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Captain",
+            "base": ""
+        },
+        {
+            "name": "Centurion Assault Squad",
+            "base": ""
+        },
+        {
+            "name": "Centurion Devastator Squad",
+            "base": ""
+        },
+        {
+            "name": "Chaplain",
+            "base": ""
+        },
+        {
+            "name": "Chaplain on Bike",
+            "base": ""
+        },
+        {
+            "name": "Command Squad",
+            "base": ""
+        },
+        {
+            "name": "Contemptor Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Desolation Squad",
+            "base": ""
+        },
+        {
+            "name": "Devastator Squad",
+            "base": ""
+        },
+        {
+            "name": "Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Drop Pod",
+            "base": ""
+        },
+        {
+            "name": "Eliminators",
+            "base": ""
+        },
+        {
+            "name": "Eradicators",
+            "base": ""
+        },
+        {
+            "name": "Firestrike Servo-Turrets",
+            "base": ""
+        },
+        {
+            "name": "Gladiator Lancer",
+            "base": ""
+        },
+        {
+            "name": "Gladiator Reaper",
+            "base": ""
+        },
+        {
+            "name": "Gladiator Valiant",
+            "base": ""
+        },
+        {
+            "name": "Gravis Captain",
+            "base": ""
+        },
+        {
+            "name": "Hammerfall Bunker",
+            "base": ""
+        },
+        {
+            "name": "Heavy Intercessors",
+            "base": ""
+        },
+        {
+            "name": "Hellblasters",
+            "base": ""
+        },
+        {
+            "name": "Hunter",
+            "base": ""
+        },
+        {
+            "name": "Impulsor",
+            "base": ""
+        },
+        {
+            "name": "Inceptors",
+            "base": ""
+        },
+        {
+            "name": "Incursors",
+            "base": ""
+        },
+        {
+            "name": "Infernus Squad",
+            "base": ""
+        },
+        {
+            "name": "Infiltrators",
+            "base": ""
+        },
+        {
+            "name": "Intercessor Squad",
+            "base": ""
+        },
+        {
+            "name": "Invader ATV",
+            "base": ""
+        },
+        {
+            "name": "Invictor Tactical Warsuit",
+            "base": ""
+        },
+        {
+            "name": "Ironclad Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Judiciar",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder Storm",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder Tornado",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder Typhoon",
+            "base": ""
+        },
+        {
+            "name": "Landraider",
+            "base": ""
+        },
+        {
+            "name": "Landraider Crusader",
+            "base": ""
+        },
+        {
+            "name": "Landraider Redeemer",
+            "base": ""
+        },
+        {
+            "name": "Librarian",
+            "base": ""
+        },
+        {
+            "name": "Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Lieutenant w/ combi weapon",
+            "base": ""
+        },
+        {
+            "name": "Outrider Squad",
+            "base": ""
+        },
+        {
+            "name": "Phobos Captain",
+            "base": ""
+        },
+        {
+            "name": "Phobos Librarian",
+            "base": ""
+        },
+        {
+            "name": "Phobos Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Predator Annihilator",
+            "base": ""
+        },
+        {
+            "name": "Predator Destructor",
+            "base": ""
+        },
+        {
+            "name": "Primaris Ancient",
+            "base": ""
+        },
+        {
+            "name": "Primaris Apothecary",
+            "base": ""
+        },
+        {
+            "name": "Primaris Captain",
+            "base": ""
+        },
+        {
+            "name": "Primaris Chaplain",
+            "base": ""
+        },
+        {
+            "name": "Primaris Company Champion",
+            "base": ""
+        },
+        {
+            "name": "Primaris Librarian",
+            "base": ""
+        },
+        {
+            "name": "Primaris Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Primaris Techmarine",
+            "base": ""
+        },
+        {
+            "name": "Razorback",
+            "base": ""
+        },
+        {
+            "name": "Redemptor Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Reiver Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Reivers",
+            "base": ""
+        },
+        {
+            "name": "Relic Terminator Squad",
+            "base": ""
+        },
+        {
+            "name": "Repulsor",
+            "base": ""
+        },
+        {
+            "name": "Repulsor Executioner",
+            "base": ""
+        },
+        {
+            "name": "Rhino",
+            "base": ""
+        },
+        {
+            "name": "Scout Bikes",
+            "base": ""
+        },
+        {
+            "name": "Scout Squad",
+            "base": ""
+        },
+        {
+            "name": "Servitors",
+            "base": ""
+        },
+        {
+            "name": "Stalker",
+            "base": ""
+        },
+        {
+            "name": "Sternguard Veterans",
+            "base": ""
+        },
+        {
+            "name": "Storm Speeder Hailstrike",
+            "base": ""
+        },
+        {
+            "name": "Storm Speeder Hamerstrike",
+            "base": ""
+        },
+        {
+            "name": "Storm Speeder Thunderstrike",
+            "base": ""
+        },
+        {
+            "name": "Stormhawk Interceptor",
+            "base": ""
+        },
+        {
+            "name": "Stormraven Gunship",
+            "base": ""
+        },
+        {
+            "name": "Stormtalon Gunship",
+            "base": ""
+        },
+        {
+            "name": "Suppressors",
+            "base": ""
+        },
+        {
+            "name": "Tactical Squad",
+            "base": ""
+        },
+        {
+            "name": "Techmarine",
+            "base": ""
+        },
+        {
+            "name": "Terminator Ancient",
+            "base": ""
+        },
+        {
+            "name": "Terminator Assault Squad",
+            "base": ""
+        },
+        {
+            "name": "Terminator Captain",
+            "base": ""
+        },
+        {
+            "name": "Terminator Chaplain",
+            "base": ""
+        },
+        {
+            "name": "Terminator Librarian",
+            "base": ""
+        },
+        {
+            "name": "Terminator Squad",
+            "base": ""
+        },
+        {
+            "name": "Thunderfire Cannon",
+            "base": ""
+        },
+        {
+            "name": "Vanguard Veterans",
+            "base": ""
+        },
+        {
+            "name": "Vindicator",
+            "base": ""
+        },
+        {
+            "name": "Whirlwind",
+            "base": ""
+        },
+        {
+            "name": "Vindicare Assassin",
+            "base": ""
+        },
+        {
+            "name": "Culexus Assassin",
+            "base": ""
+        },
+        {
+            "name": "Eversor Assassin",
+            "base": ""
+        },
+        {
+            "name": "Callidus Assassin",
+            "base": ""
+        },
+        {
+            "name": "Rogue Trader Squad",
+            "base": ""
+        },
+        {
+            "name": "Voidsmen",
+            "base": ""
+        },
+        {
+            "name": "Navy Breachers",
+            "base": ""
+        },
+        {
+            "name": "Subductor Squad",
+            "base": ""
+        },
+        {
+            "name": "Exaction Squad",
+            "base": ""
+        },
+        {
+            "name": "Vigilant Squad",
+            "base": ""
+        },
+        {
+            "name": "Kyria Draxus",
+            "base": ""
+        },
+        {
+            "name": "Inquisitor Corteaz",
+            "base": ""
+        },
+        {
+            "name": "Greyfax",
+            "base": ""
+        },
+        {
+            "name": "Karamazov",
+            "base": ""
+        },
+        {
+            "name": "Inquisitor",
+            "base": ""
+        },
+        {
+            "name": "Eisenhorn",
+            "base": ""
+        },
+        {
+            "name": "Henchmen",
+            "base": ""
+        }
+    ],
+    "RAVEN GUARD": [
+        {
+            "name": "ARMY LISTS",
+            "base": ""
+        },
+        {
+            "name": "Kayvaan Shrike",
+            "base": ""
+        },
+        {
+            "name": "Aggressors",
+            "base": ""
+        },
+        {
+            "name": "Ancient",
+            "base": ""
+        },
+        {
+            "name": "Apothecary Biologis",
+            "base": ""
+        },
+        {
+            "name": "Assault Intercessors",
+            "base": ""
+        },
+        {
+            "name": "Assault Squad",
+            "base": ""
+        },
+        {
+            "name": "Attack Bikes",
+            "base": ""
+        },
+        {
+            "name": "Ballistus Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Bike Squad",
+            "base": ""
+        },
+        {
+            "name": "Bladeguard Ancient",
+            "base": ""
+        },
+        {
+            "name": "Bladeguard Veterans",
+            "base": ""
+        },
+        {
+            "name": "Brutalis Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Captain",
+            "base": ""
+        },
+        {
+            "name": "Centurion Assault Squad",
+            "base": ""
+        },
+        {
+            "name": "Centurion Devastator Squad",
+            "base": ""
+        },
+        {
+            "name": "Chaplain",
+            "base": ""
+        },
+        {
+            "name": "Chaplain on Bike",
+            "base": ""
+        },
+        {
+            "name": "Command Squad",
+            "base": ""
+        },
+        {
+            "name": "Contemptor Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Desolation Squad",
+            "base": ""
+        },
+        {
+            "name": "Devastator Squad",
+            "base": ""
+        },
+        {
+            "name": "Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Drop Pod",
+            "base": ""
+        },
+        {
+            "name": "Eliminators",
+            "base": ""
+        },
+        {
+            "name": "Eradicators",
+            "base": ""
+        },
+        {
+            "name": "Firestrike Servo-Turrets",
+            "base": ""
+        },
+        {
+            "name": "Gladiator Lancer",
+            "base": ""
+        },
+        {
+            "name": "Gladiator Reaper",
+            "base": ""
+        },
+        {
+            "name": "Gladiator Valiant",
+            "base": ""
+        },
+        {
+            "name": "Gravis Captain",
+            "base": ""
+        },
+        {
+            "name": "Hammerfall Bunker",
+            "base": ""
+        },
+        {
+            "name": "Heavy Intercessors",
+            "base": ""
+        },
+        {
+            "name": "Hellblasters",
+            "base": ""
+        },
+        {
+            "name": "Hunter",
+            "base": ""
+        },
+        {
+            "name": "Impulsor",
+            "base": ""
+        },
+        {
+            "name": "Inceptors",
+            "base": ""
+        },
+        {
+            "name": "Incursors",
+            "base": ""
+        },
+        {
+            "name": "Infernus Squad",
+            "base": ""
+        },
+        {
+            "name": "Infiltrators",
+            "base": ""
+        },
+        {
+            "name": "Intercessor Squad",
+            "base": ""
+        },
+        {
+            "name": "Invader ATV",
+            "base": ""
+        },
+        {
+            "name": "Invictor Tactical Warsuit",
+            "base": ""
+        },
+        {
+            "name": "Ironclad Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Judiciar",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder Storm",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder Tornado",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder Typhoon",
+            "base": ""
+        },
+        {
+            "name": "Landraider",
+            "base": ""
+        },
+        {
+            "name": "Landraider Crusader",
+            "base": ""
+        },
+        {
+            "name": "Landraider Redeemer",
+            "base": ""
+        },
+        {
+            "name": "Librarian",
+            "base": ""
+        },
+        {
+            "name": "Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Lieutenant w/ combi weapon",
+            "base": ""
+        },
+        {
+            "name": "Outrider Squad",
+            "base": ""
+        },
+        {
+            "name": "Phobos Captain",
+            "base": ""
+        },
+        {
+            "name": "Phobos Librarian",
+            "base": ""
+        },
+        {
+            "name": "Phobos Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Predator Annihilator",
+            "base": ""
+        },
+        {
+            "name": "Predator Destructor",
+            "base": ""
+        },
+        {
+            "name": "Primaris Ancient",
+            "base": ""
+        },
+        {
+            "name": "Primaris Apothecary",
+            "base": ""
+        },
+        {
+            "name": "Primaris Captain",
+            "base": ""
+        },
+        {
+            "name": "Primaris Chaplain",
+            "base": ""
+        },
+        {
+            "name": "Primaris Company Champion",
+            "base": ""
+        },
+        {
+            "name": "Primaris Librarian",
+            "base": ""
+        },
+        {
+            "name": "Primaris Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Primaris Techmarine",
+            "base": ""
+        },
+        {
+            "name": "Razorback",
+            "base": ""
+        },
+        {
+            "name": "Redemptor Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Reiver Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Reivers",
+            "base": ""
+        },
+        {
+            "name": "Relic Terminator Squad",
+            "base": ""
+        },
+        {
+            "name": "Repulsor",
+            "base": ""
+        },
+        {
+            "name": "Repulsor Executioner",
+            "base": ""
+        },
+        {
+            "name": "Rhino",
+            "base": ""
+        },
+        {
+            "name": "Scout Bikes",
+            "base": ""
+        },
+        {
+            "name": "Scout Squad",
+            "base": ""
+        },
+        {
+            "name": "Servitors",
+            "base": ""
+        },
+        {
+            "name": "Stalker",
+            "base": ""
+        },
+        {
+            "name": "Sternguard Veterans",
+            "base": ""
+        },
+        {
+            "name": "Storm Speeder Hailstrike",
+            "base": ""
+        },
+        {
+            "name": "Storm Speeder Hamerstrike",
+            "base": ""
+        },
+        {
+            "name": "Storm Speeder Thunderstrike",
+            "base": ""
+        },
+        {
+            "name": "Stormhawk Interceptor",
+            "base": ""
+        },
+        {
+            "name": "Stormraven Gunship",
+            "base": ""
+        },
+        {
+            "name": "Stormtalon Gunship",
+            "base": ""
+        },
+        {
+            "name": "Suppressors",
+            "base": ""
+        },
+        {
+            "name": "Tactical Squad",
+            "base": ""
+        },
+        {
+            "name": "Techmarine",
+            "base": ""
+        },
+        {
+            "name": "Terminator Ancient",
+            "base": ""
+        },
+        {
+            "name": "Terminator Assault Squad",
+            "base": ""
+        },
+        {
+            "name": "Terminator Captain",
+            "base": ""
+        },
+        {
+            "name": "Terminator Chaplain",
+            "base": ""
+        },
+        {
+            "name": "Terminator Librarian",
+            "base": ""
+        },
+        {
+            "name": "Terminator Squad",
+            "base": ""
+        },
+        {
+            "name": "Thunderfire Cannon",
+            "base": ""
+        },
+        {
+            "name": "Vanguard Veterans",
+            "base": ""
+        },
+        {
+            "name": "Vindicator",
+            "base": ""
+        },
+        {
+            "name": "Whirlwind",
+            "base": ""
+        },
+        {
+            "name": "Vindicare Assassin",
+            "base": ""
+        },
+        {
+            "name": "Culexus Assassin",
+            "base": ""
+        },
+        {
+            "name": "Eversor Assassin",
+            "base": ""
+        },
+        {
+            "name": "Callidus Assassin",
+            "base": ""
+        },
+        {
+            "name": "Rogue Trader Squad",
+            "base": ""
+        },
+        {
+            "name": "Voidsmen",
+            "base": ""
+        },
+        {
+            "name": "Navy Breachers",
+            "base": ""
+        },
+        {
+            "name": "Subductor Squad",
+            "base": ""
+        },
+        {
+            "name": "Exaction Squad",
+            "base": ""
+        },
+        {
+            "name": "Vigilant Squad",
+            "base": ""
+        },
+        {
+            "name": "Kyria Draxus",
+            "base": ""
+        },
+        {
+            "name": "Inquisitor Corteaz",
+            "base": ""
+        },
+        {
+            "name": "Greyfax",
+            "base": ""
+        },
+        {
+            "name": "Karamazov",
+            "base": ""
+        },
+        {
+            "name": "Inquisitor",
+            "base": ""
+        },
+        {
+            "name": "Eisenhorn",
+            "base": ""
+        },
+        {
+            "name": "Henchmen",
+            "base": ""
+        }
+    ],
+    "SALAMANDERS": [
+        {
+            "name": "ARMY LISTS",
+            "base": ""
+        },
+        {
+            "name": "Adrax Agatone",
+            "base": ""
+        },
+        {
+            "name": "Vulkan He'stan",
+            "base": ""
+        },
+        {
+            "name": "Aggressors",
+            "base": ""
+        },
+        {
+            "name": "Ancient",
+            "base": ""
+        },
+        {
+            "name": "Apothecary Biologis",
+            "base": ""
+        },
+        {
+            "name": "Assault Intercessors",
+            "base": ""
+        },
+        {
+            "name": "Assault Squad",
+            "base": ""
+        },
+        {
+            "name": "Attack Bikes",
+            "base": ""
+        },
+        {
+            "name": "Ballistus Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Bike Squad",
+            "base": ""
+        },
+        {
+            "name": "Bladeguard Ancient",
+            "base": ""
+        },
+        {
+            "name": "Bladeguard Veterans",
+            "base": ""
+        },
+        {
+            "name": "Brutalis Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Captain",
+            "base": ""
+        },
+        {
+            "name": "Centurion Assault Squad",
+            "base": ""
+        },
+        {
+            "name": "Centurion Devastator Squad",
+            "base": ""
+        },
+        {
+            "name": "Chaplain",
+            "base": ""
+        },
+        {
+            "name": "Chaplain on Bike",
+            "base": ""
+        },
+        {
+            "name": "Command Squad",
+            "base": ""
+        },
+        {
+            "name": "Contemptor Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Desolation Squad",
+            "base": ""
+        },
+        {
+            "name": "Devastator Squad",
+            "base": ""
+        },
+        {
+            "name": "Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Drop Pod",
+            "base": ""
+        },
+        {
+            "name": "Eliminators",
+            "base": ""
+        },
+        {
+            "name": "Eradicators",
+            "base": ""
+        },
+        {
+            "name": "Firestrike Servo-Turrets",
+            "base": ""
+        },
+        {
+            "name": "Gladiator Lancer",
+            "base": ""
+        },
+        {
+            "name": "Gladiator Reaper",
+            "base": ""
+        },
+        {
+            "name": "Gladiator Valiant",
+            "base": ""
+        },
+        {
+            "name": "Gravis Captain",
+            "base": ""
+        },
+        {
+            "name": "Hammerfall Bunker",
+            "base": ""
+        },
+        {
+            "name": "Heavy Intercessors",
+            "base": ""
+        },
+        {
+            "name": "Hellblasters",
+            "base": ""
+        },
+        {
+            "name": "Hunter",
+            "base": ""
+        },
+        {
+            "name": "Impulsor",
+            "base": ""
+        },
+        {
+            "name": "Inceptors",
+            "base": ""
+        },
+        {
+            "name": "Incursors",
+            "base": ""
+        },
+        {
+            "name": "Infernus Squad",
+            "base": ""
+        },
+        {
+            "name": "Infiltrators",
+            "base": ""
+        },
+        {
+            "name": "Intercessor Squad",
+            "base": ""
+        },
+        {
+            "name": "Invader ATV",
+            "base": ""
+        },
+        {
+            "name": "Invictor Tactical Warsuit",
+            "base": ""
+        },
+        {
+            "name": "Ironclad Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Judiciar",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder Storm",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder Tornado",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder Typhoon",
+            "base": ""
+        },
+        {
+            "name": "Landraider",
+            "base": ""
+        },
+        {
+            "name": "Landraider Crusader",
+            "base": ""
+        },
+        {
+            "name": "Landraider Redeemer",
+            "base": ""
+        },
+        {
+            "name": "Librarian",
+            "base": ""
+        },
+        {
+            "name": "Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Lieutenant w/ combi weapon",
+            "base": ""
+        },
+        {
+            "name": "Outrider Squad",
+            "base": ""
+        },
+        {
+            "name": "Phobos Captain",
+            "base": ""
+        },
+        {
+            "name": "Phobos Librarian",
+            "base": ""
+        },
+        {
+            "name": "Phobos Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Predator Annihilator",
+            "base": ""
+        },
+        {
+            "name": "Predator Destructor",
+            "base": ""
+        },
+        {
+            "name": "Primaris Ancient",
+            "base": ""
+        },
+        {
+            "name": "Primaris Apothecary",
+            "base": ""
+        },
+        {
+            "name": "Primaris Captain",
+            "base": ""
+        },
+        {
+            "name": "Primaris Chaplain",
+            "base": ""
+        },
+        {
+            "name": "Primaris Company Champion",
+            "base": ""
+        },
+        {
+            "name": "Primaris Librarian",
+            "base": ""
+        },
+        {
+            "name": "Primaris Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Primaris Techmarine",
+            "base": ""
+        },
+        {
+            "name": "Razorback",
+            "base": ""
+        },
+        {
+            "name": "Redemptor Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Reiver Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Reivers",
+            "base": ""
+        },
+        {
+            "name": "Relic Terminator Squad",
+            "base": ""
+        },
+        {
+            "name": "Repulsor",
+            "base": ""
+        },
+        {
+            "name": "Repulsor Executioner",
+            "base": ""
+        },
+        {
+            "name": "Rhino",
+            "base": ""
+        },
+        {
+            "name": "Scout Bikes",
+            "base": ""
+        },
+        {
+            "name": "Scout Squad",
+            "base": ""
+        },
+        {
+            "name": "Servitors",
+            "base": ""
+        },
+        {
+            "name": "Stalker",
+            "base": ""
+        },
+        {
+            "name": "Sternguard Veterans",
+            "base": ""
+        },
+        {
+            "name": "Storm Speeder Hailstrike",
+            "base": ""
+        },
+        {
+            "name": "Storm Speeder Hamerstrike",
+            "base": ""
+        },
+        {
+            "name": "Storm Speeder Thunderstrike",
+            "base": ""
+        },
+        {
+            "name": "Stormhawk Interceptor",
+            "base": ""
+        },
+        {
+            "name": "Stormraven Gunship",
+            "base": ""
+        },
+        {
+            "name": "Stormtalon Gunship",
+            "base": ""
+        },
+        {
+            "name": "Suppressors",
+            "base": ""
+        },
+        {
+            "name": "Tactical Squad",
+            "base": ""
+        },
+        {
+            "name": "Techmarine",
+            "base": ""
+        },
+        {
+            "name": "Terminator Ancient",
+            "base": ""
+        },
+        {
+            "name": "Terminator Assault Squad",
+            "base": ""
+        },
+        {
+            "name": "Terminator Captain",
+            "base": ""
+        },
+        {
+            "name": "Terminator Chaplain",
+            "base": ""
+        },
+        {
+            "name": "Terminator Librarian",
+            "base": ""
+        },
+        {
+            "name": "Terminator Squad",
+            "base": ""
+        },
+        {
+            "name": "Thunderfire Cannon",
+            "base": ""
+        },
+        {
+            "name": "Vanguard Veterans",
+            "base": ""
+        },
+        {
+            "name": "Vindicator",
+            "base": ""
+        },
+        {
+            "name": "Whirlwind",
+            "base": ""
+        },
+        {
+            "name": "Vindicare Assassin",
+            "base": ""
+        },
+        {
+            "name": "Culexus Assassin",
+            "base": ""
+        },
+        {
+            "name": "Eversor Assassin",
+            "base": ""
+        },
+        {
+            "name": "Callidus Assassin",
+            "base": ""
+        },
+        {
+            "name": "Rogue Trader Squad",
+            "base": ""
+        },
+        {
+            "name": "Voidsmen",
+            "base": ""
+        },
+        {
+            "name": "Navy Breachers",
+            "base": ""
+        },
+        {
+            "name": "Subductor Squad",
+            "base": ""
+        },
+        {
+            "name": "Exaction Squad",
+            "base": ""
+        },
+        {
+            "name": "Vigilant Squad",
+            "base": ""
+        },
+        {
+            "name": "Kyria Draxus",
+            "base": ""
+        },
+        {
+            "name": "Inquisitor Corteaz",
+            "base": ""
+        },
+        {
+            "name": "Greyfax",
+            "base": ""
+        },
+        {
+            "name": "Karamazov",
+            "base": ""
+        },
+        {
+            "name": "Inquisitor",
+            "base": ""
+        },
+        {
+            "name": "Eisenhorn",
+            "base": ""
+        },
+        {
+            "name": "Henchmen",
+            "base": ""
+        }
+    ],
+    "WHITE SCARS": [
+        {
+            "name": "ARMY LISTS",
+            "base": ""
+        },
+        {
+            "name": "Khan",
+            "base": ""
+        },
+        {
+            "name": "Kor'Sarro Khan",
+            "base": ""
+        },
+        {
+            "name": "Aggressors",
+            "base": ""
+        },
+        {
+            "name": "Ancient",
+            "base": ""
+        },
+        {
+            "name": "Apothecary Biologis",
+            "base": ""
+        },
+        {
+            "name": "Assault Intercessors",
+            "base": ""
+        },
+        {
+            "name": "Assault Squad",
+            "base": ""
+        },
+        {
+            "name": "Attack Bikes",
+            "base": ""
+        },
+        {
+            "name": "Ballistus Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Bike Squad",
+            "base": ""
+        },
+        {
+            "name": "Bladeguard Ancient",
+            "base": ""
+        },
+        {
+            "name": "Bladeguard Veterans",
+            "base": ""
+        },
+        {
+            "name": "Brutalis Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Captain",
+            "base": ""
+        },
+        {
+            "name": "Centurion Assault Squad",
+            "base": ""
+        },
+        {
+            "name": "Centurion Devastator Squad",
+            "base": ""
+        },
+        {
+            "name": "Chaplain",
+            "base": ""
+        },
+        {
+            "name": "Chaplain on Bike",
+            "base": ""
+        },
+        {
+            "name": "Command Squad",
+            "base": ""
+        },
+        {
+            "name": "Contemptor Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Desolation Squad",
+            "base": ""
+        },
+        {
+            "name": "Devastator Squad",
+            "base": ""
+        },
+        {
+            "name": "Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Drop Pod",
+            "base": ""
+        },
+        {
+            "name": "Eliminators",
+            "base": ""
+        },
+        {
+            "name": "Eradicators",
+            "base": ""
+        },
+        {
+            "name": "Firestrike Servo-Turrets",
+            "base": ""
+        },
+        {
+            "name": "Gladiator Lancer",
+            "base": ""
+        },
+        {
+            "name": "Gladiator Reaper",
+            "base": ""
+        },
+        {
+            "name": "Gladiator Valiant",
+            "base": ""
+        },
+        {
+            "name": "Gravis Captain",
+            "base": ""
+        },
+        {
+            "name": "Hammerfall Bunker",
+            "base": ""
+        },
+        {
+            "name": "Heavy Intercessors",
+            "base": ""
+        },
+        {
+            "name": "Hellblasters",
+            "base": ""
+        },
+        {
+            "name": "Hunter",
+            "base": ""
+        },
+        {
+            "name": "Impulsor",
+            "base": ""
+        },
+        {
+            "name": "Inceptors",
+            "base": ""
+        },
+        {
+            "name": "Incursors",
+            "base": ""
+        },
+        {
+            "name": "Infernus Squad",
+            "base": ""
+        },
+        {
+            "name": "Infiltrators",
+            "base": ""
+        },
+        {
+            "name": "Intercessor Squad",
+            "base": ""
+        },
+        {
+            "name": "Invader ATV",
+            "base": ""
+        },
+        {
+            "name": "Invictor Tactical Warsuit",
+            "base": ""
+        },
+        {
+            "name": "Ironclad Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Judiciar",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder Storm",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder Tornado",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder Typhoon",
+            "base": ""
+        },
+        {
+            "name": "Landraider",
+            "base": ""
+        },
+        {
+            "name": "Landraider Crusader",
+            "base": ""
+        },
+        {
+            "name": "Landraider Redeemer",
+            "base": ""
+        },
+        {
+            "name": "Librarian",
+            "base": ""
+        },
+        {
+            "name": "Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Lieutenant w/ combi weapon",
+            "base": ""
+        },
+        {
+            "name": "Outrider Squad",
+            "base": ""
+        },
+        {
+            "name": "Phobos Captain",
+            "base": ""
+        },
+        {
+            "name": "Phobos Librarian",
+            "base": ""
+        },
+        {
+            "name": "Phobos Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Predator Annihilator",
+            "base": ""
+        },
+        {
+            "name": "Predator Destructor",
+            "base": ""
+        },
+        {
+            "name": "Primaris Ancient",
+            "base": ""
+        },
+        {
+            "name": "Primaris Apothecary",
+            "base": ""
+        },
+        {
+            "name": "Primaris Captain",
+            "base": ""
+        },
+        {
+            "name": "Primaris Chaplain",
+            "base": ""
+        },
+        {
+            "name": "Primaris Company Champion",
+            "base": ""
+        },
+        {
+            "name": "Primaris Librarian",
+            "base": ""
+        },
+        {
+            "name": "Primaris Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Primaris Techmarine",
+            "base": ""
+        },
+        {
+            "name": "Razorback",
+            "base": ""
+        },
+        {
+            "name": "Redemptor Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Reiver Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Reivers",
+            "base": ""
+        },
+        {
+            "name": "Relic Terminator Squad",
+            "base": ""
+        },
+        {
+            "name": "Repulsor",
+            "base": ""
+        },
+        {
+            "name": "Repulsor Executioner",
+            "base": ""
+        },
+        {
+            "name": "Rhino",
+            "base": ""
+        },
+        {
+            "name": "Scout Bikes",
+            "base": ""
+        },
+        {
+            "name": "Scout Squad",
+            "base": ""
+        },
+        {
+            "name": "Servitors",
+            "base": ""
+        },
+        {
+            "name": "Stalker",
+            "base": ""
+        },
+        {
+            "name": "Sternguard Veterans",
+            "base": ""
+        },
+        {
+            "name": "Storm Speeder Hailstrike",
+            "base": ""
+        },
+        {
+            "name": "Storm Speeder Hamerstrike",
+            "base": ""
+        },
+        {
+            "name": "Storm Speeder Thunderstrike",
+            "base": ""
+        },
+        {
+            "name": "Stormhawk Interceptor",
+            "base": ""
+        },
+        {
+            "name": "Stormraven Gunship",
+            "base": ""
+        },
+        {
+            "name": "Stormtalon Gunship",
+            "base": ""
+        },
+        {
+            "name": "Suppressors",
+            "base": ""
+        },
+        {
+            "name": "Tactical Squad",
+            "base": ""
+        },
+        {
+            "name": "Techmarine",
+            "base": ""
+        },
+        {
+            "name": "Terminator Ancient",
+            "base": ""
+        },
+        {
+            "name": "Terminator Assault Squad",
+            "base": ""
+        },
+        {
+            "name": "Terminator Captain",
+            "base": ""
+        },
+        {
+            "name": "Terminator Chaplain",
+            "base": ""
+        },
+        {
+            "name": "Terminator Librarian",
+            "base": ""
+        },
+        {
+            "name": "Terminator Squad",
+            "base": ""
+        },
+        {
+            "name": "Thunderfire Cannon",
+            "base": ""
+        },
+        {
+            "name": "Vanguard Veterans",
+            "base": ""
+        },
+        {
+            "name": "Vindicator",
+            "base": ""
+        },
+        {
+            "name": "Whirlwind",
+            "base": ""
+        },
+        {
+            "name": "Vindicare Assassin",
+            "base": ""
+        },
+        {
+            "name": "Culexus Assassin",
+            "base": ""
+        },
+        {
+            "name": "Eversor Assassin",
+            "base": ""
+        },
+        {
+            "name": "Callidus Assassin",
+            "base": ""
+        },
+        {
+            "name": "Rogue Trader Squad",
+            "base": ""
+        },
+        {
+            "name": "Voidsmen",
+            "base": ""
+        },
+        {
+            "name": "Navy Breachers",
+            "base": ""
+        },
+        {
+            "name": "Subductor Squad",
+            "base": ""
+        },
+        {
+            "name": "Exaction Squad",
+            "base": ""
+        },
+        {
+            "name": "Vigilant Squad",
+            "base": ""
+        },
+        {
+            "name": "Kyria Draxus",
+            "base": ""
+        },
+        {
+            "name": "Inquisitor Corteaz",
+            "base": ""
+        },
+        {
+            "name": "Greyfax",
+            "base": ""
+        },
+        {
+            "name": "Karamazov",
+            "base": ""
+        },
+        {
+            "name": "Inquisitor",
+            "base": ""
+        },
+        {
+            "name": "Eisenhorn",
+            "base": ""
+        },
+        {
+            "name": "Henchmen",
+            "base": ""
+        }
+    ],
+    "GENESTEALER CULTS": [
+        {
+            "name": "ARMY LISTS",
+            "base": ""
+        },
+        {
+            "name": "Aberrants",
+            "base": ""
+        },
+        {
+            "name": "Achilles Ridgerunners",
+            "base": ""
+        },
+        {
+            "name": "Acolyte Hybrids",
+            "base": ""
+        },
+        {
+            "name": "Acolyte Iconward",
+            "base": ""
+        },
+        {
+            "name": "Adominant",
+            "base": ""
+        },
+        {
+            "name": "Atalan Jackals",
+            "base": ""
+        },
+        {
+            "name": "Biophagus",
+            "base": ""
+        },
+        {
+            "name": "Clamavus",
+            "base": ""
+        },
+        {
+            "name": "Goliath Rockgrinder",
+            "base": ""
+        },
+        {
+            "name": "Goliath Truck",
+            "base": ""
+        },
+        {
+            "name": "Hybrid Metamorphs",
+            "base": ""
+        },
+        {
+            "name": "Jackal Alphus",
+            "base": ""
+        },
+        {
+            "name": "Kelermorph",
+            "base": ""
+        },
+        {
+            "name": "Locus",
+            "base": ""
+        },
+        {
+            "name": "Magus",
+            "base": ""
+        },
+        {
+            "name": "Neophyte Hybrids",
+            "base": ""
+        },
+        {
+            "name": "Nexos",
+            "base": ""
+        },
+        {
+            "name": "Patriarch",
+            "base": ""
+        },
+        {
+            "name": "Primus",
+            "base": ""
+        },
+        {
+            "name": "Purestrain Genestealers",
+            "base": ""
+        },
+        {
+            "name": "Reductus Saboteur",
+            "base": ""
+        },
+        {
+            "name": "Sanctus",
+            "base": ""
+        }
+    ],
+    "TYRANIDS": [
+        {
+            "name": "ARMY LISTS",
+            "base": ""
+        },
+        {
+            "name": "Barbgaunts",
+            "base": ""
+        },
+        {
+            "name": "Biovores",
+            "base": ""
+        },
+        {
+            "name": "Broodlord",
+            "base": ""
+        },
+        {
+            "name": "Carnifexe",
+            "base": ""
+        },
+        {
+            "name": "Deathleaper",
+            "base": ""
+        },
+        {
+            "name": "Exocrine",
+            "base": ""
+        },
+        {
+            "name": "Gargoyles",
+            "base": ""
+        },
+        {
+            "name": "Genestealers",
+            "base": ""
+        },
+        {
+            "name": "Harpy",
+            "base": ""
+        },
+        {
+            "name": "Haruspex",
+            "base": ""
+        },
+        {
+            "name": "Hive Crone",
+            "base": ""
+        },
+        {
+            "name": "Hive Guard",
+            "base": ""
+        },
+        {
+            "name": "Hive Tyrant",
+            "base": ""
+        },
+        {
+            "name": "Hormagaunts",
+            "base": ""
+        },
+        {
+            "name": "Lictor",
+            "base": ""
+        },
+        {
+            "name": "Maleceptor",
+            "base": ""
+        },
+        {
+            "name": "Mawloc",
+            "base": ""
+        },
+        {
+            "name": "Mucolid Spores",
+            "base": ""
+        },
+        {
+            "name": "Neurogaunts",
+            "base": ""
+        },
+        {
+            "name": "Neurotyrant",
+            "base": ""
+        },
+        {
+            "name": "Old One Eye",
+            "base": ""
+        },
+        {
+            "name": "Parasite of Mortrex",
+            "base": ""
+        },
+        {
+            "name": "Psychophage",
+            "base": ""
+        },
+        {
+            "name": "Pyrovores",
+            "base": ""
+        },
+        {
+            "name": "Raveners",
+            "base": ""
+        },
+        {
+            "name": "Ripper Swarms",
+            "base": ""
+        },
+        {
+            "name": "Screamer-Killer",
+            "base": ""
+        },
+        {
+            "name": "Spore Mines",
+            "base": ""
+        },
+        {
+            "name": "Sporocyst",
+            "base": ""
+        },
+        {
+            "name": "Swarmlord",
+            "base": ""
+        },
+        {
+            "name": "Termagants",
+            "base": ""
+        },
+        {
+            "name": "Tervigon",
+            "base": ""
+        },
+        {
+            "name": "Toxicrene",
+            "base": ""
+        },
+        {
+            "name": "Trygon",
+            "base": ""
+        },
+        {
+            "name": "Tyeannocyte",
+            "base": ""
+        },
+        {
+            "name": "Tyranid Warriors",
+            "base": ""
+        },
+        {
+            "name": "Tyrannofex",
+            "base": ""
+        },
+        {
+            "name": "Tyrant Guard",
+            "base": ""
+        },
+        {
+            "name": "Venomthropes",
+            "base": ""
+        },
+        {
+            "name": "Von Ryan's Leapers",
+            "base": ""
+        },
+        {
+            "name": "Winged Hive Tyrant",
+            "base": ""
+        },
+        {
+            "name": "Winged Tyranid Prime",
+            "base": ""
+        },
+        {
+            "name": "Zoanthropes",
+            "base": ""
+        }
+    ],
+    "NECRONS": [
+        {
+            "name": "ARMY LISTS",
+            "base": ""
+        },
+        {
+            "name": "Annihilation Barge",
+            "base": ""
+        },
+        {
+            "name": "Anrakr the Traveller",
+            "base": ""
+        },
+        {
+            "name": "Canoptek Doomstalker",
+            "base": ""
+        },
+        {
+            "name": "Canoptek Reanimator",
+            "base": ""
+        },
+        {
+            "name": "Canoptek Scarab Swarms",
+            "base": ""
+        },
+        {
+            "name": "Canoptek Spyders",
+            "base": ""
+        },
+        {
+            "name": "Canoptek Wraiths",
+            "base": ""
+        },
+        {
+            "name": "Catacomb Command Barge",
+            "base": ""
+        },
+        {
+            "name": "Chronomancer",
+            "base": ""
+        },
+        {
+            "name": "Convergence of Dominion",
+            "base": ""
+        },
+        {
+            "name": "Cryptothralls",
+            "base": ""
+        },
+        {
+            "name": "C'Tan Shard of the Deceiver",
+            "base": ""
+        },
+        {
+            "name": "C'Tan Shard of the Nightbringer",
+            "base": ""
+        },
+        {
+            "name": "C'Tan Shrd of the Void Dragon",
+            "base": ""
+        },
+        {
+            "name": "Deathmarks",
+            "base": ""
+        },
+        {
+            "name": "Doom Scythe",
+            "base": ""
+        },
+        {
+            "name": "Doomsday Ark",
+            "base": ""
+        },
+        {
+            "name": "Flayed Ones",
+            "base": ""
+        },
+        {
+            "name": "Ghost Ark",
+            "base": ""
+        },
+        {
+            "name": "Hexmark Destroyer",
+            "base": ""
+        },
+        {
+            "name": "Illuminor Szeras",
+            "base": ""
+        },
+        {
+            "name": "Immortals",
+            "base": ""
+        },
+        {
+            "name": "Imotekh the Stormlord",
+            "base": ""
+        },
+        {
+            "name": "Lokust Destroyers",
+            "base": ""
+        },
+        {
+            "name": "Lokust Heavy Destroyers",
+            "base": ""
+        },
+        {
+            "name": "Lokust Lord",
+            "base": ""
+        },
+        {
+            "name": "Lord",
+            "base": ""
+        },
+        {
+            "name": "Lychguard",
+            "base": ""
+        },
+        {
+            "name": "Monolith",
+            "base": ""
+        },
+        {
+            "name": "Necron Warriors",
+            "base": ""
+        },
+        {
+            "name": "Nemesor Zahndrekh",
+            "base": ""
+        },
+        {
+            "name": "Night Scythe",
+            "base": ""
+        },
+        {
+            "name": "Obelisk",
+            "base": ""
+        },
+        {
+            "name": "Ophydian Destroyers",
+            "base": ""
+        },
+        {
+            "name": "Orikan the Diviner",
+            "base": ""
+        },
+        {
+            "name": "Overlord",
+            "base": ""
+        },
+        {
+            "name": "Plasmancer",
+            "base": ""
+        },
+        {
+            "name": "Psychomancer",
+            "base": ""
+        },
+        {
+            "name": "Royal Warden",
+            "base": ""
+        },
+        {
+            "name": "Skorpekh Destroyers",
+            "base": ""
+        },
+        {
+            "name": "Skorpekh Lord",
+            "base": ""
+        },
+        {
+            "name": "Technomancer",
+            "base": ""
+        },
+        {
+            "name": "Tesseract Vault",
+            "base": ""
+        },
+        {
+            "name": "The Silent King",
+            "base": ""
+        },
+        {
+            "name": "Tomb Blades",
+            "base": ""
+        },
+        {
+            "name": "Transcendent C'Tan",
+            "base": ""
+        },
+        {
+            "name": "Trazyn the Infinite",
+            "base": ""
+        },
+        {
+            "name": "Triarch Praetorians",
+            "base": ""
+        },
+        {
+            "name": "Triarch Stalker",
+            "base": ""
+        },
+        {
+            "name": "Vargard Obyron",
+            "base": ""
+        }
+    ],
+    "THOUSAND SONS": [
+        {
+            "name": "ARMY LISTS",
+            "base": ""
+        },
+        {
+            "name": "Ahriman",
+            "base": ""
+        },
+        {
+            "name": "Ahriman on Disc",
+            "base": ""
+        },
+        {
+            "name": "Chaos Spawn",
+            "base": ""
+        },
+        {
+            "name": "Cultists",
+            "base": ""
+        },
+        {
+            "name": "Daemon Prince",
+            "base": ""
+        },
+        {
+            "name": "Daemon Prince w/ Wings",
+            "base": ""
+        },
+        {
+            "name": "Defiler",
+            "base": ""
+        },
+        {
+            "name": "Exalted Sorcerer",
+            "base": ""
+        },
+        {
+            "name": "Exalted Sorcerer on Disc",
+            "base": ""
+        },
+        {
+            "name": "Forgefiend",
+            "base": ""
+        },
+        {
+            "name": "Helbrute",
+            "base": ""
+        },
+        {
+            "name": "Heldrake",
+            "base": ""
+        },
+        {
+            "name": "Infernal Master",
+            "base": ""
+        },
+        {
+            "name": "Land Raider",
+            "base": ""
+        },
+        {
+            "name": "Magnus the Red",
+            "base": ""
+        },
+        {
+            "name": "Maulerfiend",
+            "base": ""
+        },
+        {
+            "name": "Mutalith Vortex Beast",
+            "base": ""
+        },
+        {
+            "name": "Predator Annihilator",
+            "base": ""
+        },
+        {
+            "name": "Predator Destructor",
+            "base": ""
+        },
+        {
+            "name": "Rhino",
+            "base": ""
+        },
+        {
+            "name": "Rubric Marines",
+            "base": ""
+        },
+        {
+            "name": "Scarab Occult Termintors",
+            "base": ""
+        },
+        {
+            "name": "Sorcerer",
+            "base": ""
+        },
+        {
+            "name": "Terminator Sorcerer",
+            "base": ""
+        },
+        {
+            "name": "Tzaangor Enlightened",
+            "base": ""
+        },
+        {
+            "name": "Tzaangor Shaman",
+            "base": ""
+        },
+        {
+            "name": "Tzaangors",
+            "base": ""
+        },
+        {
+            "name": "Vindicator",
+            "base": ""
+        }
+    ],
+    "SPACE WOLVES": [
+        {
+            "name": "ARMY LISTS",
+            "base": ""
+        },
+        {
+            "name": "Arjac Rockfist",
+            "base": ""
+        },
+        {
+            "name": "Bjorn the Fell-Handed",
+            "base": ""
+        },
+        {
+            "name": "Blood Claws",
+            "base": ""
+        },
+        {
+            "name": "Canis Wolfborn",
+            "base": ""
+        },
+        {
+            "name": "Cyberwolf",
+            "base": ""
+        },
+        {
+            "name": "Fenrisian Wolves",
+            "base": ""
+        },
+        {
+            "name": "Grey Hunters",
+            "base": ""
+        },
+        {
+            "name": "Harald Deathwolf",
+            "base": ""
+        },
+        {
+            "name": "Hounds of Morkai",
+            "base": ""
+        },
+        {
+            "name": "Iron Priest",
+            "base": ""
+        },
+        {
+            "name": "Krom Dragongaze",
+            "base": ""
+        },
+        {
+            "name": "Logan Grimnar",
+            "base": ""
+        },
+        {
+            "name": "Long Fangs",
+            "base": ""
+        },
+        {
+            "name": "Lukas the Trickster",
+            "base": ""
+        },
+        {
+            "name": "Murderfang",
+            "base": ""
+        },
+        {
+            "name": "Njal Stormcaller",
+            "base": ""
+        },
+        {
+            "name": "Ragnar Blackmane",
+            "base": ""
+        },
+        {
+            "name": "Skyclaws",
+            "base": ""
+        },
+        {
+            "name": "Storm Wolf",
+            "base": ""
+        },
+        {
+            "name": "Stormfang Gunship",
+            "base": ""
+        },
+        {
+            "name": "Thunderwolf Cavalry",
+            "base": ""
+        },
+        {
+            "name": "Ulrik the Slayer",
+            "base": ""
+        },
+        {
+            "name": "Venerable Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Wolf Guard Battle Leader",
+            "base": ""
+        },
+        {
+            "name": "Wolf Guard Pack Leader",
+            "base": ""
+        },
+        {
+            "name": "Wolf Guard Terminators",
+            "base": ""
+        },
+        {
+            "name": "Wolf Lord",
+            "base": ""
+        },
+        {
+            "name": "Wolf Scouts",
+            "base": ""
+        },
+        {
+            "name": "Wulfen",
+            "base": ""
+        },
+        {
+            "name": "Wulfen Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Aggressors",
+            "base": ""
+        },
+        {
+            "name": "Ancient",
+            "base": ""
+        },
+        {
+            "name": "Apothecary Biologis",
+            "base": ""
+        },
+        {
+            "name": "Assault Intercessors",
+            "base": ""
+        },
+        {
+            "name": "Assault Squad",
+            "base": ""
+        },
+        {
+            "name": "Attack Bikes",
+            "base": ""
+        },
+        {
+            "name": "Ballistus Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Bike Squad",
+            "base": ""
+        },
+        {
+            "name": "Bladeguard Ancient",
+            "base": ""
+        },
+        {
+            "name": "Bladeguard Veterans",
+            "base": ""
+        },
+        {
+            "name": "Brutalis Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Captain",
+            "base": ""
+        },
+        {
+            "name": "Centurion Assault Squad",
+            "base": ""
+        },
+        {
+            "name": "Centurion Devastator Squad",
+            "base": ""
+        },
+        {
+            "name": "Chaplain",
+            "base": ""
+        },
+        {
+            "name": "Chaplain on Bike",
+            "base": ""
+        },
+        {
+            "name": "Command Squad",
+            "base": ""
+        },
+        {
+            "name": "Contemptor Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Desolation Squad",
+            "base": ""
+        },
+        {
+            "name": "Devastator Squad",
+            "base": ""
+        },
+        {
+            "name": "Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Drop Pod",
+            "base": ""
+        },
+        {
+            "name": "Eliminators",
+            "base": ""
+        },
+        {
+            "name": "Eradicators",
+            "base": ""
+        },
+        {
+            "name": "Firestrike Servo-Turrets",
+            "base": ""
+        },
+        {
+            "name": "Gladiator Lancer",
+            "base": ""
+        },
+        {
+            "name": "Gladiator Reaper",
+            "base": ""
+        },
+        {
+            "name": "Gladiator Valiant",
+            "base": ""
+        },
+        {
+            "name": "Gravis Captain",
+            "base": ""
+        },
+        {
+            "name": "Hammerfall Bunker",
+            "base": ""
+        },
+        {
+            "name": "Heavy Intercessors",
+            "base": ""
+        },
+        {
+            "name": "Hellblasters",
+            "base": ""
+        },
+        {
+            "name": "Hunter",
+            "base": ""
+        },
+        {
+            "name": "Impulsor",
+            "base": ""
+        },
+        {
+            "name": "Inceptors",
+            "base": ""
+        },
+        {
+            "name": "Incursors",
+            "base": ""
+        },
+        {
+            "name": "Infernus Squad",
+            "base": ""
+        },
+        {
+            "name": "Infiltrators",
+            "base": ""
+        },
+        {
+            "name": "Intercessor Squad",
+            "base": ""
+        },
+        {
+            "name": "Invader ATV",
+            "base": ""
+        },
+        {
+            "name": "Invictor Tactical Warsuit",
+            "base": ""
+        },
+        {
+            "name": "Ironclad Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Judiciar",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder Storm",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder Tornado",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder Typhoon",
+            "base": ""
+        },
+        {
+            "name": "Landraider",
+            "base": ""
+        },
+        {
+            "name": "Landraider Crusader",
+            "base": ""
+        },
+        {
+            "name": "Landraider Redeemer",
+            "base": ""
+        },
+        {
+            "name": "Librarian",
+            "base": ""
+        },
+        {
+            "name": "Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Lieutenant w/ combi weapon",
+            "base": ""
+        },
+        {
+            "name": "Outrider Squad",
+            "base": ""
+        },
+        {
+            "name": "Phobos Captain",
+            "base": ""
+        },
+        {
+            "name": "Phobos Librarian",
+            "base": ""
+        },
+        {
+            "name": "Phobos Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Predator Annihilator",
+            "base": ""
+        },
+        {
+            "name": "Predator Destructor",
+            "base": ""
+        },
+        {
+            "name": "Primaris Ancient",
+            "base": ""
+        },
+        {
+            "name": "Primaris Apothecary",
+            "base": ""
+        },
+        {
+            "name": "Primaris Captain",
+            "base": ""
+        },
+        {
+            "name": "Primaris Chaplain",
+            "base": ""
+        },
+        {
+            "name": "Primaris Company Champion",
+            "base": ""
+        },
+        {
+            "name": "Primaris Librarian",
+            "base": ""
+        },
+        {
+            "name": "Primaris Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Primaris Techmarine",
+            "base": ""
+        },
+        {
+            "name": "Razorback",
+            "base": ""
+        },
+        {
+            "name": "Redemptor Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Reiver Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Reivers",
+            "base": ""
+        },
+        {
+            "name": "Relic Terminator Squad",
+            "base": ""
+        },
+        {
+            "name": "Repulsor",
+            "base": ""
+        },
+        {
+            "name": "Repulsor Executioner",
+            "base": ""
+        },
+        {
+            "name": "Rhino",
+            "base": ""
+        },
+        {
+            "name": "Scout Bikes",
+            "base": ""
+        },
+        {
+            "name": "Scout Squad",
+            "base": ""
+        },
+        {
+            "name": "Servitors",
+            "base": ""
+        },
+        {
+            "name": "Stalker",
+            "base": ""
+        },
+        {
+            "name": "Sternguard Veterans",
+            "base": ""
+        },
+        {
+            "name": "Storm Speeder Hailstrike",
+            "base": ""
+        },
+        {
+            "name": "Storm Speeder Hamerstrike",
+            "base": ""
+        },
+        {
+            "name": "Storm Speeder Thunderstrike",
+            "base": ""
+        },
+        {
+            "name": "Stormhawk Interceptor",
+            "base": ""
+        },
+        {
+            "name": "Stormraven Gunship",
+            "base": ""
+        },
+        {
+            "name": "Stormtalon Gunship",
+            "base": ""
+        },
+        {
+            "name": "Suppressors",
+            "base": ""
+        },
+        {
+            "name": "Tactical Squad",
+            "base": ""
+        },
+        {
+            "name": "Techmarine",
+            "base": ""
+        },
+        {
+            "name": "Terminator Ancient",
+            "base": ""
+        },
+        {
+            "name": "Terminator Assault Squad",
+            "base": ""
+        },
+        {
+            "name": "Terminator Captain",
+            "base": ""
+        },
+        {
+            "name": "Terminator Chaplain",
+            "base": ""
+        },
+        {
+            "name": "Terminator Librarian",
+            "base": ""
+        },
+        {
+            "name": "Terminator Squad",
+            "base": ""
+        },
+        {
+            "name": "Thunderfire Cannon",
+            "base": ""
+        },
+        {
+            "name": "Vanguard Veterans",
+            "base": ""
+        },
+        {
+            "name": "Vindicator",
+            "base": ""
+        },
+        {
+            "name": "Whirlwind",
+            "base": ""
+        },
+        {
+            "name": "Vindicare Assassin",
+            "base": ""
+        },
+        {
+            "name": "Culexus Assassin",
+            "base": ""
+        },
+        {
+            "name": "Eversor Assassin",
+            "base": ""
+        },
+        {
+            "name": "Callidus Assassin",
+            "base": ""
+        },
+        {
+            "name": "Rogue Trader Squad",
+            "base": ""
+        },
+        {
+            "name": "Voidsmen",
+            "base": ""
+        },
+        {
+            "name": "Navy Breachers",
+            "base": ""
+        },
+        {
+            "name": "Subductor Squad",
+            "base": ""
+        },
+        {
+            "name": "Exaction Squad",
+            "base": ""
+        },
+        {
+            "name": "Vigilant Squad",
+            "base": ""
+        },
+        {
+            "name": "Kyria Draxus",
+            "base": ""
+        },
+        {
+            "name": "Inquisitor Corteaz",
+            "base": ""
+        },
+        {
+            "name": "Greyfax",
+            "base": ""
+        },
+        {
+            "name": "Karamazov",
+            "base": ""
+        },
+        {
+            "name": "Inquisitor",
+            "base": ""
+        },
+        {
+            "name": "Eisenhorn",
+            "base": ""
+        },
+        {
+            "name": "Henchmen",
+            "base": ""
+        }
+    ],
+    "DARK ANGELS": [
+        {
+            "name": "ARMY LISTS",
+            "base": ""
+        },
+        {
+            "name": "Azrael",
+            "base": ""
+        },
+        {
+            "name": "Belial",
+            "base": ""
+        },
+        {
+            "name": "Sammael",
+            "base": ""
+        },
+        {
+            "name": "Ezekiel",
+            "base": ""
+        },
+        {
+            "name": "Asmodai",
+            "base": ""
+        },
+        {
+            "name": "Ravenwing Talonmaster",
+            "base": ""
+        },
+        {
+            "name": "Lazarus",
+            "base": ""
+        },
+        {
+            "name": "Deathwing Strikemaster",
+            "base": ""
+        },
+        {
+            "name": "Deathwing Command Squad",
+            "base": ""
+        },
+        {
+            "name": "Deathwing Terminator Squad",
+            "base": ""
+        },
+        {
+            "name": "Deathwing Knights",
+            "base": ""
+        },
+        {
+            "name": "Ravenwing Command Squad",
+            "base": ""
+        },
+        {
+            "name": "Ravenwing Black Knights",
+            "base": ""
+        },
+        {
+            "name": "Ravenwing Darkshroud",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder Vengeance",
+            "base": ""
+        },
+        {
+            "name": "Dark Talon",
+            "base": ""
+        },
+        {
+            "name": "Nephilim Jetfigher",
+            "base": ""
+        },
+        {
+            "name": "Lion El'Jonson",
+            "base": ""
+        },
+        {
+            "name": "Aggressors",
+            "base": ""
+        },
+        {
+            "name": "Ancient",
+            "base": ""
+        },
+        {
+            "name": "Apothecary Biologis",
+            "base": ""
+        },
+        {
+            "name": "Assault Intercessors",
+            "base": ""
+        },
+        {
+            "name": "Assault Squad",
+            "base": ""
+        },
+        {
+            "name": "Attack Bikes",
+            "base": ""
+        },
+        {
+            "name": "Ballistus Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Bike Squad",
+            "base": ""
+        },
+        {
+            "name": "Bladeguard Ancient",
+            "base": ""
+        },
+        {
+            "name": "Bladeguard Veterans",
+            "base": ""
+        },
+        {
+            "name": "Brutalis Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Captain",
+            "base": ""
+        },
+        {
+            "name": "Centurion Assault Squad",
+            "base": ""
+        },
+        {
+            "name": "Centurion Devastator Squad",
+            "base": ""
+        },
+        {
+            "name": "Chaplain",
+            "base": ""
+        },
+        {
+            "name": "Chaplain on Bike",
+            "base": ""
+        },
+        {
+            "name": "Command Squad",
+            "base": ""
+        },
+        {
+            "name": "Contemptor Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Desolation Squad",
+            "base": ""
+        },
+        {
+            "name": "Devastator Squad",
+            "base": ""
+        },
+        {
+            "name": "Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Drop Pod",
+            "base": ""
+        },
+        {
+            "name": "Eliminators",
+            "base": ""
+        },
+        {
+            "name": "Eradicators",
+            "base": ""
+        },
+        {
+            "name": "Firestrike Servo-Turrets",
+            "base": ""
+        },
+        {
+            "name": "Gladiator Lancer",
+            "base": ""
+        },
+        {
+            "name": "Gladiator Reaper",
+            "base": ""
+        },
+        {
+            "name": "Gladiator Valiant",
+            "base": ""
+        },
+        {
+            "name": "Gravis Captain",
+            "base": ""
+        },
+        {
+            "name": "Hammerfall Bunker",
+            "base": ""
+        },
+        {
+            "name": "Heavy Intercessors",
+            "base": ""
+        },
+        {
+            "name": "Hellblasters",
+            "base": ""
+        },
+        {
+            "name": "Hunter",
+            "base": ""
+        },
+        {
+            "name": "Impulsor",
+            "base": ""
+        },
+        {
+            "name": "Inceptors",
+            "base": ""
+        },
+        {
+            "name": "Incursors",
+            "base": ""
+        },
+        {
+            "name": "Infernus Squad",
+            "base": ""
+        },
+        {
+            "name": "Infiltrators",
+            "base": ""
+        },
+        {
+            "name": "Intercessor Squad",
+            "base": ""
+        },
+        {
+            "name": "Invader ATV",
+            "base": ""
+        },
+        {
+            "name": "Invictor Tactical Warsuit",
+            "base": ""
+        },
+        {
+            "name": "Ironclad Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Judiciar",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder Storm",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder Tornado",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder Typhoon",
+            "base": ""
+        },
+        {
+            "name": "Landraider",
+            "base": ""
+        },
+        {
+            "name": "Landraider Crusader",
+            "base": ""
+        },
+        {
+            "name": "Landraider Redeemer",
+            "base": ""
+        },
+        {
+            "name": "Librarian",
+            "base": ""
+        },
+        {
+            "name": "Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Lieutenant w/ combi weapon",
+            "base": ""
+        },
+        {
+            "name": "Outrider Squad",
+            "base": ""
+        },
+        {
+            "name": "Phobos Captain",
+            "base": ""
+        },
+        {
+            "name": "Phobos Librarian",
+            "base": ""
+        },
+        {
+            "name": "Phobos Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Predator Annihilator",
+            "base": ""
+        },
+        {
+            "name": "Predator Destructor",
+            "base": ""
+        },
+        {
+            "name": "Primaris Ancient",
+            "base": ""
+        },
+        {
+            "name": "Primaris Apothecary",
+            "base": ""
+        },
+        {
+            "name": "Primaris Captain",
+            "base": ""
+        },
+        {
+            "name": "Primaris Chaplain",
+            "base": ""
+        },
+        {
+            "name": "Primaris Company Champion",
+            "base": ""
+        },
+        {
+            "name": "Primaris Librarian",
+            "base": ""
+        },
+        {
+            "name": "Primaris Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Primaris Techmarine",
+            "base": ""
+        },
+        {
+            "name": "Razorback",
+            "base": ""
+        },
+        {
+            "name": "Redemptor Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Reiver Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Reivers",
+            "base": ""
+        },
+        {
+            "name": "Relic Terminator Squad",
+            "base": ""
+        },
+        {
+            "name": "Repulsor",
+            "base": ""
+        },
+        {
+            "name": "Repulsor Executioner",
+            "base": ""
+        },
+        {
+            "name": "Rhino",
+            "base": ""
+        },
+        {
+            "name": "Scout Bikes",
+            "base": ""
+        },
+        {
+            "name": "Scout Squad",
+            "base": ""
+        },
+        {
+            "name": "Servitors",
+            "base": ""
+        },
+        {
+            "name": "Stalker",
+            "base": ""
+        },
+        {
+            "name": "Sternguard Veterans",
+            "base": ""
+        },
+        {
+            "name": "Storm Speeder Hailstrike",
+            "base": ""
+        },
+        {
+            "name": "Storm Speeder Hamerstrike",
+            "base": ""
+        },
+        {
+            "name": "Storm Speeder Thunderstrike",
+            "base": ""
+        },
+        {
+            "name": "Stormhawk Interceptor",
+            "base": ""
+        },
+        {
+            "name": "Stormraven Gunship",
+            "base": ""
+        },
+        {
+            "name": "Stormtalon Gunship",
+            "base": ""
+        },
+        {
+            "name": "Suppressors",
+            "base": ""
+        },
+        {
+            "name": "Tactical Squad",
+            "base": ""
+        },
+        {
+            "name": "Techmarine",
+            "base": ""
+        },
+        {
+            "name": "Terminator Ancient",
+            "base": ""
+        },
+        {
+            "name": "Terminator Assault Squad",
+            "base": ""
+        },
+        {
+            "name": "Terminator Captain",
+            "base": ""
+        },
+        {
+            "name": "Terminator Chaplain",
+            "base": ""
+        },
+        {
+            "name": "Terminator Librarian",
+            "base": ""
+        },
+        {
+            "name": "Terminator Squad",
+            "base": ""
+        },
+        {
+            "name": "Thunderfire Cannon",
+            "base": ""
+        },
+        {
+            "name": "Vanguard Veterans",
+            "base": ""
+        },
+        {
+            "name": "Vindicator",
+            "base": ""
+        },
+        {
+            "name": "Whirlwind",
+            "base": ""
+        },
+        {
+            "name": "Vindicare Assassin",
+            "base": ""
+        },
+        {
+            "name": "Culexus Assassin",
+            "base": ""
+        },
+        {
+            "name": "Eversor Assassin",
+            "base": ""
+        },
+        {
+            "name": "Callidus Assassin",
+            "base": ""
+        },
+        {
+            "name": "Rogue Trader Squad",
+            "base": ""
+        },
+        {
+            "name": "Voidsmen",
+            "base": ""
+        },
+        {
+            "name": "Navy Breachers",
+            "base": ""
+        },
+        {
+            "name": "Subductor Squad",
+            "base": ""
+        },
+        {
+            "name": "Exaction Squad",
+            "base": ""
+        },
+        {
+            "name": "Vigilant Squad",
+            "base": ""
+        },
+        {
+            "name": "Kyria Draxus",
+            "base": ""
+        },
+        {
+            "name": "Inquisitor Corteaz",
+            "base": ""
+        },
+        {
+            "name": "Greyfax",
+            "base": ""
+        },
+        {
+            "name": "Karamazov",
+            "base": ""
+        },
+        {
+            "name": "Inquisitor",
+            "base": ""
+        },
+        {
+            "name": "Eisenhorn",
+            "base": ""
+        },
+        {
+            "name": "Henchmen",
+            "base": ""
+        }
+    ],
+    "BLACK TEMPLARS": [
+        {
+            "name": "ARMY LISTS",
+            "base": ""
+        },
+        {
+            "name": "Castellan",
+            "base": ""
+        },
+        {
+            "name": "Chaplain Grimaldus",
+            "base": ""
+        },
+        {
+            "name": "Crusader Squad",
+            "base": ""
+        },
+        {
+            "name": "Emperors Champion",
+            "base": ""
+        },
+        {
+            "name": "High Marshall Helbrecht",
+            "base": ""
+        },
+        {
+            "name": "Marshal",
+            "base": ""
+        },
+        {
+            "name": "Primaris Crusader Squad",
+            "base": ""
+        },
+        {
+            "name": "Sword Brethren",
+            "base": ""
+        },
+        {
+            "name": "Aggressors",
+            "base": ""
+        },
+        {
+            "name": "Ancient",
+            "base": ""
+        },
+        {
+            "name": "Apothecary Biologis",
+            "base": ""
+        },
+        {
+            "name": "Assault Intercessors",
+            "base": ""
+        },
+        {
+            "name": "Assault Squad",
+            "base": ""
+        },
+        {
+            "name": "Attack Bikes",
+            "base": ""
+        },
+        {
+            "name": "Ballistus Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Bike Squad",
+            "base": ""
+        },
+        {
+            "name": "Bladeguard Ancient",
+            "base": ""
+        },
+        {
+            "name": "Bladeguard Veterans",
+            "base": ""
+        },
+        {
+            "name": "Brutalis Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Captain",
+            "base": ""
+        },
+        {
+            "name": "Centurion Assault Squad",
+            "base": ""
+        },
+        {
+            "name": "Centurion Devastator Squad",
+            "base": ""
+        },
+        {
+            "name": "Chaplain",
+            "base": ""
+        },
+        {
+            "name": "Chaplain on Bike",
+            "base": ""
+        },
+        {
+            "name": "Command Squad",
+            "base": ""
+        },
+        {
+            "name": "Contemptor Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Desolation Squad",
+            "base": ""
+        },
+        {
+            "name": "Devastator Squad",
+            "base": ""
+        },
+        {
+            "name": "Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Drop Pod",
+            "base": ""
+        },
+        {
+            "name": "Eliminators",
+            "base": ""
+        },
+        {
+            "name": "Eradicators",
+            "base": ""
+        },
+        {
+            "name": "Firestrike Servo-Turrets",
+            "base": ""
+        },
+        {
+            "name": "Gladiator Lancer",
+            "base": ""
+        },
+        {
+            "name": "Gladiator Reaper",
+            "base": ""
+        },
+        {
+            "name": "Gladiator Valiant",
+            "base": ""
+        },
+        {
+            "name": "Gravis Captain",
+            "base": ""
+        },
+        {
+            "name": "Hammerfall Bunker",
+            "base": ""
+        },
+        {
+            "name": "Heavy Intercessors",
+            "base": ""
+        },
+        {
+            "name": "Hellblasters",
+            "base": ""
+        },
+        {
+            "name": "Hunter",
+            "base": ""
+        },
+        {
+            "name": "Impulsor",
+            "base": ""
+        },
+        {
+            "name": "Inceptors",
+            "base": ""
+        },
+        {
+            "name": "Incursors",
+            "base": ""
+        },
+        {
+            "name": "Infernus Squad",
+            "base": ""
+        },
+        {
+            "name": "Infiltrators",
+            "base": ""
+        },
+        {
+            "name": "Intercessor Squad",
+            "base": ""
+        },
+        {
+            "name": "Invader ATV",
+            "base": ""
+        },
+        {
+            "name": "Invictor Tactical Warsuit",
+            "base": ""
+        },
+        {
+            "name": "Ironclad Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Judiciar",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder Storm",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder Tornado",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder Typhoon",
+            "base": ""
+        },
+        {
+            "name": "Landraider",
+            "base": ""
+        },
+        {
+            "name": "Landraider Crusader",
+            "base": ""
+        },
+        {
+            "name": "Landraider Redeemer",
+            "base": ""
+        },
+        {
+            "name": "Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Lieutenant w/ combi weapon",
+            "base": ""
+        },
+        {
+            "name": "Outrider Squad",
+            "base": ""
+        },
+        {
+            "name": "Phobos Captain",
+            "base": ""
+        },
+        {
+            "name": "Phobos Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Predator Annihilator",
+            "base": ""
+        },
+        {
+            "name": "Predator Destructor",
+            "base": ""
+        },
+        {
+            "name": "Primaris Ancient",
+            "base": ""
+        },
+        {
+            "name": "Primaris Apothecary",
+            "base": ""
+        },
+        {
+            "name": "Primaris Captain",
+            "base": ""
+        },
+        {
+            "name": "Primaris Chaplain",
+            "base": ""
+        },
+        {
+            "name": "Primaris Company Champion",
+            "base": ""
+        },
+        {
+            "name": "Primaris Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Primaris Techmarine",
+            "base": ""
+        },
+        {
+            "name": "Razorback",
+            "base": ""
+        },
+        {
+            "name": "Redemptor Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Reiver Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Reivers",
+            "base": ""
+        },
+        {
+            "name": "Relic Terminator Squad",
+            "base": ""
+        },
+        {
+            "name": "Repulsor",
+            "base": ""
+        },
+        {
+            "name": "Repulsor Executioner",
+            "base": ""
+        },
+        {
+            "name": "Rhino",
+            "base": ""
+        },
+        {
+            "name": "Scout Bikes",
+            "base": ""
+        },
+        {
+            "name": "Scout Squad",
+            "base": ""
+        },
+        {
+            "name": "Servitors",
+            "base": ""
+        },
+        {
+            "name": "Stalker",
+            "base": ""
+        },
+        {
+            "name": "Sternguard Veterans",
+            "base": ""
+        },
+        {
+            "name": "Storm Speeder Hailstrike",
+            "base": ""
+        },
+        {
+            "name": "Storm Speeder Hamerstrike",
+            "base": ""
+        },
+        {
+            "name": "Storm Speeder Thunderstrike",
+            "base": ""
+        },
+        {
+            "name": "Stormhawk Interceptor",
+            "base": ""
+        },
+        {
+            "name": "Stormraven Gunship",
+            "base": ""
+        },
+        {
+            "name": "Stormtalon Gunship",
+            "base": ""
+        },
+        {
+            "name": "Suppressors",
+            "base": ""
+        },
+        {
+            "name": "Tactical Squad",
+            "base": ""
+        },
+        {
+            "name": "Techmarine",
+            "base": ""
+        },
+        {
+            "name": "Terminator Ancient",
+            "base": ""
+        },
+        {
+            "name": "Terminator Assault Squad",
+            "base": ""
+        },
+        {
+            "name": "Terminator Captain",
+            "base": ""
+        },
+        {
+            "name": "Terminator Chaplain",
+            "base": ""
+        },
+        {
+            "name": "Terminator Librarian",
+            "base": ""
+        },
+        {
+            "name": "Terminator Squad",
+            "base": ""
+        },
+        {
+            "name": "Thunderfire Cannon",
+            "base": ""
+        },
+        {
+            "name": "Vanguard Veterans",
+            "base": ""
+        },
+        {
+            "name": "Vindicator",
+            "base": ""
+        },
+        {
+            "name": "Whirlwind",
+            "base": ""
+        },
+        {
+            "name": "Culexus Assassin",
+            "base": ""
+        },
+        {
+            "name": "Eversor Assassin",
+            "base": ""
+        },
+        {
+            "name": "Callidus Assassin",
+            "base": ""
+        },
+        {
+            "name": "Rogue Trader Squad",
+            "base": ""
+        },
+        {
+            "name": "Voidsmen",
+            "base": ""
+        },
+        {
+            "name": "Navy Breachers",
+            "base": ""
+        },
+        {
+            "name": "Subductor Squad",
+            "base": ""
+        },
+        {
+            "name": "Exaction Squad",
+            "base": ""
+        },
+        {
+            "name": "Vigilant Squad",
+            "base": ""
+        },
+        {
+            "name": "Kyria Draxus",
+            "base": ""
+        },
+        {
+            "name": "Inquisitor Corteaz",
+            "base": ""
+        },
+        {
+            "name": "Greyfax",
+            "base": ""
+        },
+        {
+            "name": "Karamazov",
+            "base": ""
+        },
+        {
+            "name": "Inquisitor",
+            "base": ""
+        },
+        {
+            "name": "Eisenhorn",
+            "base": ""
+        },
+        {
+            "name": "Henchmen",
+            "base": ""
+        }
+    ],
+    "BLOOD ANGELS": [
+        {
+            "name": "ARMY LISTS",
+            "base": ""
+        },
+        {
+            "name": "Astorath",
+            "base": ""
+        },
+        {
+            "name": "Baal Predator",
+            "base": ""
+        },
+        {
+            "name": "Brother Corbulo",
+            "base": ""
+        },
+        {
+            "name": "Captain Tycho",
+            "base": ""
+        },
+        {
+            "name": "Chief Librarian Mephiston",
+            "base": ""
+        },
+        {
+            "name": "Commander Dante",
+            "base": ""
+        },
+        {
+            "name": "Death Company Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Death Company Intercessors",
+            "base": ""
+        },
+        {
+            "name": "Death Company Marines",
+            "base": ""
+        },
+        {
+            "name": "Furioso Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Gabriel Seth",
+            "base": ""
+        },
+        {
+            "name": "Lemartes",
+            "base": ""
+        },
+        {
+            "name": "Librarian Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Sanguinary Guard",
+            "base": ""
+        },
+        {
+            "name": "Sanguinary Priest",
+            "base": ""
+        },
+        {
+            "name": "The Sanguinor",
+            "base": ""
+        },
+        {
+            "name": "Tycho the Lost",
+            "base": ""
+        },
+        {
+            "name": "Aggressors",
+            "base": ""
+        },
+        {
+            "name": "Ancient",
+            "base": ""
+        },
+        {
+            "name": "Apothecary Biologis",
+            "base": ""
+        },
+        {
+            "name": "Assault Intercessors",
+            "base": ""
+        },
+        {
+            "name": "Assault Squad",
+            "base": ""
+        },
+        {
+            "name": "Attack Bikes",
+            "base": ""
+        },
+        {
+            "name": "Ballistus Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Bike Squad",
+            "base": ""
+        },
+        {
+            "name": "Bladeguard Ancient",
+            "base": ""
+        },
+        {
+            "name": "Bladeguard Veterans",
+            "base": ""
+        },
+        {
+            "name": "Brutalis Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Captain",
+            "base": ""
+        },
+        {
+            "name": "Centurion Assault Squad",
+            "base": ""
+        },
+        {
+            "name": "Centurion Devastator Squad",
+            "base": ""
+        },
+        {
+            "name": "Chaplain",
+            "base": ""
+        },
+        {
+            "name": "Chaplain on Bike",
+            "base": ""
+        },
+        {
+            "name": "Command Squad",
+            "base": ""
+        },
+        {
+            "name": "Contemptor Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Desolation Squad",
+            "base": ""
+        },
+        {
+            "name": "Devastator Squad",
+            "base": ""
+        },
+        {
+            "name": "Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Drop Pod",
+            "base": ""
+        },
+        {
+            "name": "Eliminators",
+            "base": ""
+        },
+        {
+            "name": "Eradicators",
+            "base": ""
+        },
+        {
+            "name": "Firestrike Servo-Turrets",
+            "base": ""
+        },
+        {
+            "name": "Gladiator Lancer",
+            "base": ""
+        },
+        {
+            "name": "Gladiator Reaper",
+            "base": ""
+        },
+        {
+            "name": "Gladiator Valiant",
+            "base": ""
+        },
+        {
+            "name": "Gravis Captain",
+            "base": ""
+        },
+        {
+            "name": "Hammerfall Bunker",
+            "base": ""
+        },
+        {
+            "name": "Heavy Intercessors",
+            "base": ""
+        },
+        {
+            "name": "Hellblasters",
+            "base": ""
+        },
+        {
+            "name": "Hunter",
+            "base": ""
+        },
+        {
+            "name": "Impulsor",
+            "base": ""
+        },
+        {
+            "name": "Inceptors",
+            "base": ""
+        },
+        {
+            "name": "Incursors",
+            "base": ""
+        },
+        {
+            "name": "Infernus Squad",
+            "base": ""
+        },
+        {
+            "name": "Infiltrators",
+            "base": ""
+        },
+        {
+            "name": "Intercessor Squad",
+            "base": ""
+        },
+        {
+            "name": "Invader ATV",
+            "base": ""
+        },
+        {
+            "name": "Invictor Tactical Warsuit",
+            "base": ""
+        },
+        {
+            "name": "Ironclad Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Judiciar",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder Storm",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder Tornado",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder Typhoon",
+            "base": ""
+        },
+        {
+            "name": "Landraider",
+            "base": ""
+        },
+        {
+            "name": "Landraider Crusader",
+            "base": ""
+        },
+        {
+            "name": "Landraider Redeemer",
+            "base": ""
+        },
+        {
+            "name": "Librarian",
+            "base": ""
+        },
+        {
+            "name": "Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Lieutenant w/ combi weapon",
+            "base": ""
+        },
+        {
+            "name": "Outrider Squad",
+            "base": ""
+        },
+        {
+            "name": "Phobos Captain",
+            "base": ""
+        },
+        {
+            "name": "Phobos Librarian",
+            "base": ""
+        },
+        {
+            "name": "Phobos Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Predator Annihilator",
+            "base": ""
+        },
+        {
+            "name": "Predator Destructor",
+            "base": ""
+        },
+        {
+            "name": "Primaris Ancient",
+            "base": ""
+        },
+        {
+            "name": "Primaris Apothecary",
+            "base": ""
+        },
+        {
+            "name": "Primaris Captain",
+            "base": ""
+        },
+        {
+            "name": "Primaris Chaplain",
+            "base": ""
+        },
+        {
+            "name": "Primaris Company Champion",
+            "base": ""
+        },
+        {
+            "name": "Primaris Librarian",
+            "base": ""
+        },
+        {
+            "name": "Primaris Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Primaris Techmarine",
+            "base": ""
+        },
+        {
+            "name": "Razorback",
+            "base": ""
+        },
+        {
+            "name": "Redemptor Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Reiver Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Reivers",
+            "base": ""
+        },
+        {
+            "name": "Relic Terminator Squad",
+            "base": ""
+        },
+        {
+            "name": "Repulsor",
+            "base": ""
+        },
+        {
+            "name": "Repulsor Executioner",
+            "base": ""
+        },
+        {
+            "name": "Rhino",
+            "base": ""
+        },
+        {
+            "name": "Scout Bikes",
+            "base": ""
+        },
+        {
+            "name": "Scout Squad",
+            "base": ""
+        },
+        {
+            "name": "Servitors",
+            "base": ""
+        },
+        {
+            "name": "Stalker",
+            "base": ""
+        },
+        {
+            "name": "Sternguard Veterans",
+            "base": ""
+        },
+        {
+            "name": "Storm Speeder Hailstrike",
+            "base": ""
+        },
+        {
+            "name": "Storm Speeder Hamerstrike",
+            "base": ""
+        },
+        {
+            "name": "Storm Speeder Thunderstrike",
+            "base": ""
+        },
+        {
+            "name": "Stormhawk Interceptor",
+            "base": ""
+        },
+        {
+            "name": "Stormraven Gunship",
+            "base": ""
+        },
+        {
+            "name": "Stormtalon Gunship",
+            "base": ""
+        },
+        {
+            "name": "Suppressors",
+            "base": ""
+        },
+        {
+            "name": "Tactical Squad",
+            "base": ""
+        },
+        {
+            "name": "Techmarine",
+            "base": ""
+        },
+        {
+            "name": "Terminator Ancient",
+            "base": ""
+        },
+        {
+            "name": "Terminator Assault Squad",
+            "base": ""
+        },
+        {
+            "name": "Terminator Captain",
+            "base": ""
+        },
+        {
+            "name": "Terminator Chaplain",
+            "base": ""
+        },
+        {
+            "name": "Terminator Librarian",
+            "base": ""
+        },
+        {
+            "name": "Terminator Squad",
+            "base": ""
+        },
+        {
+            "name": "Thunderfire Cannon",
+            "base": ""
+        },
+        {
+            "name": "Vanguard Veterans",
+            "base": ""
+        },
+        {
+            "name": "Vindicator",
+            "base": ""
+        },
+        {
+            "name": "Whirlwind",
+            "base": ""
+        },
+        {
+            "name": "Culexus Assassin",
+            "base": ""
+        },
+        {
+            "name": "Eversor Assassin",
+            "base": ""
+        },
+        {
+            "name": "Callidus Assassin",
+            "base": ""
+        },
+        {
+            "name": "Rogue Trader Squad",
+            "base": ""
+        },
+        {
+            "name": "Voidsmen",
+            "base": ""
+        },
+        {
+            "name": "Navy Breachers",
+            "base": ""
+        },
+        {
+            "name": "Subductor Squad",
+            "base": ""
+        },
+        {
+            "name": "Exaction Squad",
+            "base": ""
+        },
+        {
+            "name": "Vigilant Squad",
+            "base": ""
+        },
+        {
+            "name": "Kyria Draxus",
+            "base": ""
+        },
+        {
+            "name": "Inquisitor Corteaz",
+            "base": ""
+        },
+        {
+            "name": "Greyfax",
+            "base": ""
+        },
+        {
+            "name": "Karamazov",
+            "base": ""
+        },
+        {
+            "name": "Inquisitor",
+            "base": ""
+        },
+        {
+            "name": "Eisenhorn",
+            "base": ""
+        },
+        {
+            "name": "Henchmen",
+            "base": ""
+        }
+    ],
+    "DEATH GUARD": [
+        {
+            "name": "ARMY LISTS",
+            "base": ""
+        },
+        {
+            "name": "Biologus Putrifier",
+            "base": ""
+        },
+        {
+            "name": "Blightlord Terminators",
+            "base": ""
+        },
+        {
+            "name": "Chaos Lord",
+            "base": ""
+        },
+        {
+            "name": "Chaos Spawn",
+            "base": ""
+        },
+        {
+            "name": "Cultists",
+            "base": ""
+        },
+        {
+            "name": "Daemon Prince",
+            "base": ""
+        },
+        {
+            "name": "Daemon Prince w/ Wings",
+            "base": ""
+        },
+        {
+            "name": "Deathshroud Terminators",
+            "base": ""
+        },
+        {
+            "name": "Defilier",
+            "base": ""
+        },
+        {
+            "name": "Foetid Bloat-Drone",
+            "base": ""
+        },
+        {
+            "name": "Foul Blightspawn",
+            "base": ""
+        },
+        {
+            "name": "Helbrute",
+            "base": ""
+        },
+        {
+            "name": "Icon Bearer",
+            "base": ""
+        },
+        {
+            "name": "Land Raider",
+            "base": ""
+        },
+        {
+            "name": "Lord of Contagion",
+            "base": ""
+        },
+        {
+            "name": "Lord of Virulence",
+            "base": ""
+        },
+        {
+            "name": "Malignant Plaguecaster",
+            "base": ""
+        },
+        {
+            "name": "Miasmic Malignifier",
+            "base": ""
+        },
+        {
+            "name": "Mortarion",
+            "base": ""
+        },
+        {
+            "name": "Myphitic Blight-Haulers",
+            "base": ""
+        },
+        {
+            "name": "Noxious Blightbringer",
+            "base": ""
+        },
+        {
+            "name": "Plague Marines",
+            "base": ""
+        },
+        {
+            "name": "Plague Surgeon",
+            "base": ""
+        },
+        {
+            "name": "Plagueburst Crawler",
+            "base": ""
+        },
+        {
+            "name": "Poxwalkers",
+            "base": ""
+        },
+        {
+            "name": "Predator Annihilator",
+            "base": ""
+        },
+        {
+            "name": "Predator Destructor",
+            "base": ""
+        },
+        {
+            "name": "Rhino",
+            "base": ""
+        },
+        {
+            "name": "Sorcerer",
+            "base": ""
+        },
+        {
+            "name": "Tallyman",
+            "base": ""
+        },
+        {
+            "name": "Terminator Chaos Lord",
+            "base": ""
+        },
+        {
+            "name": "Terminator Sorcerer",
+            "base": ""
+        },
+        {
+            "name": "Typhus",
+            "base": ""
+        }
+    ],
+    "CHAOS DAEMONS": [
+        {
+            "name": "ARMY LISTS",
+            "base": ""
+        },
+        {
+            "name": "Beasts of Nurgle",
+            "base": ""
+        },
+        {
+            "name": "Be'lakor",
+            "base": ""
+        },
+        {
+            "name": "Bloodcrushers",
+            "base": ""
+        },
+        {
+            "name": "Bloodletters",
+            "base": ""
+        },
+        {
+            "name": "Bloodmaster",
+            "base": ""
+        },
+        {
+            "name": "Bloodthirster",
+            "base": ""
+        },
+        {
+            "name": "Blue Horrors",
+            "base": ""
+        },
+        {
+            "name": "Blue Scribes",
+            "base": ""
+        },
+        {
+            "name": "Burning Chariot",
+            "base": ""
+        },
+        {
+            "name": "Change Caster",
+            "base": ""
+        },
+        {
+            "name": "Contorted Epitome",
+            "base": ""
+        },
+        {
+            "name": "Daemon Prince",
+            "base": ""
+        },
+        {
+            "name": "Daemon Prince w/ Wings",
+            "base": ""
+        },
+        {
+            "name": "Daemonettes",
+            "base": ""
+        },
+        {
+            "name": "Epidemus",
+            "base": ""
+        },
+        {
+            "name": "Exalted Flamer",
+            "base": ""
+        },
+        {
+            "name": "Exalted Seeker Chariot",
+            "base": ""
+        },
+        {
+            "name": "Fateskimmer",
+            "base": ""
+        },
+        {
+            "name": "Feculent Gnarlmaw",
+            "base": ""
+        },
+        {
+            "name": "Fiends",
+            "base": ""
+        },
+        {
+            "name": "Flamers",
+            "base": ""
+        },
+        {
+            "name": "Flesh Hounds",
+            "base": ""
+        },
+        {
+            "name": "Fluxmaster",
+            "base": ""
+        },
+        {
+            "name": "Great Unclean One",
+            "base": ""
+        },
+        {
+            "name": "Hellflayer",
+            "base": ""
+        },
+        {
+            "name": "Horticulous Slimux",
+            "base": ""
+        },
+        {
+            "name": "Infernal Enrapturess",
+            "base": ""
+        },
+        {
+            "name": "Kairos Fateweaver",
+            "base": ""
+        },
+        {
+            "name": "Karanak",
+            "base": ""
+        },
+        {
+            "name": "Keeper of Secrets",
+            "base": ""
+        },
+        {
+            "name": "Lord of Change",
+            "base": ""
+        },
+        {
+            "name": "Masque of Slaanesh",
+            "base": ""
+        },
+        {
+            "name": "Nurglings",
+            "base": ""
+        },
+        {
+            "name": "Pink Horrors",
+            "base": ""
+        },
+        {
+            "name": "Plague Drones",
+            "base": ""
+        },
+        {
+            "name": "Plaguebearers",
+            "base": ""
+        },
+        {
+            "name": "Poxbringer",
+            "base": ""
+        },
+        {
+            "name": "Rendmaster",
+            "base": ""
+        },
+        {
+            "name": "Rotigus",
+            "base": ""
+        },
+        {
+            "name": "Screamers",
+            "base": ""
+        },
+        {
+            "name": "Seeker Chariot",
+            "base": ""
+        },
+        {
+            "name": "Seekers",
+            "base": ""
+        },
+        {
+            "name": "Shalaxi Helbane",
+            "base": ""
+        },
+        {
+            "name": "Skarbrand",
+            "base": ""
+        },
+        {
+            "name": "Skull Altar",
+            "base": ""
+        },
+        {
+            "name": "Skull Cannon",
+            "base": ""
+        },
+        {
+            "name": "Skullmaster",
+            "base": ""
+        },
+        {
+            "name": "Skulltaker",
+            "base": ""
+        },
+        {
+            "name": "Sloppity Bilepiper",
+            "base": ""
+        },
+        {
+            "name": "Soul Grinder",
+            "base": ""
+        },
+        {
+            "name": "Spoilpox Scrivener",
+            "base": ""
+        },
+        {
+            "name": "Syll'esske",
+            "base": ""
+        },
+        {
+            "name": "The Changeling",
+            "base": ""
+        },
+        {
+            "name": "Tormentbringer",
+            "base": ""
+        },
+        {
+            "name": "Tranceweaver",
+            "base": ""
+        }
+    ],
+    "CHAOS KNIGHTS": [
+        {
+            "name": "ARMY LISTS",
+            "base": ""
+        },
+        {
+            "name": "Knight Abdominant",
+            "base": ""
+        },
+        {
+            "name": "Knight Desecrator",
+            "base": ""
+        },
+        {
+            "name": "Knight Despoiler",
+            "base": ""
+        },
+        {
+            "name": "Knight Rampager",
+            "base": ""
+        },
+        {
+            "name": "Knight Tyrant",
+            "base": ""
+        },
+        {
+            "name": "War Dog Brigand",
+            "base": ""
+        },
+        {
+            "name": "War Dog Executioner",
+            "base": ""
+        },
+        {
+            "name": "War Dog Huntsman",
+            "base": ""
+        },
+        {
+            "name": "War Dog Karnivore",
+            "base": ""
+        },
+        {
+            "name": "War Dog Stalker",
+            "base": ""
+        },
+        {
+            "name": "Chaos Knight Acheron",
+            "base": ""
+        },
+        {
+            "name": "Chaos Knight Attrapos",
+            "base": ""
+        },
+        {
+            "name": "Chaos Knight Castigator",
+            "base": ""
+        },
+        {
+            "name": "Chaos Knight Magera",
+            "base": ""
+        },
+        {
+            "name": "Chaos Knight Lancer",
+            "base": ""
+        },
+        {
+            "name": "Chaos Knight Styrix",
+            "base": ""
+        },
+        {
+            "name": "Chaos Knight Asterius",
+            "base": ""
+        },
+        {
+            "name": "Chaos Acastus Porphyrion",
+            "base": ""
+        },
+        {
+            "name": "War Dog Moirax",
+            "base": ""
+        }
+    ],
+    "ADEPTUS SORORITAS": [
+        {
+            "name": "ARMY LISTS",
+            "base": "Sacresants"
+        },
+        {
+            "name": "Acro-Flagellants",
+            "base": ""
+        },
+        {
+            "name": "Aestred Thurga & Dolan",
+            "base": ""
+        },
+        {
+            "name": "Battle Sisters",
+            "base": ""
+        },
+        {
+            "name": "Canoness",
+            "base": ""
+        },
+        {
+            "name": "Castigator",
+            "base": ""
+        },
+        {
+            "name": "Celestian",
+            "base": ""
+        },
+        {
+            "name": "Crusaders",
+            "base": ""
+        },
+        {
+            "name": "Daemonifuge",
+            "base": ""
+        },
+        {
+            "name": "Death Cult Assassins",
+            "base": ""
+        },
+        {
+            "name": "Dialogus",
+            "base": ""
+        },
+        {
+            "name": "Dogmata",
+            "base": ""
+        },
+        {
+            "name": "Dominion Squad",
+            "base": ""
+        },
+        {
+            "name": "Exorcist",
+            "base": ""
+        },
+        {
+            "name": "Hospitaller",
+            "base": ""
+        },
+        {
+            "name": "Imagifier",
+            "base": ""
+        },
+        {
+            "name": "Immolator",
+            "base": ""
+        },
+        {
+            "name": "Junith Eruita",
+            "base": ""
+        },
+        {
+            "name": "Missionary",
+            "base": ""
+        },
+        {
+            "name": "Mortifiers",
+            "base": ""
+        },
+        {
+            "name": "Morvenn Vahl",
+            "base": ""
+        },
+        {
+            "name": "Novitiate Squad",
+            "base": ""
+        },
+        {
+            "name": "Palatine",
+            "base": ""
+        },
+        {
+            "name": "Paragon Warsuits",
+            "base": ""
+        },
+        {
+            "name": "Penitent Engines",
+            "base": ""
+        },
+        {
+            "name": "Preacher",
+            "base": ""
+        },
+        {
+            "name": "Repentia Squad",
+            "base": ""
+        },
+        {
+            "name": "Retributor Squad",
+            "base": ""
+        },
+        {
+            "name": "Rhino",
+            "base": ""
+        },
+        {
+            "name": "Saint Celestine",
+            "base": ""
+        },
+        {
+            "name": "Seraphim Squad",
+            "base": ""
+        },
+        {
+            "name": "Triumph of Saint Katherine",
+            "base": ""
+        },
+        {
+            "name": "Zephyrim Squad",
+            "base": ""
+        },
+        {
+            "name": "Culexus Assassin",
+            "base": ""
+        },
+        {
+            "name": "Eversor Assassin",
+            "base": ""
+        },
+        {
+            "name": "Callidus Assassin",
+            "base": ""
+        },
+        {
+            "name": "Rogue Trader Squad",
+            "base": ""
+        },
+        {
+            "name": "Voidsmen",
+            "base": ""
+        },
+        {
+            "name": "Navy Breachers",
+            "base": ""
+        },
+        {
+            "name": "Subductor Squad",
+            "base": ""
+        },
+        {
+            "name": "Exaction Squad",
+            "base": ""
+        },
+        {
+            "name": "Vigilant Squad",
+            "base": ""
+        },
+        {
+            "name": "Kyria Draxus",
+            "base": ""
+        },
+        {
+            "name": "Inquisitor Corteaz",
+            "base": ""
+        },
+        {
+            "name": "Greyfax",
+            "base": ""
+        },
+        {
+            "name": "Karamazov",
+            "base": ""
+        },
+        {
+            "name": "Inquisitor",
+            "base": ""
+        },
+        {
+            "name": "Eisenhorn",
+            "base": ""
+        },
+        {
+            "name": "Henchmen",
+            "base": ""
+        }
+    ],
+    "ADEPTUS MECHANICUS": [
+        {
+            "name": "ARMY LISTS",
+            "base": ""
+        },
+        {
+            "name": "Archaeopter Fusilave",
+            "base": ""
+        },
+        {
+            "name": "Archaeopter Stratoraptor",
+            "base": ""
+        },
+        {
+            "name": "Archaeopter Transvector",
+            "base": ""
+        },
+        {
+            "name": "Belisarius Cawl",
+            "base": ""
+        },
+        {
+            "name": "Corpuscarii Electro-Priests",
+            "base": ""
+        },
+        {
+            "name": "Datasmith",
+            "base": ""
+        },
+        {
+            "name": "Fulgrite Electro-Priests",
+            "base": ""
+        },
+        {
+            "name": "Ironstrider Ballistarii",
+            "base": ""
+        },
+        {
+            "name": "Kastelan Robots",
+            "base": ""
+        },
+        {
+            "name": "Kataphron Breachers",
+            "base": ""
+        },
+        {
+            "name": "Kataphron Destroyers",
+            "base": ""
+        },
+        {
+            "name": "Onager Dunecrawler",
+            "base": ""
+        },
+        {
+            "name": "Pteraxii Skystalkers",
+            "base": ""
+        },
+        {
+            "name": "Pteraxii Sterylizors",
+            "base": ""
+        },
+        {
+            "name": "Serbery's Raiders",
+            "base": ""
+        },
+        {
+            "name": "Serbery's Sulphurhounds",
+            "base": ""
+        },
+        {
+            "name": "Servitors",
+            "base": ""
+        },
+        {
+            "name": "Sicarian Infiltrators",
+            "base": ""
+        },
+        {
+            "name": "Sicarian Ruststalkers",
+            "base": ""
+        },
+        {
+            "name": "Skitarii Marshall",
+            "base": ""
+        },
+        {
+            "name": "Skitarii Rangers",
+            "base": ""
+        },
+        {
+            "name": "Skitarii Vanguard",
+            "base": ""
+        },
+        {
+            "name": "Skorpius Disintegrator",
+            "base": ""
+        },
+        {
+            "name": "Skorpius Dunerider",
+            "base": ""
+        },
+        {
+            "name": "Sydonian Dragoons",
+            "base": ""
+        },
+        {
+            "name": "Technoarcheologist",
+            "base": ""
+        },
+        {
+            "name": "Tech-Priest Dominus",
+            "base": ""
+        },
+        {
+            "name": "Tech-Priest Enginseer",
+            "base": ""
+        },
+        {
+            "name": "Tech-Priest Manipulus",
+            "base": ""
+        }
+    ],
+    "DEATHWATCH": [
+        {
+            "name": "ARMY LISTS",
+            "base": ""
+        },
+        {
+            "name": "Corvus Blackstar",
+            "base": ""
+        },
+        {
+            "name": "Deathwatch Terminators",
+            "base": ""
+        },
+        {
+            "name": "Deathwatch Veterans",
+            "base": ""
+        },
+        {
+            "name": "Fortis Kill Team",
+            "base": ""
+        },
+        {
+            "name": "Indomitor Kill Team",
+            "base": ""
+        },
+        {
+            "name": "Kill Team Cassius",
+            "base": ""
+        },
+        {
+            "name": "Proteus Kill Team",
+            "base": ""
+        },
+        {
+            "name": "Spectrus Kill Team",
+            "base": ""
+        },
+        {
+            "name": "Veteran Bike Squad",
+            "base": ""
+        },
+        {
+            "name": "Watch Captain Artemis",
+            "base": ""
+        },
+        {
+            "name": "Watch Master",
+            "base": ""
+        },
+        {
+            "name": "Aggressors",
+            "base": ""
+        },
+        {
+            "name": "Ancient",
+            "base": ""
+        },
+        {
+            "name": "Apothecary Biologis",
+            "base": ""
+        },
+        {
+            "name": "Assault Intercessors",
+            "base": ""
+        },
+        {
+            "name": "Ballistus Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Bike Squad",
+            "base": ""
+        },
+        {
+            "name": "Bladeguard Ancient",
+            "base": ""
+        },
+        {
+            "name": "Bladeguard Veterans",
+            "base": ""
+        },
+        {
+            "name": "Brutalis Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Captain",
+            "base": ""
+        },
+        {
+            "name": "Centurion Assault Squad",
+            "base": ""
+        },
+        {
+            "name": "Centurion Devastator Squad",
+            "base": ""
+        },
+        {
+            "name": "Chaplain",
+            "base": ""
+        },
+        {
+            "name": "Chaplain on Bike",
+            "base": ""
+        },
+        {
+            "name": "Command Squad",
+            "base": ""
+        },
+        {
+            "name": "Contemptor Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Desolation Squad",
+            "base": ""
+        },
+        {
+            "name": "Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Drop Pod",
+            "base": ""
+        },
+        {
+            "name": "Eliminators",
+            "base": ""
+        },
+        {
+            "name": "Eradicators",
+            "base": ""
+        },
+        {
+            "name": "Firestrike Servo-Turrets",
+            "base": ""
+        },
+        {
+            "name": "Gladiator Lancer",
+            "base": ""
+        },
+        {
+            "name": "Gladiator Reaper",
+            "base": ""
+        },
+        {
+            "name": "Gladiator Valiant",
+            "base": ""
+        },
+        {
+            "name": "Gravis Captain",
+            "base": ""
+        },
+        {
+            "name": "Hammerfall Bunker",
+            "base": ""
+        },
+        {
+            "name": "Heavy Intercessors",
+            "base": ""
+        },
+        {
+            "name": "Hellblasters",
+            "base": ""
+        },
+        {
+            "name": "Hunter",
+            "base": ""
+        },
+        {
+            "name": "Impulsor",
+            "base": ""
+        },
+        {
+            "name": "Inceptors",
+            "base": ""
+        },
+        {
+            "name": "Incursors",
+            "base": ""
+        },
+        {
+            "name": "Infernus Squad",
+            "base": ""
+        },
+        {
+            "name": "Infiltrators",
+            "base": ""
+        },
+        {
+            "name": "Intercessor Squad",
+            "base": ""
+        },
+        {
+            "name": "Invader ATV",
+            "base": ""
+        },
+        {
+            "name": "Invictor Tactical Warsuit",
+            "base": ""
+        },
+        {
+            "name": "Ironclad Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Judiciar",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder Tornado",
+            "base": ""
+        },
+        {
+            "name": "Land Speeder Typhoon",
+            "base": ""
+        },
+        {
+            "name": "Landraider",
+            "base": ""
+        },
+        {
+            "name": "Landraider Crusader",
+            "base": ""
+        },
+        {
+            "name": "Landraider Redeemer",
+            "base": ""
+        },
+        {
+            "name": "Librarian",
+            "base": ""
+        },
+        {
+            "name": "Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Lieutenant w/ combi weapon",
+            "base": ""
+        },
+        {
+            "name": "Outrider Squad",
+            "base": ""
+        },
+        {
+            "name": "Phobos Captain",
+            "base": ""
+        },
+        {
+            "name": "Phobos Librarian",
+            "base": ""
+        },
+        {
+            "name": "Phobos Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Predator Annihilator",
+            "base": ""
+        },
+        {
+            "name": "Predator Destructor",
+            "base": ""
+        },
+        {
+            "name": "Primaris Ancient",
+            "base": ""
+        },
+        {
+            "name": "Primaris Apothecary",
+            "base": ""
+        },
+        {
+            "name": "Primaris Captain",
+            "base": ""
+        },
+        {
+            "name": "Primaris Chaplain",
+            "base": ""
+        },
+        {
+            "name": "Primaris Company Champion",
+            "base": ""
+        },
+        {
+            "name": "Primaris Librarian",
+            "base": ""
+        },
+        {
+            "name": "Primaris Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Primaris Techmarine",
+            "base": ""
+        },
+        {
+            "name": "Razorback",
+            "base": ""
+        },
+        {
+            "name": "Redemptor Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Reiver Lieutenant",
+            "base": ""
+        },
+        {
+            "name": "Reivers",
+            "base": ""
+        },
+        {
+            "name": "Relic Terminator Squad",
+            "base": ""
+        },
+        {
+            "name": "Repulsor",
+            "base": ""
+        },
+        {
+            "name": "Repulsor Executioner",
+            "base": ""
+        },
+        {
+            "name": "Rhino",
+            "base": ""
+        },
+        {
+            "name": "Scout Bikes",
+            "base": ""
+        },
+        {
+            "name": "Servitors",
+            "base": ""
+        },
+        {
+            "name": "Stalker",
+            "base": ""
+        },
+        {
+            "name": "Sternguard Veterans",
+            "base": ""
+        },
+        {
+            "name": "Storm Speeder Hailstrike",
+            "base": ""
+        },
+        {
+            "name": "Storm Speeder Hamerstrike",
+            "base": ""
+        },
+        {
+            "name": "Storm Speeder Thunderstrike",
+            "base": ""
+        },
+        {
+            "name": "Stormhawk Interceptor",
+            "base": ""
+        },
+        {
+            "name": "Stormraven Gunship",
+            "base": ""
+        },
+        {
+            "name": "Stormtalon Gunship",
+            "base": ""
+        },
+        {
+            "name": "Suppressors",
+            "base": ""
+        },
+        {
+            "name": "Techmarine",
+            "base": ""
+        },
+        {
+            "name": "Terminator Ancient",
+            "base": ""
+        },
+        {
+            "name": "Terminator Assault Squad",
+            "base": ""
+        },
+        {
+            "name": "Terminator Captain",
+            "base": ""
+        },
+        {
+            "name": "Terminator Chaplain",
+            "base": ""
+        },
+        {
+            "name": "Terminator Librarian",
+            "base": ""
+        },
+        {
+            "name": "Terminator Squad",
+            "base": ""
+        },
+        {
+            "name": "Thunderfire Cannon",
+            "base": ""
+        },
+        {
+            "name": "Vanguard Veterans",
+            "base": ""
+        },
+        {
+            "name": "Vindicator",
+            "base": ""
+        },
+        {
+            "name": "Whirlwind",
+            "base": ""
+        }
+    ],
+    "CHAOS SPACE MARINES": [
+        {
+            "name": "ARMY LISTS",
+            "base": ""
+        },
+        {
+            "name": "Abaddon",
+            "base": ""
+        },
+        {
+            "name": "Accursed Cultists",
+            "base": ""
+        },
+        {
+            "name": "Chaos Bikers",
+            "base": ""
+        },
+        {
+            "name": "Chaos Land Raider",
+            "base": ""
+        },
+        {
+            "name": "Chaos Lord",
+            "base": ""
+        },
+        {
+            "name": "Chaos Lord w/Term Arm",
+            "base": ""
+        },
+        {
+            "name": "Chaos Rhino",
+            "base": ""
+        },
+        {
+            "name": "Chaos Spawn",
+            "base": ""
+        },
+        {
+            "name": "Chaos Terminators",
+            "base": ""
+        },
+        {
+            "name": "Chaos Vindicator",
+            "base": ""
+        },
+        {
+            "name": "Chosen",
+            "base": ""
+        },
+        {
+            "name": "Cultist Mob",
+            "base": ""
+        },
+        {
+            "name": "Cypher",
+            "base": ""
+        },
+        {
+            "name": "Daemon Prince",
+            "base": ""
+        },
+        {
+            "name": "Daemon Prince w/Wings",
+            "base": ""
+        },
+        {
+            "name": "Dark Apostle",
+            "base": ""
+        },
+        {
+            "name": "Dark Commune",
+            "base": ""
+        },
+        {
+            "name": "Defiler",
+            "base": ""
+        },
+        {
+            "name": "Exalted Champion",
+            "base": ""
+        },
+        {
+            "name": "Fabius Bile",
+            "base": ""
+        },
+        {
+            "name": "Fellgor Beastmen",
+            "base": ""
+        },
+        {
+            "name": "Forgefiend",
+            "base": ""
+        },
+        {
+            "name": "Haarken WorldClaimer",
+            "base": ""
+        },
+        {
+            "name": "Havocs",
+            "base": ""
+        },
+        {
+            "name": "Helbrute",
+            "base": ""
+        },
+        {
+            "name": "Heldrake",
+            "base": ""
+        },
+        {
+            "name": "Huron Blackheart",
+            "base": ""
+        },
+        {
+            "name": "Khorne Lord of Skulls",
+            "base": ""
+        },
+        {
+            "name": "Legionaries",
+            "base": ""
+        },
+        {
+            "name": "Lord Discordant",
+            "base": ""
+        },
+        {
+            "name": "Lucius the Eternal",
+            "base": ""
+        },
+        {
+            "name": "Master of Executions",
+            "base": ""
+        },
+        {
+            "name": "Master of Possession",
+            "base": ""
+        },
+        {
+            "name": "Maulerfiend",
+            "base": ""
+        },
+        {
+            "name": "Noctilith Crown",
+            "base": ""
+        },
+        {
+            "name": "Noise Marines",
+            "base": ""
+        },
+        {
+            "name": "Obliterators",
+            "base": ""
+        },
+        {
+            "name": "Possessed",
+            "base": ""
+        },
+        {
+            "name": "Predator Annilhilator",
+            "base": ""
+        },
+        {
+            "name": "Predator Destructor",
+            "base": ""
+        },
+        {
+            "name": "Raptors",
+            "base": ""
+        },
+        {
+            "name": "Sorcerer",
+            "base": ""
+        },
+        {
+            "name": "Sorcerer w/Term Arm",
+            "base": ""
+        },
+        {
+            "name": "Traitor Enforcer",
+            "base": ""
+        },
+        {
+            "name": "Traitor Guardsmen",
+            "base": ""
+        },
+        {
+            "name": "Vashtoor the Arkifane",
+            "base": ""
+        },
+        {
+            "name": "Venom Crawler",
+            "base": ""
+        },
+        {
+            "name": "Warp Smith",
+            "base": ""
+        },
+        {
+            "name": "Warp Talos",
+            "base": ""
+        }
+    ],
+    "WORLD EATERS": [
+        {
+            "name": "ARMY LISTS",
+            "base": ""
+        },
+        {
+            "name": "Angron",
+            "base": ""
+        },
+        {
+            "name": "Eightbound",
+            "base": ""
+        },
+        {
+            "name": "Exalted Eightbound",
+            "base": ""
+        },
+        {
+            "name": "Jakhals",
+            "base": ""
+        },
+        {
+            "name": "Kharn Betrayer",
+            "base": ""
+        },
+        {
+            "name": "Bezerkers",
+            "base": ""
+        },
+        {
+            "name": "Khorne lord of skulls",
+            "base": ""
+        },
+        {
+            "name": "Lord Invocatus",
+            "base": ""
+        },
+        {
+            "name": "Chaos Spawn",
+            "base": ""
+        },
+        {
+            "name": "Daemon Prince",
+            "base": ""
+        },
+        {
+            "name": "Defiler",
+            "base": ""
+        },
+        {
+            "name": "Daemon Prine w/Wings",
+            "base": ""
+        },
+        {
+            "name": "Forgefiend",
+            "base": ""
+        },
+        {
+            "name": "Helbrute",
+            "base": ""
+        },
+        {
+            "name": "Heldrake",
+            "base": ""
+        },
+        {
+            "name": "Land Raider",
+            "base": ""
+        },
+        {
+            "name": "Lord on Juggernaut",
+            "base": ""
+        },
+        {
+            "name": "Master Executions",
+            "base": ""
+        },
+        {
+            "name": "Maulerfiend",
+            "base": ""
+        },
+        {
+            "name": "Predator Annihilator",
+            "base": ""
+        },
+        {
+            "name": "Predator Destructor",
+            "base": ""
+        },
+        {
+            "name": "Rhino",
+            "base": ""
+        }
+    ],
+    "ORKS": [
+        {
+            "name": "ARMY LISTS",
+            "base": ""
+        },
+        {
+            "name": "Battlewagon",
+            "base": ""
+        },
+        {
+            "name": "Beastboss",
+            "base": ""
+        },
+        {
+            "name": "Beastboss on Squiga",
+            "base": ""
+        },
+        {
+            "name": "Big Mek w/Kustom Force",
+            "base": ""
+        },
+        {
+            "name": "Big Mek w/Mega Armour",
+            "base": ""
+        },
+        {
+            "name": "Big Mek w/Shokk Attack",
+            "base": ""
+        },
+        {
+            "name": "Big Trakk",
+            "base": ""
+        },
+        {
+            "name": "Big'Ed Bosssbunka",
+            "base": ""
+        },
+        {
+            "name": "Blitza Bommer",
+            "base": ""
+        },
+        {
+            "name": "Boomdakka Snazzwagon",
+            "base": ""
+        },
+        {
+            "name": "Boss Snikrot",
+            "base": ""
+        },
+        {
+            "name": "BossZagstruk",
+            "base": ""
+        },
+        {
+            "name": "Boyz",
+            "base": ""
+        },
+        {
+            "name": "Burna Boyz",
+            "base": ""
+        },
+        {
+            "name": "Burna-Bommer",
+            "base": ""
+        },
+        {
+            "name": "Deffkilla Wartrike",
+            "base": ""
+        },
+        {
+            "name": "Deffkoptas",
+            "base": ""
+        },
+        {
+            "name": "Flash Gitz",
+            "base": ""
+        },
+        {
+            "name": "Gargantuan Squiggoth",
+            "base": ""
+        },
+        {
+            "name": "Ghazghkull Thraka",
+            "base": ""
+        },
+        {
+            "name": "Gorkanaut",
+            "base": ""
+        },
+        {
+            "name": "Gretchin",
+            "base": ""
+        },
+        {
+            "name": "Grot Mega-Tank",
+            "base": ""
+        },
+        {
+            "name": "Grot Tanks",
+            "base": ""
+        },
+        {
+            "name": "Hunta Rig",
+            "base": ""
+        },
+        {
+            "name": "Kaptin Badrukk",
+            "base": ""
+        },
+        {
+            "name": "Kill Kans",
+            "base": ""
+        },
+        {
+            "name": "Kill Rig",
+            "base": ""
+        },
+        {
+            "name": "Kill Tank",
+            "base": ""
+        },
+        {
+            "name": "Kommandos",
+            "base": ""
+        },
+        {
+            "name": "Kustom Boosta-blasta",
+            "base": ""
+        },
+        {
+            "name": "Lootas",
+            "base": ""
+        },
+        {
+            "name": "Mad Dok Grotsnik",
+            "base": ""
+        },
+        {
+            "name": "Mega Dread",
+            "base": ""
+        },
+        {
+            "name": "Meganobz",
+            "base": ""
+        },
+        {
+            "name": "Megatrakk Scrapjet",
+            "base": ""
+        },
+        {
+            "name": "Mek",
+            "base": ""
+        },
+        {
+            "name": "Mek Gunz",
+            "base": ""
+        },
+        {
+            "name": "Meka-Dread",
+            "base": ""
+        },
+        {
+            "name": "Mekboy Workshop",
+            "base": ""
+        },
+        {
+            "name": "Morkanaught",
+            "base": ""
+        },
+        {
+            "name": "Mozrog Skragbad",
+            "base": ""
+        },
+        {
+            "name": "Nob on Smasha Squig",
+            "base": ""
+        },
+        {
+            "name": "Nob with Waagh Banner",
+            "base": ""
+        },
+        {
+            "name": "Nobz",
+            "base": ""
+        },
+        {
+            "name": "Nobz on Warbikes",
+            "base": ""
+        },
+        {
+            "name": "Painboss",
+            "base": ""
+        },
+        {
+            "name": "Painboy",
+            "base": ""
+        },
+        {
+            "name": "Rukkatrukk Squigbuggy",
+            "base": ""
+        },
+        {
+            "name": "Shokkjump Dragsta",
+            "base": ""
+        },
+        {
+            "name": "Snagga Boys",
+            "base": ""
+        },
+        {
+            "name": "Squiggoth",
+            "base": ""
+        },
+        {
+            "name": "Squighog boyz",
+            "base": ""
+        },
+        {
+            "name": "Stompa",
+            "base": ""
+        },
+        {
+            "name": "Stormboyz",
+            "base": ""
+        },
+        {
+            "name": "Tankbustas",
+            "base": ""
+        },
+        {
+            "name": "Trukk",
+            "base": ""
+        },
+        {
+            "name": "Warbikers",
+            "base": ""
+        },
+        {
+            "name": "Warboss",
+            "base": ""
+        },
+        {
+            "name": "Warboss in Mega Armour",
+            "base": ""
+        },
+        {
+            "name": "Warboss on Warbike",
+            "base": ""
+        },
+        {
+            "name": "Wazbom Blastajet",
+            "base": ""
+        },
+        {
+            "name": "Weirdboy",
+            "base": ""
+        },
+        {
+            "name": "Wurrboy",
+            "base": ""
+        },
+        {
+            "name": "Zodgrod Wortsnagga",
+            "base": ""
+        }
+    ],
+    "AELDARI": [
+        {
+            "name": "ARMY LISTS",
+            "base": ""
+        },
+        {
+            "name": "Asurmen",
+            "base": ""
+        },
+        {
+            "name": "Autarch",
+            "base": ""
+        },
+        {
+            "name": "Autarch Skyrunner",
+            "base": ""
+        },
+        {
+            "name": "Autarch Wayleaper",
+            "base": ""
+        },
+        {
+            "name": "Avatar of Khaine",
+            "base": ""
+        },
+        {
+            "name": "Baharroth",
+            "base": ""
+        },
+        {
+            "name": "Cobra",
+            "base": ""
+        },
+        {
+            "name": "Corsair Voidreavers",
+            "base": ""
+        },
+        {
+            "name": "Corsair Voidscarred",
+            "base": ""
+        },
+        {
+            "name": "Crimson Hunter",
+            "base": ""
+        },
+        {
+            "name": "Dark Reapers",
+            "base": ""
+        },
+        {
+            "name": "Death Jester",
+            "base": ""
+        },
+        {
+            "name": "Dire Avengers",
+            "base": ""
+        },
+        {
+            "name": "Eldrad Ulthran",
+            "base": ""
+        },
+        {
+            "name": "Falcon",
+            "base": ""
+        },
+        {
+            "name": "Farseer Skyrunner",
+            "base": ""
+        },
+        {
+            "name": "Fire Dragons",
+            "base": ""
+        },
+        {
+            "name": "Fire Prism",
+            "base": ""
+        },
+        {
+            "name": "Fuegan",
+            "base": ""
+        },
+        {
+            "name": "Guardian Defenders",
+            "base": ""
+        },
+        {
+            "name": "Hemlock Wraithfighter",
+            "base": ""
+        },
+        {
+            "name": "Hornet",
+            "base": ""
+        },
+        {
+            "name": "Howling Banshees",
+            "base": ""
+        },
+        {
+            "name": "Illic Nightspear",
+            "base": ""
+        },
+        {
+            "name": "Irillyth",
+            "base": ""
+        },
+        {
+            "name": "Jain Zar",
+            "base": ""
+        },
+        {
+            "name": "Karandras",
+            "base": ""
+        },
+        {
+            "name": "Lynx",
+            "base": ""
+        },
+        {
+            "name": "Maugan Ra",
+            "base": ""
+        },
+        {
+            "name": "Night Spinner",
+            "base": ""
+        },
+        {
+            "name": "Nightwing",
+            "base": ""
+        },
+        {
+            "name": "Phantom Titan",
+            "base": ""
+        },
+        {
+            "name": "Prince Yriel",
+            "base": ""
+        },
+        {
+            "name": "Rangers",
+            "base": ""
+        },
+        {
+            "name": "Revenant Titan",
+            "base": ""
+        },
+        {
+            "name": "Scorpion",
+            "base": ""
+        },
+        {
+            "name": "Shadow Spectres",
+            "base": ""
+        },
+        {
+            "name": "Shadowseer",
+            "base": ""
+        },
+        {
+            "name": "Shining Spears",
+            "base": ""
+        },
+        {
+            "name": "Shroud Runners",
+            "base": ""
+        },
+        {
+            "name": "Skathach Wraighknight",
+            "base": ""
+        },
+        {
+            "name": "Skyweavers",
+            "base": ""
+        },
+        {
+            "name": "Soltaire",
+            "base": ""
+        },
+        {
+            "name": "Spiritseer",
+            "base": ""
+        },
+        {
+            "name": "Starweaver",
+            "base": ""
+        },
+        {
+            "name": "Storm Guardians",
+            "base": ""
+        },
+        {
+            "name": "Striking Scoprions",
+            "base": ""
+        },
+        {
+            "name": "Support Weapons",
+            "base": ""
+        },
+        {
+            "name": "Swooping Hawks",
+            "base": ""
+        },
+        {
+            "name": "The Visarch",
+            "base": ""
+        },
+        {
+            "name": "The Yncarne",
+            "base": ""
+        },
+        {
+            "name": "Troupe",
+            "base": ""
+        },
+        {
+            "name": "Troupe Master",
+            "base": ""
+        },
+        {
+            "name": "Voidweaver",
+            "base": ""
+        },
+        {
+            "name": "Vypers",
+            "base": ""
+        },
+        {
+            "name": "War Walkers",
+            "base": ""
+        },
+        {
+            "name": "Warlock",
+            "base": ""
+        },
+        {
+            "name": "Warlock Conclave",
+            "base": ""
+        },
+        {
+            "name": "Warlock Skyrunner",
+            "base": ""
+        },
+        {
+            "name": "Warp Hunter",
+            "base": ""
+        },
+        {
+            "name": "Warp Spiders",
+            "base": ""
+        },
+        {
+            "name": "Wave Serpent",
+            "base": ""
+        },
+        {
+            "name": "Webway Gate",
+            "base": ""
+        },
+        {
+            "name": "Windriders",
+            "base": ""
+        },
+        {
+            "name": "Wraithblades",
+            "base": ""
+        },
+        {
+            "name": "Wraithgaurd",
+            "base": ""
+        },
+        {
+            "name": "Wraithknight",
+            "base": ""
+        },
+        {
+            "name": "Wraithlord",
+            "base": ""
+        },
+        {
+            "name": "Wraithseer",
+            "base": ""
+        },
+        {
+            "name": "Yvraine",
+            "base": ""
+        }
+    ],
+    "GREY KNIGHTS": [
+        {
+            "name": "ARMY LISTS",
+            "base": ""
+        },
+        {
+            "name": "Brother Captain",
+            "base": ""
+        },
+        {
+            "name": "Brother Captain Stern",
+            "base": ""
+        },
+        {
+            "name": "Brotherhood Champion",
+            "base": ""
+        },
+        {
+            "name": "Brotherhood Chaplain",
+            "base": ""
+        },
+        {
+            "name": "Brotherhood Libraian",
+            "base": ""
+        },
+        {
+            "name": "Terminator Squad",
+            "base": ""
+        },
+        {
+            "name": "Castellan Crowe",
+            "base": ""
+        },
+        {
+            "name": "Techmarine",
+            "base": ""
+        },
+        {
+            "name": "Grand Master",
+            "base": ""
+        },
+        {
+            "name": "Grand Master DK",
+            "base": ""
+        },
+        {
+            "name": "Land Raider",
+            "base": ""
+        },
+        {
+            "name": "Land Raider Crusader",
+            "base": ""
+        },
+        {
+            "name": "Land Raider Redeemer",
+            "base": ""
+        },
+        {
+            "name": "Razorback",
+            "base": ""
+        },
+        {
+            "name": "Rhino",
+            "base": ""
+        },
+        {
+            "name": "Stormhawk Interceptor",
+            "base": ""
+        },
+        {
+            "name": "Stormraven Gunship",
+            "base": ""
+        },
+        {
+            "name": "Stormtalon Gunship",
+            "base": ""
+        },
+        {
+            "name": "Thunderhawk Gunship",
+            "base": ""
+        },
+        {
+            "name": "Interceptor Squad",
+            "base": ""
+        },
+        {
+            "name": "Venerable Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Kaldor Draigo",
+            "base": ""
+        },
+        {
+            "name": "Land Raider Banisher",
+            "base": ""
+        },
+        {
+            "name": "Nemesis Dreadknight",
+            "base": ""
+        },
+        {
+            "name": "Paladin Squad",
+            "base": ""
+        },
+        {
+            "name": "Purgation Squad",
+            "base": ""
+        },
+        {
+            "name": "Purifier Squad",
+            "base": ""
+        },
+        {
+            "name": "Servitors",
+            "base": ""
+        },
+        {
+            "name": "Strike Squad",
+            "base": ""
+        }
+    ],
+    "TAU": [
+        {
+            "name": "ARMY LISTS",
+            "base": ""
+        },
+        {
+            "name": "Aun'shi",
+            "base": ""
+        },
+        {
+            "name": "Aun'va",
+            "base": ""
+        },
+        {
+            "name": "AX-1-0 Tiger Shark",
+            "base": ""
+        },
+        {
+            "name": "Barracuda",
+            "base": ""
+        },
+        {
+            "name": "Breacher Team",
+            "base": ""
+        },
+        {
+            "name": "Broadside Battlesuits",
+            "base": ""
+        },
+        {
+            "name": "Cadre Fireblade",
+            "base": ""
+        },
+        {
+            "name": "Commander Farsight",
+            "base": ""
+        },
+        {
+            "name": "Commander in Battlesuit",
+            "base": ""
+        },
+        {
+            "name": "Commander in Crisis Battlesuit",
+            "base": ""
+        },
+        {
+            "name": "Commander Enforcer Battlesuit",
+            "base": ""
+        },
+        {
+            "name": "Commander Shadowsun",
+            "base": ""
+        },
+        {
+            "name": "Crisis Battlesuits",
+            "base": ""
+        },
+        {
+            "name": "Darkstrider",
+            "base": ""
+        },
+        {
+            "name": "Devilfish",
+            "base": ""
+        },
+        {
+            "name": "Firesight Team",
+            "base": ""
+        },
+        {
+            "name": "Ethereal",
+            "base": ""
+        },
+        {
+            "name": "Ghostkeel Battlesuit",
+            "base": ""
+        },
+        {
+            "name": "Hammerhead Gunship",
+            "base": ""
+        },
+        {
+            "name": "Kroot",
+            "base": ""
+        },
+        {
+            "name": "Kroot Farstalkers",
+            "base": ""
+        },
+        {
+            "name": "Kroot Hounds",
+            "base": ""
+        },
+        {
+            "name": "Krootox Riders",
+            "base": ""
+        },
+        {
+            "name": "Kroot Shaper",
+            "base": ""
+        },
+        {
+            "name": "Longstrike",
+            "base": ""
+        },
+        {
+            "name": "Manta",
+            "base": ""
+        },
+        {
+            "name": "Pathfinder Team",
+            "base": ""
+        },
+        {
+            "name": "Piranha",
+            "base": ""
+        },
+        {
+            "name": "Razorshark Strike Fighter",
+            "base": ""
+        },
+        {
+            "name": "Remora Stealth Drones",
+            "base": ""
+        },
+        {
+            "name": "Riptide Battlesuit",
+            "base": ""
+        },
+        {
+            "name": "R'Varna Battlesuit",
+            "base": ""
+        },
+        {
+            "name": "Sky Ray Gunship",
+            "base": ""
+        },
+        {
+            "name": "Stealth Battlesuits",
+            "base": ""
+        },
+        {
+            "name": "Stormsurge",
+            "base": ""
+        },
+        {
+            "name": "Strike Team",
+            "base": ""
+        },
+        {
+            "name": "Tactical Drones",
+            "base": ""
+        },
+        {
+            "name": "Ta'unar Supremacy Armour",
+            "base": ""
+        },
+        {
+            "name": "Tetras",
+            "base": ""
+        },
+        {
+            "name": "Tidewel Droneport",
+            "base": ""
+        },
+        {
+            "name": "Tidewell Gunrig",
+            "base": ""
+        },
+        {
+            "name": "Tidewell Shieldline",
+            "base": ""
+        },
+        {
+            "name": "Tiger Shark",
+            "base": ""
+        },
+        {
+            "name": "Vespid Stringwings",
+            "base": ""
+        },
+        {
+            "name": "Y'vahra Battlesuit",
+            "base": ""
+        }
+    ],
+    "VOTANN": [
+        {
+            "name": "ARMY LISTS",
+            "base": ""
+        },
+        {
+            "name": "Brokhyr Iron Master",
+            "base": ""
+        },
+        {
+            "name": "Brokhyr Thunderkyn",
+            "base": ""
+        },
+        {
+            "name": "Cthonian Beserks",
+            "base": ""
+        },
+        {
+            "name": "Einhyr Champion",
+            "base": ""
+        },
+        {
+            "name": "Einhyr Hearthguard",
+            "base": ""
+        },
+        {
+            "name": "Grimnyr",
+            "base": ""
+        },
+        {
+            "name": "Hearthkyn Warriors",
+            "base": ""
+        },
+        {
+            "name": "Hekaton Land Fortress",
+            "base": ""
+        },
+        {
+            "name": "Hernkyn Pioneers",
+            "base": ""
+        },
+        {
+            "name": "Kahl",
+            "base": ""
+        },
+        {
+            "name": "Sagitaur",
+            "base": ""
+        },
+        {
+            "name": "Uthar the Destined",
+            "base": ""
+        }
+    ],
+    "IMPERIAL KNIGHTS": [
+        {
+            "name": "ARMY LISTS",
+            "base": ""
+        },
+        {
+            "name": "Acastus Knight Asterius",
+            "base": ""
+        },
+        {
+            "name": "Armiger Heleverin",
+            "base": ""
+        },
+        {
+            "name": "Armiger Warglaive",
+            "base": ""
+        },
+        {
+            "name": "ArmigerMoirax",
+            "base": ""
+        },
+        {
+            "name": "Battle Sisters Squad",
+            "base": ""
+        },
+        {
+            "name": "Sororitas Rhino",
+            "base": ""
+        },
+        {
+            "name": "Questoris Magaera",
+            "base": ""
+        },
+        {
+            "name": "Questoris Styrix",
+            "base": ""
+        },
+        {
+            "name": "Sri Hekhtur",
+            "base": ""
+        },
+        {
+            "name": "Canis Rex",
+            "base": ""
+        },
+        {
+            "name": "Cerastus Knight Acheron",
+            "base": ""
+        },
+        {
+            "name": "Cerastus Knight Attrapos",
+            "base": ""
+        },
+        {
+            "name": "Cerastus Knight Castigator",
+            "base": ""
+        },
+        {
+            "name": "Knight Errant",
+            "base": ""
+        },
+        {
+            "name": "Knight Gallant",
+            "base": ""
+        },
+        {
+            "name": "Knight Lancer",
+            "base": ""
+        },
+        {
+            "name": "Knight Paladin",
+            "base": ""
+        },
+        {
+            "name": "Knight Porphyrion",
+            "base": ""
+        },
+        {
+            "name": "Knight Preceptor",
+            "base": ""
+        },
+        {
+            "name": "Knight Valiant",
+            "base": ""
+        },
+        {
+            "name": "Knight Warden",
+            "base": ""
+        },
+        {
+            "name": "Knight Castellan",
+            "base": ""
+        },
+        {
+            "name": "Knight Crusader",
+            "base": ""
+        }
+    ],
+    "DRUKHARI": [
+        {
+            "name": "ARMY LISTS",
+            "base": ""
+        },
+        {
+            "name": "Archon",
+            "base": ""
+        },
+        {
+            "name": "Court of Archon",
+            "base": ""
+        },
+        {
+            "name": "Cronos",
+            "base": ""
+        },
+        {
+            "name": "Drazhar",
+            "base": ""
+        },
+        {
+            "name": "Grotesques",
+            "base": ""
+        },
+        {
+            "name": "Haemonculus",
+            "base": ""
+        },
+        {
+            "name": "Hellions",
+            "base": ""
+        },
+        {
+            "name": "Incubi",
+            "base": ""
+        },
+        {
+            "name": "Kabalite Warriors",
+            "base": ""
+        },
+        {
+            "name": "Lelith Hesperax",
+            "base": ""
+        },
+        {
+            "name": "Mandrakes",
+            "base": ""
+        },
+        {
+            "name": "Raider",
+            "base": ""
+        },
+        {
+            "name": "Ravager",
+            "base": ""
+        },
+        {
+            "name": "Razorwing Jetfighter",
+            "base": ""
+        },
+        {
+            "name": "Reavers",
+            "base": ""
+        },
+        {
+            "name": "Scourges",
+            "base": ""
+        },
+        {
+            "name": "Succubus",
+            "base": ""
+        },
+        {
+            "name": "Talos",
+            "base": ""
+        },
+        {
+            "name": "Urien Rakarth",
+            "base": ""
+        },
+        {
+            "name": "Venom",
+            "base": ""
+        },
+        {
+            "name": "Voidraven Bomber",
+            "base": ""
+        },
+        {
+            "name": "Wracks",
+            "base": ""
+        },
+        {
+            "name": "Wyches",
+            "base": ""
+        }
+    ],
+    "IMPERIAL GUARD": [
+        {
+            "name": "ARMY LISTS",
+            "base": ""
+        },
+        {
+            "name": "Aegis Defence Line",
+            "base": ""
+        },
+        {
+            "name": "Armoured Sentinels",
+            "base": ""
+        },
+        {
+            "name": "Attilan Rough Riders",
+            "base": ""
+        },
+        {
+            "name": "Avenger Strike Fighter",
+            "base": ""
+        },
+        {
+            "name": "Baneblade",
+            "base": ""
+        },
+        {
+            "name": "Basilisk",
+            "base": ""
+        },
+        {
+            "name": "Bullgryn Squad",
+            "base": ""
+        },
+        {
+            "name": "Cadian Shock Troops",
+            "base": ""
+        },
+        {
+            "name": "Carnodon",
+            "base": ""
+        },
+        {
+            "name": "Catachan Jungle Fighters",
+            "base": ""
+        },
+        {
+            "name": "Chimera",
+            "base": ""
+        },
+        {
+            "name": "Colossus",
+            "base": ""
+        },
+        {
+            "name": "Commissar",
+            "base": ""
+        },
+        {
+            "name": "Crassus",
+            "base": ""
+        },
+        {
+            "name": "Cyclops Demolition Vehicle",
+            "base": ""
+        },
+        {
+            "name": "Death Korps of Krieg",
+            "base": ""
+        },
+        {
+            "name": "Death Rider Squadron",
+            "base": ""
+        },
+        {
+            "name": "Death Rider Commander",
+            "base": ""
+        },
+        {
+            "name": "Deathstrike",
+            "base": ""
+        },
+        {
+            "name": "Doomhammer",
+            "base": ""
+        },
+        {
+            "name": "Earthshaker Battery",
+            "base": ""
+        },
+        {
+            "name": "Field Ordance Battery",
+            "base": ""
+        },
+        {
+            "name": "Gaunts Ghosts",
+            "base": ""
+        },
+        {
+            "name": "Hades Breaching Drills\\",
+            "base": ""
+        },
+        {
+            "name": "Heavy Weapon Squad",
+            "base": ""
+        },
+        {
+            "name": "Hellhammer",
+            "base": ""
+        },
+        {
+            "name": "Hellhound",
+            "base": ""
+        },
+        {
+            "name": "Hydra",
+            "base": ""
+        },
+        {
+            "name": "Infantry Squad",
+            "base": ""
+        },
+        {
+            "name": "Iron Hand Straken",
+            "base": ""
+        },
+        {
+            "name": "Karskin",
+            "base": ""
+        },
+        {
+            "name": "Leman Russ Battle Tank",
+            "base": ""
+        },
+        {
+            "name": "Lema Russ Demolisher",
+            "base": ""
+        },
+        {
+            "name": "Leman Russ Eradicator",
+            "base": ""
+        },
+        {
+            "name": "Leman Russ Executioner",
+            "base": ""
+        },
+        {
+            "name": "Leman Russ Exterminator",
+            "base": ""
+        },
+        {
+            "name": "Leman Russ Punisher",
+            "base": ""
+        },
+        {
+            "name": "Leman Russ Vanqisher",
+            "base": ""
+        },
+        {
+            "name": "Lord Solar Leontus",
+            "base": ""
+        },
+        {
+            "name": "Marcharius Vanquisher",
+            "base": ""
+        },
+        {
+            "name": "Macharius Vulvan",
+            "base": ""
+        },
+        {
+            "name": "Malcador",
+            "base": ""
+        },
+        {
+            "name": "Malcador Annilhilator",
+            "base": ""
+        },
+        {
+            "name": "Malcador Defender",
+            "base": ""
+        },
+        {
+            "name": "Malcador Infernus",
+            "base": ""
+        },
+        {
+            "name": "Manticore",
+            "base": ""
+        },
+        {
+            "name": "Marauder Bomber",
+            "base": ""
+        },
+        {
+            "name": "Marauder Destroyer",
+            "base": ""
+        },
+        {
+            "name": "Medua Carriage Battery",
+            "base": ""
+        },
+        {
+            "name": "Tempestus Command Squad",
+            "base": ""
+        },
+        {
+            "name": "Munitorum Servitors",
+            "base": ""
+        },
+        {
+            "name": "Nork Deddog",
+            "base": ""
+        },
+        {
+            "name": "Ogryn Bodyguard",
+            "base": ""
+        },
+        {
+            "name": "Ogryn Squad",
+            "base": ""
+        },
+        {
+            "name": "Command Squad",
+            "base": ""
+        },
+        {
+            "name": "Praetor",
+            "base": ""
+        },
+        {
+            "name": "Primaris Psyker",
+            "base": ""
+        },
+        {
+            "name": "Rapier Destroyer Battery",
+            "base": ""
+        },
+        {
+            "name": "Ratling Snipers",
+            "base": ""
+        },
+        {
+            "name": "Regimental Engineer",
+            "base": ""
+        },
+        {
+            "name": "Regiental Preacher",
+            "base": ""
+        },
+        {
+            "name": "Dorn Battle Tank",
+            "base": ""
+        },
+        {
+            "name": "Scout Sentinels",
+            "base": ""
+        },
+        {
+            "name": "Sergeant Harker",
+            "base": ""
+        },
+        {
+            "name": "Shadowsword",
+            "base": ""
+        },
+        {
+            "name": "Sly Marbo",
+            "base": ""
+        },
+        {
+            "name": "Stormblade",
+            "base": ""
+        },
+        {
+            "name": "Stormlord",
+            "base": ""
+        },
+        {
+            "name": "Stormsword",
+            "base": ""
+        },
+        {
+            "name": "Tank Commander",
+            "base": ""
+        },
+        {
+            "name": "Tarantula Battery",
+            "base": ""
+        },
+        {
+            "name": "Taurox",
+            "base": ""
+        },
+        {
+            "name": "Taurox Prime",
+            "base": ""
+        },
+        {
+            "name": "Temp Scions",
+            "base": ""
+        },
+        {
+            "name": "Thunderbolt Heavy Fighter",
+            "base": ""
+        },
+        {
+            "name": "Trojan Support Vehicle",
+            "base": ""
+        },
+        {
+            "name": "Ursula Creed",
+            "base": ""
+        },
+        {
+            "name": "Valdor",
+            "base": ""
+        },
+        {
+            "name": "Valkyrie",
+            "base": ""
+        },
+        {
+            "name": "Voss-Pattern Lightning",
+            "base": ""
+        },
+        {
+            "name": "Vulture Gunship",
+            "base": ""
+        },
+        {
+            "name": "Wyvern",
+            "base": ""
+        }
+    ],
+    "CUSTODES": [
+        {
+            "name": "ARMY LISTS",
+            "base": ""
+        },
+        {
+            "name": "Allarus Custodians",
+            "base": ""
+        },
+        {
+            "name": "Aleya",
+            "base": ""
+        },
+        {
+            "name": "Blade Champion",
+            "base": ""
+        },
+        {
+            "name": "Custodian Guard",
+            "base": ""
+        },
+        {
+            "name": "Custodian Wardens",
+            "base": ""
+        },
+        {
+            "name": "Knight-Centura",
+            "base": ""
+        },
+        {
+            "name": "Prosecutors",
+            "base": ""
+        },
+        {
+            "name": "Rhino",
+            "base": ""
+        },
+        {
+            "name": "Shield-Captain",
+            "base": ""
+        },
+        {
+            "name": "Shield Captain in Term Armour",
+            "base": ""
+        },
+        {
+            "name": "Shield Captain Dawn Jetbike",
+            "base": ""
+        },
+        {
+            "name": "Trajann Valoris",
+            "base": ""
+        },
+        {
+            "name": "Valerian",
+            "base": ""
+        },
+        {
+            "name": "Venerable Contemp Dreadnought",
+            "base": ""
+        },
+        {
+            "name": "Venerable Landraider",
+            "base": ""
+        },
+        {
+            "name": "Vertus Praetors",
+            "base": ""
+        },
+        {
+            "name": "Vilgilators",
+            "base": ""
+        },
+        {
+            "name": "Witchseekers",
+            "base": ""
+        }
+    ]
+}

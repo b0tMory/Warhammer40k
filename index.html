@@ -56,6 +56,12 @@
             <div id="unitList1">
                 <!-- Units for this army -->
             </div>
+            <!-- Unit Selection Dropdown -->
+            <div style="margin: 10px 0;">
+                <select id="unitSelector1">
+                    <option value="">Select Unit to Add</option>
+                </select>
+            </div>
             <button id="addUnitBtn1">Add Unit</button>
             <button id="deleteUnitBtn1">Delete Unit</button>
             <button id="rotateUnitBtn1">Rotate Unit</button>
@@ -81,6 +87,12 @@
             <h3 id="armyTitle2"></h3>
             <div id="unitList2">
                 <!-- Units for this army -->
+            </div>
+            <!-- Unit Selection Dropdown -->
+            <div style="margin: 10px 0;">
+                <select id="unitSelector2">
+                    <option value="">Select Unit to Add</option>
+                </select>
             </div>
             <button id="addUnitBtn2">Add Unit</button>
             <button id="deleteUnitBtn2">Delete Unit</button>
@@ -223,10 +235,6 @@ function updateImage() {
 }
     </script>
 
-
-
-
-
 <script>
 const mapContainer = document.getElementById("mapContainer");
 
@@ -249,9 +257,9 @@ mapContainer.addEventListener("click", function(e) {
 </script>
 
 <script>
-    // Army list data
+    // Army list data - FIXED: Match the exact keys from army_units.json
     const armyList = [
-        "Space Marines", "Ultra Marines", "Imperial Fists", "Iron Hands", "Raven Guard",
+        "SPACE MARINES", "UltraMarines", "Imperial Fists", "Iron Hands", "Raven Guard",
         "Salamanders", "White Scars", "Genestealer Cults", "Tyranids", "Necrons",
         "Thousand Sons", "Space Wolves", "Dark Angels", "Black Templars", "Blood Angels",
         "Death Guard", "Chaos Demons", "Chaos Knights", "Adeptus Sororitas", "Adeptus Mechanicus",
@@ -259,8 +267,77 @@ mapContainer.addEventListener("click", function(e) {
         "Grey Knights", "Tau", "Votann", "Imperial Knights", "Drukhari",
         "Imperial Guard", "Custodes"
     ];
+    
 
-    // Army management
+    let armyUnits = {};
+
+    // FIXED: Load army units and properly initialize UI
+    fetch("army_units.json")
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+    })
+    .then(data => {
+        armyUnits = data;
+        console.log("Army units loaded successfully:", armyUnits);
+        generateArmyCheckboxes(); // FIXED: Changed from populateFactions() to generateArmyCheckboxes()
+    })
+    .catch(error => {
+        console.error('Failed to load army units:', error);
+        // Fallback: still generate checkboxes even if JSON fails to load
+        console.log("Generating checkboxes with fallback data");
+        generateArmyCheckboxes();
+    });
+
+    function populateUnitSelector(player, armyName) {
+        const unitSelector = document.getElementById(`unitSelector${player}`);
+        unitSelector.innerHTML = '<option value="">Select Unit to Add</option>';
+
+        // FIXED: Try both the exact name and uppercase version
+        let unitsData = armyUnits[armyName] || armyUnits[armyName.toUpperCase()];
+        
+        if (unitsData) {
+            unitsData.forEach(unitObj => {
+                const option = document.createElement('option');
+                // Handle both string and object formats
+                if (typeof unitObj === 'string') {
+                    option.value = unitObj;
+                    option.text = unitObj;
+                } else {
+                    // Skip "ARMY LISTS" entry and other non-unit entries
+                    if (unitObj.name === "ARMY LISTS" || !unitObj.name) {
+                        return;
+                    }
+                    option.value = unitObj.name;
+                    option.text = `${unitObj.name}${unitObj.base ? ' (' + unitObj.base + ')' : ''}`;
+                }
+                unitSelector.appendChild(option);
+            });
+            console.log(`Populated ${unitsData.length} units for army: ${armyName}`);
+        } else {
+            console.warn(`No units found for army: ${armyName}. Available armies:`, Object.keys(armyUnits));
+        }
+    }
+
+    function renderUnits(player, armyName) {
+        const unitList = document.getElementById(`unitList${player}`);
+        const playerKey = `player${player}`;
+        unitList.innerHTML = '';
+
+        armies[playerKey][armyName].forEach(unit => {
+            const div = document.createElement('div');
+            if (typeof unit === 'string') {
+                div.textContent = unit;
+            } else {
+                div.textContent = `${unit.name} (${unit.base || "?"})`;
+            }
+            unitList.appendChild(div);
+        });
+    }
+
+    // Army management - Updated to store unit objects with rotation tracking
     const armies = {
         player1: {},
         player2: {}
@@ -276,6 +353,10 @@ mapContainer.addEventListener("click", function(e) {
     function generateArmyCheckboxes() {
         const container1 = document.getElementById('checkboxContainer1');
         const container2 = document.getElementById('checkboxContainer2');
+        
+        // Clear existing content
+        container1.innerHTML = '';
+        container2.innerHTML = '';
         
         armyList.forEach((army, index) => {
             // Player 1
@@ -300,6 +381,8 @@ mapContainer.addEventListener("click", function(e) {
             label2.appendChild(document.createTextNode(army));
             container2.appendChild(label2);
         });
+        
+        console.log("Army checkboxes generated successfully");
     }
 
     // Handle army selection
@@ -328,9 +411,10 @@ mapContainer.addEventListener("click", function(e) {
         detailView.style.display = 'block';
         armyTitle.textContent = armyName;
         renderUnits(player, armyName);
+        populateUnitSelector(player, armyName);
     }
 
-    // Render units for an army
+    // Render units for an army - Updated to handle unit objects
     function renderUnits(player, armyName) {
         const unitList = document.getElementById(`unitList${player}`);
         const playerKey = `player${player}`;
@@ -338,21 +422,48 @@ mapContainer.addEventListener("click", function(e) {
         unitList.innerHTML = '';
         armies[playerKey][armyName].forEach(unit => {
             const div = document.createElement('div');
-            div.textContent = unit;
+            // Handle both old string format and new object format
+            const unitText = typeof unit === 'string' ? unit : unit.name;
+            div.textContent = unitText;
             unitList.appendChild(div);
         });
     }
 
-    // Add unit
+    // FIXED: Modified add unit function to use selected unit type
     function addUnit(player, armyName) {
         const playerKey = `player${player}`;
-        const unitCount = armies[playerKey][armyName].length + 1;
-        const unitName = `Unit ${unitCount}`;
-        armies[playerKey][armyName].push(unitName);
+        const unitSelector = document.getElementById(`unitSelector${player}`);
+        const selectedUnitType = unitSelector.value;
+        
+        if (!selectedUnitType) {
+            alert('Please select a unit type to add');
+            return;
+        }
+        
+        // Count existing units of this type to create unique names
+        const existingUnitsOfType = armies[playerKey][armyName].filter(unit => {
+            const unitName = typeof unit === 'string' ? unit : unit.name;
+            return unitName.startsWith(selectedUnitType);
+        });
+        
+        const unitNumber = existingUnitsOfType.length + 1;
+        const unitName = unitNumber === 1 ? selectedUnitType : `${selectedUnitType} ${unitNumber}`;
+        
+        // Create unit object with rotation tracking
+        const newUnit = {
+            name: unitName,
+            id: Date.now() + Math.random(), // Simple unique ID
+            rotation: 0 // Track current rotation (0, 45, 90, 135, 180, 225, 270, 315)
+        };
+        
+        armies[playerKey][armyName].push(newUnit);
         renderUnits(player, armyName);
         
         // Keep the checkbox checked since army now has units
         updateCheckboxState(player, armyName, true);
+        
+        // Reset unit selector
+        unitSelector.value = '';
         
         // Broadcast unit addition to map.html
         const imagePath = player === 1 ? 
@@ -363,13 +474,15 @@ mapContainer.addEventListener("click", function(e) {
             action: 'addUnit',
             player: player,
             unitName: `${armyName} ${unitName}`,
-            imagePath: imagePath
+            unitId: newUnit.id,
+            imagePath: imagePath,
+            rotation: newUnit.rotation
         });
         
-        console.log(`Broadcasting unit addition: Player ${player}, Unit: ${armyName} ${unitName}`);
+        console.log(`Broadcasting unit addition: Player ${player}, Unit: ${armyName} ${unitName}, ID: ${newUnit.id}`);
     }
 
-    // Delete last unit
+    // Delete last unit - Updated to handle unit objects
     function deleteLastUnit(player, armyName) {
         const playerKey = `player${player}`;
         const deletedUnit = armies[playerKey][armyName].pop();
@@ -381,14 +494,63 @@ mapContainer.addEventListener("click", function(e) {
         
         // Broadcast unit deletion to map.html
         if (deletedUnit) {
+            const unitName = typeof deletedUnit === 'string' ? deletedUnit : deletedUnit.name;
             bc.postMessage({ 
                 action: 'deleteUnit',
                 player: player,
-                unitName: `${armyName} ${deletedUnit}`
+                unitName: `${armyName} ${unitName}`
             });
             
-            console.log(`Broadcasting unit deletion: Player ${player}, Unit: ${armyName} ${deletedUnit}`);
+            console.log(`Broadcasting unit deletion: Player ${player}, Unit: ${armyName} ${unitName}`);
         }
+    }
+
+    // Rotate all units for current army in octagonal pattern (45-degree increments)
+    function rotateArmyUnits(player, armyName) {
+        const playerKey = `player${player}`;
+        
+        // Update rotation for all units in this army
+        armies[playerKey][armyName].forEach(unit => {
+            // Handle both old string format and new object format
+            if (typeof unit === 'string') {
+                // Convert old string format to object format
+                const index = armies[playerKey][armyName].indexOf(unit);
+                armies[playerKey][armyName][index] = {
+                    name: unit,
+                    id: Date.now() + Math.random(),
+                    rotation: 45 // Start at 45 degrees for first rotation
+                };
+                unit = armies[playerKey][armyName][index];
+            } else {
+                // Increment rotation by 45 degrees (1/8 of a full rotation)
+                unit.rotation = (unit.rotation + 45) % 360;
+            }
+            
+            // Broadcast individual unit rotation to map.html
+            bc.postMessage({ 
+                action: 'rotateUnit',
+                player: player,
+                armyName: armyName,
+                unitId: unit.id,
+                unitName: unit.name,
+                newRotation: unit.rotation
+            });
+            
+            console.log(`Rotating unit: ${unit.name} (ID: ${unit.id}) to ${unit.rotation}°`);
+        });
+        
+        console.log(`Broadcasting rotation for all units in Army: ${armyName}, Player: ${player}`);
+        
+        // Visual feedback
+        const rotateBtn = document.getElementById(`rotateUnitBtn${player}`);
+        const originalText = rotateBtn.textContent;
+        rotateBtn.textContent = 'Rotating...';
+        rotateBtn.disabled = true;
+        
+        setTimeout(() => {
+            rotateBtn.textContent = originalText;
+            rotateBtn.disabled = false;
+        }, 300);
     }
 
     // Update checkbox state
@@ -419,8 +581,10 @@ mapContainer.addEventListener("click", function(e) {
         deleteLastUnit(1, armyName);
     });
 
+    // Updated rotate button functionality
     document.getElementById('rotateUnitBtn1').addEventListener('click', () => {
-        alert('Rotate functionality would be implemented here');
+        const armyName = document.getElementById('armyTitle1').textContent;
+        rotateArmyUnits(1, armyName);
     });
 
     document.getElementById('backBtn1').addEventListener('click', () => {
@@ -437,21 +601,18 @@ mapContainer.addEventListener("click", function(e) {
         deleteLastUnit(2, armyName);
     });
 
+    // Updated rotate button functionality
     document.getElementById('rotateUnitBtn2').addEventListener('click', () => {
-        alert('Rotate functionality would be implemented here');
+        const armyName = document.getElementById('armyTitle2').textContent;
+        rotateArmyUnits(2, armyName);
     });
 
     document.getElementById('backBtn2').addEventListener('click', () => {
         goBackToSelection(2);
     });
 
-    // Initialize the application
-    document.addEventListener('DOMContentLoaded', function() {
-        generateArmyCheckboxes();
-    });
-
-
-
+    // REMOVED: Don't initialize on DOMContentLoaded since we need to wait for JSON
+    // The initialization now happens after the fetch completes
 </script>
 
 </body>

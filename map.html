@@ -78,11 +78,7 @@
         
     
     
-    <div class="controls">
-        <button onclick="rotateSelected()">Rotate</button>
-        <div>Selected: <span id="selectedInfo">None</span></div>
-        <div>Units: <span id="unitCount">0</span></div>
-    </div>
+
 
     <div id="checkboxContainer"></div>
 
@@ -113,49 +109,51 @@
                 updateImageFromBroadcast(data.imagePath);
             } else if (data.action === 'addUnit') {
                 // Add unit
-                addShapeFromBroadcast(data.imagePath, data.unitName, data.player);
+                addShapeFromBroadcast(data.imagePath, data.unitName, data.player, data.unitId);
             } else if (data.action === 'deleteUnit') {
                 // Delete unit
                 deleteShapeByName(data.unitName, data.player);
-            }
+            } else if (data.action === 'rotateUnit') {
+    // Rotate specific unit
+    rotateUnitById(data.unitId, data.newRotation);
+            
         };
+    }
+        function addShapeFromBroadcast(imagePath, unitName, player, unitId) {
+    shapeCounter++;
+    const shape = document.createElement('div');
+    shape.className = 'shape';
+    shape.style.top = '50%';
+    shape.style.left = '50%';
+    shape.dataset.id = shapeCounter;
+    shape.dataset.rotation = '0';
+    shape.dataset.unitName = unitName;
+    shape.dataset.player = player;
+    shape.dataset.unitId = unitId;  // ✅ now correctly assigned
 
-        // Add shape from broadcast (no counter needed)
-        function addShapeFromBroadcast(imagePath, unitName, player) {
-            shapeCounter++;
-            const shape = document.createElement('div');
-            shape.className = 'shape';
-            shape.style.top = '50%';
-            shape.style.left = '50%';
-            shape.dataset.id = shapeCounter;
-            shape.dataset.rotation = '0';
-            shape.dataset.unitName = unitName;
-            shape.dataset.player = player;
-            
-            // Add the actual image
-            const img = document.createElement('img');
-            img.src = imagePath;
-            img.className = 'shape-image';
-            img.alt = unitName;
-            shape.appendChild(img);
-            
-            // Add click handler for selection
-            shape.addEventListener('click', function() {
-                selectShape(shape);
-            });
-            
-            // Add drag functionality
-            makeDraggable(shape);
-            
-            document.getElementById('mapContainer').appendChild(shape);
-            shapes.push(shape);
-            selectShape(shape);
-            
-            // Update unit count
-            updateUnitCount();
-            
-            console.log(`Added unit: ${unitName} for Player ${player}`);
-        }
+    // Add the actual image
+    const img = document.createElement('img');
+    img.src = imagePath;
+    img.className = 'shape-image';
+    img.alt = unitName;
+    shape.appendChild(img);
+
+    // Click handler
+    shape.addEventListener('click', function() {
+        selectShape(shape);
+    });
+
+    // Drag functionality
+    makeDraggable(shape);
+
+    document.getElementById('mapContainer').appendChild(shape);
+    shapes.push(shape);
+    selectShape(shape);
+
+    updateUnitCount();
+    console.log(`Added unit: ${unitName} for Player ${player} with ID ${unitId}`);
+}
+
 
         // Delete shape by unit name
         function deleteShapeByName(unitName, player) {
@@ -210,15 +208,17 @@
                 `${shape.dataset.unitName} (Player ${shape.dataset.player})`;
         }
 
-        // Rotate selected shape (octagonal - 45 degree increments)
-        function rotateSelected() {
-            if (selectedShape) {
-                const currentRotation = parseInt(selectedShape.dataset.rotation);
-                const newRotation = (currentRotation + 45) % 360;
-                selectedShape.dataset.rotation = newRotation;
-                selectedShape.style.transform = `translate(-50%, -50%) rotate(${newRotation}deg)`;
-            }
-        }
+    
+
+        // Rotate a specific unit by its unique ID (from broadcast)
+function rotateUnitById(unitId, newRotation) {
+    const shape = shapes.find(s => s.dataset.unitId == unitId);
+    if (shape) {
+        shape.dataset.rotation = newRotation;
+        shape.style.transform = `translate(-50%, -50%) rotate(${newRotation}deg)`;
+        console.log(`Rotated unit ${shape.dataset.unitName} (ID: ${unitId}) to ${newRotation}°`);
+    }
+}
 
         // Make shape draggable
         function makeDraggable(shape) {
