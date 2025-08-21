@@ -64,7 +64,7 @@
             </div>
             <button id="addUnitBtn1">Add Unit</button>
             <button id="deleteUnitBtn1">Delete Unit</button>
-            <button id="rotateUnitBtn1">Rotate Unit</button>
+            <button id="rotateUnitBtn1">Rotate Selected Unit</button>
             <button id="backBtn1">Back</button>
         </div>
     </div>
@@ -96,7 +96,7 @@
             </div>
             <button id="addUnitBtn2">Add Unit</button>
             <button id="deleteUnitBtn2">Delete Unit</button>
-            <button id="rotateUnitBtn2">Rotate Unit</button>
+            <button id="rotateUnitBtn2">Rotate Selected Unit</button>
             
             <button id="backBtn2">Back</button>
         </div>
@@ -414,22 +414,59 @@ mapContainer.addEventListener("click", function(e) {
         populateUnitSelector(player, armyName);
     }
 
-    // Render units for an army - Updated to handle unit objects
+    // UPDATED: Render units with click selection functionality
     function renderUnits(player, armyName) {
         const unitList = document.getElementById(`unitList${player}`);
         const playerKey = `player${player}`;
         
         unitList.innerHTML = '';
-        armies[playerKey][armyName].forEach(unit => {
+        armies[playerKey][armyName].forEach((unit, index) => {
             const div = document.createElement('div');
+            div.style.cursor = 'pointer';
+            div.style.padding = '5px';
+            div.style.margin = '2px 0';
+            div.style.border = '1px solid #ccc';
+            div.style.borderRadius = '3px';
+            div.dataset.unitId = unit.id; // Store unit ID for selection
+            
             // Handle both old string format and new object format
             const unitText = typeof unit === 'string' ? unit : unit.name;
             div.textContent = unitText;
+            
+            // Add click handler for unit selection
+            div.addEventListener('click', () => selectUnit(player, armyName, unit.id, div));
+            
             unitList.appendChild(div);
         });
     }
 
-    // FIXED: Modified add unit function to use selected unit type
+    // NEW: Track selected units for each player
+    const selectedUnits = {
+        player1: null,
+        player2: null
+    };
+
+    // NEW: Select unit functionality
+    function selectUnit(player, armyName, unitId, divElement) {
+        const unitList = document.getElementById(`unitList${player}`);
+        
+        // Clear previous selection styling
+        Array.from(unitList.children).forEach(child => {
+            child.style.backgroundColor = '';
+            child.style.color = '';
+        });
+        
+        // Apply selection styling
+        divElement.style.backgroundColor = '#007cba';
+        divElement.style.color = 'white';
+        
+        // Store selected unit
+        selectedUnits[`player${player}`] = unitId;
+        
+        console.log(`Selected unit ID: ${unitId} for Player ${player}`);
+    }
+
+    //add unit function to use selected unit type
     function addUnit(player, armyName) {
         const playerKey = `player${player}`;
         const unitSelector = document.getElementById(`unitSelector${player}`);
@@ -488,6 +525,11 @@ mapContainer.addEventListener("click", function(e) {
         const deletedUnit = armies[playerKey][armyName].pop();
         renderUnits(player, armyName);
         
+        // Clear selection if deleted unit was selected
+        if (selectedUnits[playerKey] && deletedUnit && selectedUnits[playerKey] === deletedUnit.id) {
+            selectedUnits[playerKey] = null;
+        }
+        
         // Update checkbox state based on whether army still has units
         const hasUnits = armies[playerKey][armyName].length > 0;
         updateCheckboxState(player, armyName, hasUnits);
@@ -505,41 +547,50 @@ mapContainer.addEventListener("click", function(e) {
         }
     }
 
-    // Rotate all units for current army in octagonal pattern (45-degree increments)
-    function rotateArmyUnits(player, armyName) {
+    // FIXED: New function to rotate only the selected unit
+    function rotateSelectedUnit(player, armyName) {
         const playerKey = `player${player}`;
+        const selectedUnitId = selectedUnits[playerKey];
         
-        // Update rotation for all units in this army
-        armies[playerKey][armyName].forEach(unit => {
-            // Handle both old string format and new object format
-            if (typeof unit === 'string') {
-                // Convert old string format to object format
-                const index = armies[playerKey][armyName].indexOf(unit);
-                armies[playerKey][armyName][index] = {
-                    name: unit,
-                    id: Date.now() + Math.random(),
-                    rotation: 45 // Start at 45 degrees for first rotation
-                };
-                unit = armies[playerKey][armyName][index];
-            } else {
-                // Increment rotation by 45 degrees (1/8 of a full rotation)
-                unit.rotation = (unit.rotation + 45) % 360;
-            }
-            
-            // Broadcast individual unit rotation to map.html
-            bc.postMessage({ 
-                action: 'rotateUnit',
-                player: player,
-                armyName: armyName,
-                unitId: unit.id,
-                unitName: unit.name,
-                newRotation: unit.rotation
-            });
-            
-            console.log(`Rotating unit: ${unit.name} (ID: ${unit.id}) to ${unit.rotation}°`);
+        if (!selectedUnitId) {
+            alert('Please select a unit to rotate by clicking on it in the unit list.');
+            return;
+        }
+        
+        // Find the selected unit in the army
+        const selectedUnit = armies[playerKey][armyName].find(unit => unit.id === selectedUnitId);
+        
+        if (!selectedUnit) {
+            alert('Selected unit not found. Please select a unit first.');
+            return;
+        }
+        
+        // Handle both old string format and new object format
+        if (typeof selectedUnit === 'string') {
+            // Convert old string format to object format
+            const index = armies[playerKey][armyName].indexOf(selectedUnit);
+            armies[playerKey][armyName][index] = {
+                name: selectedUnit,
+                id: selectedUnitId,
+                rotation: 45 // Start at 45 degrees for first rotation
+            };
+            selectedUnit = armies[playerKey][armyName][index];
+        } else {
+            // Increment rotation by 45 degrees (1/8 of a full rotation)
+            selectedUnit.rotation = (selectedUnit.rotation + 45) % 360;
+        }
+        
+        // Broadcast ONLY the selected unit's rotation to map.html
+        bc.postMessage({ 
+            action: 'rotateUnit',
+            player: player,
+            armyName: armyName,
+            unitId: selectedUnit.id,
+            unitName: selectedUnit.name,
+            newRotation: selectedUnit.rotation
         });
         
-        console.log(`Broadcasting rotation for all units in Army: ${armyName}, Player: ${player}`);
+        console.log(`Broadcasting rotation for SELECTED unit ONLY: ${selectedUnit.name} (ID: ${selectedUnit.id}) to ${selectedUnit.rotation}°`);
         
         // Visual feedback
         const rotateBtn = document.getElementById(`rotateUnitBtn${player}`);
@@ -566,6 +617,9 @@ mapContainer.addEventListener("click", function(e) {
         const selectionView = document.getElementById(`armySelectionView${player}`);
         const detailView = document.getElementById(`armyDetailView${player}`);
         
+        // Clear selection when going back
+        selectedUnits[`player${player}`] = null;
+        
         selectionView.style.display = 'block';
         detailView.style.display = 'none';
     }
@@ -581,10 +635,10 @@ mapContainer.addEventListener("click", function(e) {
         deleteLastUnit(1, armyName);
     });
 
-    // Updated rotate button functionality
+    // UPDATED: Use the new function for individual unit rotation
     document.getElementById('rotateUnitBtn1').addEventListener('click', () => {
         const armyName = document.getElementById('armyTitle1').textContent;
-        rotateArmyUnits(1, armyName);
+        rotateSelectedUnit(1, armyName);
     });
 
     document.getElementById('backBtn1').addEventListener('click', () => {
@@ -601,10 +655,10 @@ mapContainer.addEventListener("click", function(e) {
         deleteLastUnit(2, armyName);
     });
 
-    // Updated rotate button functionality
+    // UPDATED: Use the new function for individual unit rotation
     document.getElementById('rotateUnitBtn2').addEventListener('click', () => {
         const armyName = document.getElementById('armyTitle2').textContent;
-        rotateArmyUnits(2, armyName);
+        rotateSelectedUnit(2, armyName);
     });
 
     document.getElementById('backBtn2').addEventListener('click', () => {

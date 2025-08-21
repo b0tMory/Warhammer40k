@@ -48,6 +48,7 @@
             height: 50px;
             transform: translate(-50%, -50%);
             cursor: move;
+            z-index: 10;
         }
 
         .shape-image {
@@ -56,29 +57,48 @@
             object-fit: contain;
         }
 
+        .shape-label {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 10px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 1px 1px 2px black;
+            pointer-events: none;
+            white-space: nowrap;
+        }
+
         .controls {
             position: fixed;
             top: 10px;
             left: 10px;
-            background: white;
+            background: rgba(255, 255, 255, 0.9);
             padding: 10px;
             border: 1px solid black;
             z-index: 100;
+            border-radius: 5px;
         }
 
         .controls button {
             margin: 2px;
             padding: 5px 10px;
         }
+
+        
     </style>
 </head>
 <body>
     <div class="map-container" id="mapContainer">
         <img id="image" src="http://localhost:5500/GW%20Layouts%202025-2026/GW%20-%20Crucible%20of%20Battle%20-%20Layout%202.png" alt="Test Image" style="width: 100%; height: 100%; object-fit: contain;">
-        
-    
-    
+    </div>
 
+    <!-- Added missing UI elements -->
+    <div class="status-info">
+        <div>Units: <span id="unitCount">0</span></div>
+        <div>Selected: <span id="selectedInfo">None</span></div>
+    </div>
 
     <div id="checkboxContainer"></div>
 
@@ -114,51 +134,67 @@
                 // Delete unit
                 deleteShapeByName(data.unitName, data.player);
             } else if (data.action === 'rotateUnit') {
-    // Rotate specific unit
-    rotateUnitById(data.unitId, data.newRotation);
-            
-        }
-    };
+                // Rotate unit by specific ID only - enhanced logging and validation
+                rotateUnitById(data.unitId, data.newRotation);
+            }
+        };
+
         function addShapeFromBroadcast(imagePath, unitName, player, unitId) {
-    shapeCounter++;
-    const shape = document.createElement('div');
-    shape.className = 'shape';
-    shape.style.top = '50%';
-    shape.style.left = '50%';
-    shape.dataset.id = shapeCounter;
-    shape.dataset.rotation = '0';
-    shape.dataset.unitName = unitName;
-    shape.dataset.player = player;
-    shape.dataset.unitId = unitId;  
+            shapeCounter++;
+            const shape = document.createElement('div');
+            shape.className = 'shape';
+            shape.style.top = '50%';
+            shape.style.left = '50%';
+            shape.dataset.id = shapeCounter;
+            shape.dataset.rotation = '0';
+            shape.dataset.unitName = unitName;
+            shape.dataset.player = player;
+            shape.dataset.unitId = unitId;  // This is the crucial unique identifier
 
-    // Add the actual image
-    const img = document.createElement('img');
-    img.src = imagePath;
-    img.className = 'shape-image';
-    img.alt = unitName;
-    shape.appendChild(img);
+            // Add the actual image
+            const img = document.createElement('img');
+            img.src = imagePath;
+            img.className = 'shape-image';
+            img.alt = unitName;
+            shape.appendChild(img);
 
-    const label = document.createElement('div');
-    label.className = 'shape-label';
-    label.textContent = unitName;
-    shape.appendChild(label);
+            const label = document.createElement('div');
+            label.className = 'shape-label';
+            label.textContent = unitName;
+            shape.appendChild(label);
 
-    // Click handler
-    shape.addEventListener('click', function() {
-        selectShape(shape);
-    });
+            // Improved click handler that doesn't interfere with dragging
+            let clickStartTime;
+            let clickStartPos;
+            
+            shape.addEventListener('mousedown', function(e) {
+                clickStartTime = Date.now();
+                clickStartPos = { x: e.clientX, y: e.clientY };
+            });
+            
+            shape.addEventListener('mouseup', function(e) {
+                const clickDuration = Date.now() - clickStartTime;
+                const clickDistance = Math.sqrt(
+                    Math.pow(e.clientX - clickStartPos.x, 2) + 
+                    Math.pow(e.clientY - clickStartPos.y, 2)
+                );
+                
+                // Only select if it was a short click without much movement (not a drag)
+                if (clickDuration < 300 && clickDistance < 10) {
+                    selectShape(shape);
+                }
+            });
 
-    // Drag functionality
-    makeDraggable(shape);
+            // Drag functionality
+            makeDraggable(shape);
 
-    document.getElementById('mapContainer').appendChild(shape);
-    shapes.push(shape);
-    selectShape(shape);
+            document.getElementById('mapContainer').appendChild(shape);
+            shapes.push(shape);
+            selectShape(shape);
 
-    updateUnitCount();
-    console.log(`Added unit: ${unitName} for Player ${player} with ID ${unitId}`);
-}
-
+            updateUnitCount();
+            console.log(`Added unit: ${unitName} for Player ${player} with unique ID ${unitId}`);
+        }
 
         // Delete shape by unit name
         function deleteShapeByName(unitName, player) {
@@ -174,7 +210,8 @@
                 // Clear selection if deleted shape was selected
                 if (selectedShape === shapeToDelete) {
                     selectedShape = null;
-                    document.getElementById('selectedInfo').textContent = 'None';
+                    const selectedInfo = document.getElementById('selectedInfo');
+                    if (selectedInfo) selectedInfo.textContent = 'None';
                 }
                 
                 updateUnitCount();
@@ -184,7 +221,10 @@
 
         // Update unit count display
         function updateUnitCount() {
-            document.getElementById('unitCount').textContent = shapes.length;
+            const unitCountElement = document.getElementById('unitCount');
+            if (unitCountElement) {
+                unitCountElement.textContent = shapes.length;
+            }
         }
 
         // Update image from broadcast
@@ -200,7 +240,7 @@
             loadCheckboxesForMap(fileName);
         }
 
-        // Select shape
+        // Select shape - improved with error checking
         function selectShape(shape) {
             // Remove selection from all shapes
             shapes.forEach(s => s.style.outline = 'none');
@@ -209,29 +249,61 @@
             selectedShape = shape;
             shape.style.outline = '3px solid yellow';
             
-            document.getElementById('selectedInfo').textContent = 
-                `${shape.dataset.unitName} (Player ${shape.dataset.player})`;
+            // Update UI with error checking
+            const selectedInfo = document.getElementById('selectedInfo');
+            if (selectedInfo) {
+                selectedInfo.textContent = `${shape.dataset.unitName} (Player ${shape.dataset.player}, ID: ${shape.dataset.unitId})`;
+            }
+            
+            console.log(`Selected: ${shape.dataset.unitName} (Player ${shape.dataset.player}, Unique ID: ${shape.dataset.unitId})`);
         }
 
-    
+        // Add keyboard shortcut for deselection
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && selectedShape) {
+                selectedShape.style.outline = 'none';
+                selectedShape = null;
+                const selectedInfo = document.getElementById('selectedInfo');
+                if (selectedInfo) selectedInfo.textContent = 'None';
+                console.log('Selection cleared');
+            }
+        });
 
-        // Rotate a specific unit by its unique ID (from broadcast)
-function rotateUnitById(unitId, newRotation) {
-    const shape = shapes.find(s => s.dataset.unitId == unitId);
-    if (shape) {
-        shape.dataset.rotation = newRotation;
-        shape.style.transform = `translate(-50%, -50%) rotate(${newRotation}deg)`;
-        console.log(`Rotated unit ${shape.dataset.unitName} (ID: ${unitId}) to ${newRotation}°`);
-    }
-}
+        // Rotate a specific unit by its unique ID (from broadcast) - ENHANCED for individual rotation
+        function rotateUnitById(unitId, newRotation) {
+            console.log(`Attempting to rotate unit with ID: ${unitId} to ${newRotation}°`);
+            
+            // Find the EXACT unit by its unique ID (converted to string for comparison)
+            const shape = shapes.find(s => s.dataset.unitId === String(unitId));
+            
+            if (shape) {
+                // Update the rotation data
+                shape.dataset.rotation = newRotation;
+                
+                // Apply the rotation transform while preserving position
+                shape.style.transform = `translate(-50%, -50%) rotate(${newRotation}deg)`;
+                
+                console.log(`✅ Successfully rotated unit "${shape.dataset.unitName}" (ID: ${unitId}) to ${newRotation}°`);
+                console.log(`Unit details - Name: ${shape.dataset.unitName}, Player: ${shape.dataset.player}, ID: ${shape.dataset.unitId}`);
+            } else {
+                console.warn(`❌ Could not find unit with ID: ${unitId}`);
+                console.log("Available units:", shapes.map(s => ({
+                    name: s.dataset.unitName,
+                    player: s.dataset.player,
+                    id: s.dataset.unitId
+                })));
+            }
+        }
 
-        // Make shape draggable
+        // Make shape draggable - improved to not interfere with selection
         function makeDraggable(shape) {
             let isDragging = false;
+            let hasMoved = false;
             let startX, startY, startLeft, startTop;
 
             shape.addEventListener('mousedown', function(e) {
                 isDragging = true;
+                hasMoved = false;
                 startX = e.clientX;
                 startY = e.clientY;
                 
@@ -247,6 +319,15 @@ function rotateUnitById(unitId, newRotation) {
             document.addEventListener('mousemove', function(e) {
                 if (!isDragging) return;
                 
+                const moveDistance = Math.sqrt(
+                    Math.pow(e.clientX - startX, 2) + 
+                    Math.pow(e.clientY - startY, 2)
+                );
+                
+                if (moveDistance > 5) {
+                    hasMoved = true;
+                }
+                
                 const containerRect = document.getElementById('mapContainer').getBoundingClientRect();
                 const deltaX = e.clientX - startX;
                 const deltaY = e.clientY - startY;
@@ -256,10 +337,18 @@ function rotateUnitById(unitId, newRotation) {
                 
                 shape.style.left = newLeft + '%';
                 shape.style.top = newTop + '%';
+                
+                // Preserve rotation when dragging
+                const currentRotation = shape.dataset.rotation || '0';
+                shape.style.transform = `translate(-50%, -50%) rotate(${currentRotation}deg)`;
             });
 
             document.addEventListener('mouseup', function() {
+                if (isDragging && hasMoved) {
+                    console.log(`Moved unit: ${shape.dataset.unitName} (ID: ${shape.dataset.unitId})`);
+                }
                 isDragging = false;
+                hasMoved = false;
             });
         }
 
@@ -273,6 +362,9 @@ function rotateUnitById(unitId, newRotation) {
                     if (path && img.src !== path) {
                         img.src = `${path}?t=${Date.now()}`;
                     }
+                })
+                .catch(err => {
+                    // console.log("Server not available");
                 });
         }
 
