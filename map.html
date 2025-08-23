@@ -129,7 +129,7 @@
                 updateImageFromBroadcast(data.imagePath);
             } else if (data.action === 'addUnit') {
                 // Add unit
-                addShapeFromBroadcast(data.imagePath, data.unitName, data.player, data.unitId);
+                addShapeFromBroadcast(data.imagePath, data.unitName, data.player, data.unitId, data.unitDisplayName);
             } else if (data.action === 'deleteUnit') {
                 // Delete unit
                 deleteShapeByName(data.unitName, data.player);
@@ -139,7 +139,7 @@
             }
         };
 
-        function addShapeFromBroadcast(imagePath, unitName, player, unitId) {
+        function addShapeFromBroadcast(imagePath, unitName, player, unitId,unitDisplayName) {
             shapeCounter++;
             const shape = document.createElement('div');
             shape.className = 'shape';
@@ -160,7 +160,7 @@
 
             const label = document.createElement('div');
             label.className = 'shape-label';
-            label.textContent = unitName;
+            label.textContent = unitDisplayName;
             shape.appendChild(label);
 
             // Improved click handler that doesn't interfere with dragging

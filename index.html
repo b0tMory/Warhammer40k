@@ -291,35 +291,72 @@ mapContainer.addEventListener("click", function(e) {
         generateArmyCheckboxes();
     });
 
-    function populateUnitSelector(player, armyName) {
-        const unitSelector = document.getElementById(`unitSelector${player}`);
-        unitSelector.innerHTML = '<option value="">Select Unit to Add</option>';
+    // Updated populateUnitSelector function to store shape data
+function populateUnitSelector(player, armyName) {
+    const unitSelector = document.getElementById(`unitSelector${player}`);
+    unitSelector.innerHTML = '<option value="">Select Unit to Add</option>';
 
-        // FIXED: Try both the exact name and uppercase version
-        let unitsData = armyUnits[armyName] || armyUnits[armyName.toUpperCase()];
-        
-        if (unitsData) {
-            unitsData.forEach(unitObj => {
-                const option = document.createElement('option');
-                // Handle both string and object formats
-                if (typeof unitObj === 'string') {
-                    option.value = unitObj;
-                    option.text = unitObj;
-                } else {
-                    // Skip "ARMY LISTS" entry and other non-unit entries
-                    if (unitObj.name === "ARMY LISTS" || !unitObj.name) {
-                        return;
-                    }
-                    option.value = unitObj.name;
-                    option.text = `${unitObj.name}${unitObj.base ? ' (' + unitObj.base + ')' : ''}`;
+    // Try both the exact name and uppercase version
+    let unitsData = armyUnits[armyName] || armyUnits[armyName.toUpperCase()];
+    
+    if (unitsData) {
+        unitsData.forEach(unitObj => {
+            const option = document.createElement('option');
+            // Handle both string and object formats
+            if (typeof unitObj === 'string') {
+                option.value = unitObj;
+                option.text = unitObj;
+                option.dataset.shape = ''; // No shape data for string format
+            } else {
+                // Skip "ARMY LISTS" entry and other non-unit entries
+                if (unitObj.name === "ARMY LISTS" || !unitObj.name) {
+                    return;
                 }
-                unitSelector.appendChild(option);
-            });
-            console.log(`Populated ${unitsData.length} units for army: ${armyName}`);
+                option.value = unitObj.name;
+                option.text = unitObj.name;
+                option.dataset.shape = unitObj.shape || ''; // Store shape data
+            }
+            unitSelector.appendChild(option);
+        });
+        console.log(`Populated ${unitsData.length} units for army: ${armyName}`);
+    } else {
+        console.warn(`No units found for army: ${armyName}. Available armies:`, Object.keys(armyUnits));
+    }
+}
+
+// Function to determine image path based on player and shape
+function getImagePathForUnit(player, shape) {
+    const shapeStr = (shape || '').toLowerCase();
+    
+    // Check specific shapes
+    const isCircular = shapeStr.includes('circle') || shapeStr.includes('oval');
+    const isSquare = shapeStr.includes('square');
+    const isRectangle = shapeStr.includes('rectangle');
+    
+    if (player === 1) {
+        if (isCircular) {
+            return 'elements/Blue Circle.png';
+        } else if (isSquare) {
+            return 'elements/2.png';
+        } else if (isRectangle) {
+            return 'elements/Blue Rectangle.png';
         } else {
-            console.warn(`No units found for army: ${armyName}. Available armies:`, Object.keys(armyUnits));
+            // Default for player 1 when shape is unknown
+            return 'elements/2.png';
+        }
+    } else { // player === 2
+        if (isCircular) {
+            return 'elements/Orange Circle.png';
+        } else if (isSquare) {
+            return 'elements/1.png';
+        } else if (isRectangle) {
+            return 'elements/Orange Rectangle.png';
+        } else {
+            // Default for player 2 when shape is unknown
+            return 'elements/1.png';
         }
     }
+}
 
     function renderUnits(player, armyName) {
         const unitList = document.getElementById(`unitList${player}`);
@@ -467,57 +504,64 @@ mapContainer.addEventListener("click", function(e) {
     }
 
     //add unit function to use selected unit type
-    function addUnit(player, armyName) {
-        const playerKey = `player${player}`;
-        const unitSelector = document.getElementById(`unitSelector${player}`);
-        const selectedUnitType = unitSelector.value;
-        
-        if (!selectedUnitType) {
-            alert('Please select a unit type to add');
-            return;
-        }
-        
-        // Count existing units of this type to create unique names
-        const existingUnitsOfType = armies[playerKey][armyName].filter(unit => {
-            const unitName = typeof unit === 'string' ? unit : unit.name;
-            return unitName.startsWith(selectedUnitType);
-        });
-        
-        const unitNumber = existingUnitsOfType.length + 1;
-        const unitName = unitNumber === 1 ? selectedUnitType : `${selectedUnitType} ${unitNumber}`;
-        
-        // Create unit object with rotation tracking
-        const newUnit = {
-            name: unitName,
-            id: Date.now() + Math.random(), // Simple unique ID
-            rotation: 0 // Track current rotation (0, 45, 90, 135, 180, 225, 270, 315)
-        };
-        
-        armies[playerKey][armyName].push(newUnit);
-        renderUnits(player, armyName);
-        
-        // Keep the checkbox checked since army now has units
-        updateCheckboxState(player, armyName, true);
-        
-        // Reset unit selector
-        unitSelector.value = '';
-        
-        // Broadcast unit addition to map.html
-        const imagePath = player === 1 ? 
-            'elements/2.png' : 
-            'elements/1.png';
-            
-        bc.postMessage({ 
-            action: 'addUnit',
-            player: player,
-            unitName: `${armyName} ${unitName}`,
-            unitId: newUnit.id,
-            imagePath: imagePath,
-            rotation: newUnit.rotation
-        });
-        
-        console.log(`Broadcasting unit addition: Player ${player}, Unit: ${armyName} ${unitName}, ID: ${newUnit.id}`);
+    // Updated addUnit function to use shape-based images
+function addUnit(player, armyName) {
+    const playerKey = `player${player}`;
+    const unitSelector = document.getElementById(`unitSelector${player}`);
+    const selectedUnitType = unitSelector.value;
+    
+    if (!selectedUnitType) {
+        alert('Please select a unit type to add');
+        return;
     }
+    
+    // Get the shape from the selected option
+    const selectedOption = unitSelector.options[unitSelector.selectedIndex];
+    const unitShape = selectedOption.dataset.shape || '';
+    
+    // Count existing units of this type to create unique names
+    const existingUnitsOfType = armies[playerKey][armyName].filter(unit => {
+        const unitName = typeof unit === 'string' ? unit : unit.name;
+        return unitName.startsWith(selectedUnitType);
+    });
+    
+    const unitNumber = existingUnitsOfType.length + 1;
+    const unitName = unitNumber === 1 ? selectedUnitType : `${selectedUnitType} ${unitNumber}`;
+    
+    // Create unit object with rotation tracking and shape
+    const newUnit = {
+        name: unitName,
+        id: Date.now() + Math.random(), // Simple unique ID
+        rotation: 0, // Track current rotation (0, 45, 90, 135, 180, 225, 270, 315)
+        shape: unitShape // Store the shape information
+    };
+    
+    armies[playerKey][armyName].push(newUnit);
+    renderUnits(player, armyName);
+    
+    // Keep the checkbox checked since army now has units
+    updateCheckboxState(player, armyName, true);
+    
+    // Reset unit selector
+    unitSelector.value = '';
+    
+    // Get the appropriate image path based on player and shape
+    const imagePath = getImagePathForUnit(player, unitShape);
+    
+    // Broadcast unit addition to map.html
+    bc.postMessage({ 
+        action: 'addUnit',
+        player: player,
+        unitName: `${armyName} ${unitName}`,
+        unitDisplayName: unitName,
+        unitId: newUnit.id,
+        imagePath: imagePath,
+        rotation: newUnit.rotation,
+        shape: unitShape // Also send shape info for potential future use
+    });
+    
+    console.log(`Broadcasting unit addition: Player ${player}, Unit: ${armyName} ${unitName}, ID: ${newUnit.id}, Shape: ${unitShape}, Image: ${imagePath}`);
+}
 
     // Delete last unit - Updated to handle unit objects
     function deleteLastUnit(player, armyName) {

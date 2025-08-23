@@ -20,17 +20,17 @@ for col_idx in range(0, df.shape[1], 3):
 
     # Units start 2 rows down (row 8 in Excel after skiprows)
     unit_col = df.iloc[2:, col_idx].dropna().tolist()
-    shape_col = df.iloc[2:, col_idx+1].dropna().tolist() if col_idx+1 < df.shape[1] else []
+    shape_col = df.iloc[2:, col_idx+2].dropna().tolist() if col_idx+2 < df.shape[1] else []  # Changed from col_idx+1 to col_idx+2
 
     # Pair units with their shapes
     units_with_shapes = []
     for i, unit in enumerate(unit_col):
         unit_name = str(unit).strip()
-        base_shape = str(shape_col[i]).strip() if i < len(shape_col) else ""
+        shape = str(shape_col[i]).strip() if i < len(shape_col) and str(shape_col[i]).strip() != 'nan' else ""
         if unit_name:
             units_with_shapes.append({
                 "name": unit_name,
-                "base": base_shape
+                "shape": shape  # Changed from "base" to "shape"
             })
 
     army_units[army_name] = units_with_shapes
@@ -38,6 +38,13 @@ for col_idx in range(0, df.shape[1], 3):
 # Save JSON
 json_file = os.path.join(base_dir, "army_units.json")
 with open(json_file, "w", encoding="utf-8") as f:
-    json.dump(army_units, f, indent=4)
+    json.dump(army_units, f, indent=4, ensure_ascii=False)
 
 print(f"✅ Converted {csv_file} → {json_file}")
+print(f"📊 Processed {len(army_units)} armies")
+
+# Print sample for verification
+for army_name, units in list(army_units.items())[:2]:  # Show first 2 armies
+    print(f"\n{army_name} sample:")
+    for unit in units[:3]:  # Show first 3 units
+        print(f"  - {unit['name']}: {unit['shape'] if unit['shape'] else 'No shape'}")
